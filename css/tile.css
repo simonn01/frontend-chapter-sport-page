@@ -1,0 +1,128 @@
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0.5px;
+    background-color: #FFF;
+    padding-bottom: 30px;
+    align-items: flex-start;
+    position: relative;
+}
+
+.tile--transparent {
+    background-color: transparent;
+}
+
+.tile--sunglasses {
+    border: 1px #c7c7c7 solid;
+}
+
+.tile__h1 {
+    line-height: 90%;
+    margin-left: 30px;
+    font-style: italic;
+    padding-top: 50px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    text-transform: uppercase;
+}
+
+.tile__h2 {
+    line-height: 90%;
+    margin: 50px 30px 0 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 52px;
+}
+
+.tile__h3 {
+    margin: 20px 0 30px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+}
+
+
+.tile--clickable:hover::before {
+    content: '';
+    background-color: #8a8a8a60;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.tile--clickable:hover::after {
+    content: 'Shop Now';
+    background-color: #3954d9;
+    position: absolute;
+    /* center */
+    width: 85px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 45% auto;
+    /**********/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 2em;
+    font-size: 13px;
+    color: #FFF;
+    padding: 0.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tile__img {
+    height: 100%;
+    width: 100%;
+    padding: 2em 0 1em 0;
+}
+
+.tile__img--sunglasses {
+    width: 80%;
+    align-self: center;
+    padding: 3em 0 3em 0;
+}
+
+.tile__title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #0d2e57;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+}
+
+.tile__title--padding-left-39 {
+    padding-left: 39px;
+}
+
+.tile__content__container {
+    padding-left: 39px;
+}
+
+.tile__content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.tile__content--blue {
+    color: #3954d9;
+    font-size: 13px;
+}
+
+.tile__content--grey {
+    color: #818181;
+    font-size: 12px;
+    text-transform: strikethrough;
+}
+
+.tile__anchor {
+    width: 30%;
+}
