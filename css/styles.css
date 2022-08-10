@@ -1,16 +1,14 @@
-header {
-    background-color: #111;
-    color: #eee;
-    width: 100%;
+* {
     text-transform: uppercase;
-    font-family: "serif";
+    font-size: small;
+    font-family: sans-serif;
 }
 
 a {
     font-family: 'Optima', Courier, monospace;
     font-weight: 600;
     font-size: 10px;
-    padding: 1em;
+    padding: 0 1em;
     text-decoration: none;
 }
 
@@ -22,8 +20,10 @@ a:hover {
     color: hotpink;
 }
 
-div, nav, li, a, ul {
-    display: inline-block;
+ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
 }
 
 img {
@@ -31,10 +31,20 @@ img {
     height: 25px;
 }
 
-.border-right {
-    border-right-style: solid;
-    border-right-color: #eee;
-    border-right-width: 2px;
+header {
+    background-color: #111;
+    color: #eee;
+    width: 100%;
+    font-family: "serif";
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 #ecom-tools {
@@ -48,4 +58,174 @@ img {
 
 #portpro {
     font-size: 20px;
+    padding: 0;
+}
+
+.lorem {
+    font-variant: normal;
+    text-transform: none;
+}
+
+.icons {
+    display: flex;
+}
+
+#sprinter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    height: 300px;
+    width: 100%;
+    background-color: #EEE;
+}
+
+#basketball_background {
+    background-color: hotpink;
+    padding: 0 100px;
+}
+
+#basketball_container {
+    position: relative;
+    bottom: 80px;
+}
+
+#free_shipping {
+    display: flex;
+    justify-content: space-around;
+    font: #1111;
+    background-color: #CCC;
+    font-family: 'Optima', Courier, monospace;
+}
+
+#free_shipping .child {
+   display: flex;
+   flex-direction:column;
+   align-items: center; 
+   justify-content: space-around;
+   margin: 0 0.5px;
+   background-color: white;
+}
+
+#free_shipping .child a {
+    padding-bottom: 2em;
+    padding-top: 0.7em;
+    font-variant: normal;
+    color: blue;
+    text-transform: none;
+}
+
+#free_shipping .child img {
+    padding: 2em 0 1em 0;
+    height: 35px;
+    width: 35px;
+}
+
+#free_shipping .child span {
+    text-align: center;
+    font-size: small;
+    padding: 0.5em 3em;
+}
+
+#free_shipping .child .lorem {
+    font: #CCC:
+}
+
+#offer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #CCC;
+    font-family: 'Optima', Courier, monospace;
+}
+
+#offer #left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#left span {
+    text-align: center;
+}
+
+#left .lorem{
+    text-align: center;
+    margin: 0.5em 5em;
+}
+
+#offer-text {
+    font-size: 15px;
+    padding-top: 2em;
+}
+
+#phantom-elite {
+    font-size: 22px;
+    padding:  0.4em 0 1em 0;
+}
+
+#reduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#reduction span {
+    padding: 20px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+}
+
+#countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ddd;
+    border-radius: 20%;
+    font-size: small;
+    font-weight: 500;
+    margin: 0 5px;
+    padding: 5px 0;
+}
+
+#countdown .clock {
+    margin-bottom: 15px;
+    padding-bottom: 0 15px;
+}
+
+#countdown div .number {
+    margin: 0;
+    padding: 0;
+    font-size: xx-large;
+    font-weight: bold;
+}
+
+#offer img {
+    width: 50%;
+    height: 100%;
+}
+
+#five_hundred {
+    color: blue;
+    font-size: x-large;
+    font-weight: bold;
+}
+
+#one_thousand {
+    font-size: large;
+}
+
+#shop_now {
+    display: flex;
+    background-color: blue;
+    border-radius: 30px;
+    height: 2em;
+    font-size: medium;
+    color: white;
+    align-items: center;
+    padding: 0.3em;
+    margin: 1.5em 0;
 }
