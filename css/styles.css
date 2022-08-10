@@ -1,11 +1,8 @@
 * {
     text-transform: uppercase;
-    font-size: small;
-    font-family: sans-serif;
 }
 
 a {
-    font-family: 'Optima', Courier, monospace;
     font-weight: 600;
     font-size: 10px;
     padding: 0 1em;
@@ -95,7 +92,6 @@ nav {
     justify-content: space-around;
     font: #1111;
     background-color: #CCC;
-    font-family: 'Optima', Courier, monospace;
 }
 
 #free_shipping .child {
@@ -135,7 +131,6 @@ nav {
     display: flex;
     justify-content: space-between;
     background-color: #CCC;
-    font-family: 'Optima', Courier, monospace;
 }
 
 #offer #left {
@@ -177,6 +172,8 @@ nav {
 #countdown {
     display: flex;
     justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
 }
 
 #countdown div {
