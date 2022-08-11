@@ -7,6 +7,7 @@ a {
     font-size: 10px;
     padding: 0 1em;
     text-decoration: none;
+    color: white;
 }
 
 a:visited {
@@ -44,16 +45,16 @@ nav {
     align-items: center;
 }
 
-#ecom-tools {
+#ecomTools {
     float: right;
 }
 
-#empty-hamburger {
+#emptyHamburger {
     width: 30px;
     color: #1110
 }
 
-#portpro {
+#portPro {
     font-size: 20px;
     padding: 0;
 }
@@ -77,24 +78,24 @@ nav {
     background-color: #EEE;
 }
 
-#basketball_background {
+#basketballBackground {
     background-color: hotpink;
     padding: 0 100px;
 }
 
-#basketball_container {
+#basketballContainer {
     position: relative;
     bottom: 80px;
 }
 
-#free_shipping {
+#freeShipping {
     display: flex;
     justify-content: space-around;
     font: #1111;
     background-color: #CCC;
 }
 
-#free_shipping .child {
+#freeShipping .child {
    display: flex;
    flex-direction:column;
    align-items: center; 
@@ -103,7 +104,7 @@ nav {
    background-color: white;
 }
 
-#free_shipping .child a {
+#freeShipping .child a {
     padding-bottom: 2em;
     padding-top: 0.7em;
     font-variant: normal;
@@ -111,19 +112,19 @@ nav {
     text-transform: none;
 }
 
-#free_shipping .child img {
+#freeShipping .child img {
     padding: 2em 0 1em 0;
     height: 35px;
     width: 35px;
 }
 
-#free_shipping .child span {
+#freeShipping .child span {
     text-align: center;
     font-size: small;
     padding: 0.5em 3em;
 }
 
-#free_shipping .child .lorem {
+#freeShipping .child .lorem {
     font: #CCC:
 }
 
@@ -149,12 +150,12 @@ nav {
     margin: 0.5em 5em;
 }
 
-#offer-text {
+#offerText {
     font-size: 15px;
     padding-top: 2em;
 }
 
-#phantom-elite {
+#phantomElite {
     font-size: 22px;
     padding:  0.4em 0 1em 0;
 }
@@ -205,17 +206,17 @@ nav {
     height: 100%;
 }
 
-#five_hundred {
+#fiveHundred {
     color: blue;
     font-size: x-large;
     font-weight: bold;
 }
 
-#one_thousand {
+#oneThousand {
     font-size: large;
 }
 
-#shop_now {
+#shopNow {
     display: flex;
     background-color: blue;
     border-radius: 30px;
