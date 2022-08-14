@@ -30,7 +30,8 @@ img {
 }
 
 header {
-    background-color: #111;
+    background-color: #212121;
+    opacity: 0.75;
     color: #eee;
     width: 100%;
     font-family: "serif";
@@ -38,6 +39,9 @@ header {
     justify-content: space-between;
     padding: 1em 0;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 9;
 }
 
 nav {
