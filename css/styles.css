@@ -45,6 +45,32 @@ nav {
     align-items: center;
 }
 
+/* Font Colors */
+.phantomBlue {
+    color: #0d2e57;
+}
+
+.blue500 {
+    color: #3954d9
+}
+
+.grey61 {
+    color: #616161;
+}
+
+.black12 {
+    color: #121212
+}
+
+/* Font Sizes */
+.size15 {
+    font-size: 15px;
+}
+
+.size22 {
+    font-size: 22px;
+}
+
 #ecomTools {
     float: right;
 }
@@ -88,14 +114,16 @@ nav {
     bottom: 80px;
 }
 
-#freeShipping {
+#basketballContainer ul {
     display: flex;
     justify-content: space-around;
     font: #1111;
     background-color: #CCC;
+    margin: 0;
+    padding: 0;
 }
 
-#freeShipping .child {
+#basketballContainer li {
    display: flex;
    flex-direction:column;
    align-items: center; 
@@ -104,34 +132,35 @@ nav {
    background-color: white;
 }
 
-#freeShipping .child a {
+#basketballContainer ul li a{
     padding-bottom: 2em;
     padding-top: 0.7em;
     font-variant: normal;
-    color: blue;
+    color: #3753da;
     text-transform: none;
 }
 
-#freeShipping .child img {
+#basketballContainer ul li img{
     padding: 2em 0 1em 0;
     height: 35px;
     width: 35px;
 }
 
-#freeShipping .child span {
+#basketballContainer ul li div{
     text-align: center;
     font-size: small;
     padding: 0.5em 3em;
 }
 
-#freeShipping .child .lorem {
-    font: #CCC:
+#basketballContainer .lorem{
+    color: #8a8a8a;
 }
 
 #offer {
     display: flex;
     justify-content: space-between;
-    background-color: #CCC;
+    background-color: #f2f0f0;
+    text-align: center;
 }
 
 #offer #left {
@@ -141,22 +170,15 @@ nav {
     justify-content: space-around;
 }
 
-#left span {
-    text-align: center;
-}
-
 #left .lorem{
-    text-align: center;
     margin: 0.5em 5em;
 }
 
 #offerText {
-    font-size: 15px;
     padding-top: 2em;
 }
 
 #phantomElite {
-    font-size: 22px;
     padding:  0.4em 0 1em 0;
 }
 
@@ -194,6 +216,10 @@ nav {
     padding-bottom: 0 15px;
 }
 
+#countdown .clock div {
+    color: #2d2b27;
+}
+
 #countdown div .number {
     margin: 0;
     padding: 0;
@@ -201,24 +227,28 @@ nav {
     font-weight: bold;
 }
 
-#offer img {
+#offer div {
     width: 50%;
+}
+
+#offer img {
+    width: 100%;
     height: 100%;
 }
 
 #fiveHundred {
-    color: blue;
     font-size: x-large;
     font-weight: bold;
 }
 
 #oneThousand {
     font-size: large;
+    text-decoration: line-through;
 }
 
 #shopNow {
     display: flex;
-    background-color: blue;
+    background-color: #3954d9;
     border-radius: 30px;
     height: 2em;
     font-size: medium;
