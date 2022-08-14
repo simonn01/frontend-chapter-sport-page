@@ -71,6 +71,69 @@ nav {
     font-size: 22px;
 }
 
+.size33 {
+    font-size: 33px;
+}
+
+.size38 {
+    font-size: 43px;
+}
+
+.size43 {
+    font-size: 43px;
+}
+
+.size52 {
+    font-size: 52px;
+}
+
+/* Font Families */
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bebasNeue {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/*Font Weights */
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.black {
+    font-weight: 900;
+}
+
+.paddingZero {
+    padding: 0
+}
+
+.paddingTop2 {
+    padding-top: 2em;
+}
+
+
 #ecomTools {
     float: right;
 }
@@ -80,14 +143,12 @@ nav {
     color: #1110
 }
 
-#portPro {
-    font-size: 20px;
-    padding: 0;
-}
-
 .lorem {
     font-variant: normal;
     text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #8a8a8a;
 }
 
 .icons {
@@ -137,6 +198,8 @@ nav {
     padding-top: 0.7em;
     font-variant: normal;
     color: #3753da;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
     text-transform: none;
 }
 
@@ -148,12 +211,8 @@ nav {
 
 #basketballContainer ul li div{
     text-align: center;
-    font-size: small;
+    font-size: 13px;
     padding: 0.5em 3em;
-}
-
-#basketballContainer .lorem{
-    color: #8a8a8a;
 }
 
 #offer {
@@ -172,10 +231,6 @@ nav {
 
 #left .lorem{
     margin: 0.5em 5em;
-}
-
-#offerText {
-    padding-top: 2em;
 }
 
 #phantomElite {
@@ -236,13 +291,7 @@ nav {
     height: 100%;
 }
 
-#fiveHundred {
-    font-size: x-large;
-    font-weight: bold;
-}
-
 #oneThousand {
-    font-size: large;
     text-decoration: line-through;
 }
 
