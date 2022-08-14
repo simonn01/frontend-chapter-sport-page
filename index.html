@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sport Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@600;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
   <!--Emmet-->
@@ -13,33 +17,108 @@
   <body>
     <header>
       <nav>
-        <a id="empty-hamburger" href="">=</a>
-        <a id="portpro" href="">PortPro</a>
+        <a id="emptyHamburger" href="#">=</a>
+        <a class="poppins black size33 paddingZero" href="#">PortPro</a>
         <ul>
-          <li><a href="">Men</a></li>
-          <li><a href="">Women</a></li>
-          <li><a href="">Kids</a></li>
-          <li><a href="">Sports</a></li>
-          <li><a href="">Brands</a></li>
-          <li><a href="">Customize</a></li>
+          <li><a class="size13 montserrat semiBold" href="#">Men</a></li>
+          <li><a class="size13 montserrat semiBold" href="#">Women</a></li>
+          <li><a class="size13 montserrat semiBold" href="#">Kids</a></li>
+          <li><a class="size13 montserrat semiBold" href="#">Sports</a></li>
+          <li><a class="size13 montserrat semiBold" href="#">Brands</a></li>
+          <li><a class="size13 montserrat semiBold" href="#">Customize</a></li>
         </ul>
       </nav>
 
-      <div id="social-media">
-        <ul>
-          <li><a href=""><img src="/images/facebook.png"></a></li>
-          <li><a href=""><img src="/images/twitter.png"></a></li>
-          <li><a href=""><img src="/images/google.png"></a></li>
-          <li><a href=""><img src="/images/instagram.png"></a></li>
-        </ul>
-      </div>
+      <div class="icons">
+        <div>
+          <ul>
+            <li><a href="#"><img src="/images/facebook.png"></a></li>
+            <li><a href="#"><img src="/images/twitter.png"></a></li>
+            <li><a href="#"><img src="/images/google.png"></a></li>
+            <li><a href="#"><img src="/images/instagram.png"></a></li>
+          </ul>
+        </div>
 
-      <div id="ecom-tools">
-        <ul>
-        <li><a href=""><img src="/images/basket.png"></a></li>
-        <li><a href=""><img src="/images/search.png"></a></li>
-        </ul>
+        <div id="ecomTools">
+          <ul>
+            <li><a href="#"><img src="/images/basket.png"></a></li>
+            <li><a href="#"><img src="/images/search.png"></a></li>
+          </ul>
+        </div>
       </div>
     </header>
+
+    <div id="sprinter">Sprinter</div>
+
+    <div id="basketballBackground">
+      <div id="basketballContainer">
+        <ul>
+          <li>
+            <img src="/images/aeroplane.png">
+            <div class="size33 bebasNeue bold phantomBlue">Free Shipping</div>
+            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a href="#">Click Here</a>
+          </li>
+
+          <li>
+            <img src="/images/clock.png">
+            <div class="size33 bebasNeue bold phantomBlue">Free Shipping</div>
+            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a href="#">Click Here</a>
+          </li>
+
+          <li>
+            <img src="/images/life_raft.png">
+            <div class="size33 bebasNeue bold phantomBlue">Free Shipping</div>
+            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a href="#">Click Here</a>
+          </li>
+
+          <li>
+            <img src="/images/life_raft.png">
+            <div class="size33 bebasNeue bold phantomBlue">Free Shipping</div>
+            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a href="#">Click Here</a>
+          </li>
+        </ul>
+
+        <div id="offer">
+          <div id="left">
+            <div class="grey61 size20 poppins semiBold paddingTop2">Offer of the Month</div>
+            <div class="phantomBlue size43 bebasNeue bold">Phantom Vision Elite Dynamic</div>
+            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam deleniti nesciunt illum deserunt iusto explicabo velit? Repellendus quae, in facilis ratione accusantium amet culpa consequatur, hic eum nemo iusto!</div>
+
+            <div id="reduction">
+              <span class="blue500 size52 montserrat bold" id="fiveHundred">$500</span>
+              <span class="black12 size33 montserrat medium" id="oneThousand">$1000</span>
+            </div>
+
+            <div id="countdown">
+              <div class="clock">
+                <div class="number montserrat semiBold size38">09</div>
+                <div class="montserrat regular size15">....</div>
+                <div class="montserrat semiBold size11">hours</div>
+              </div>
+              <div class="clock">
+                <div class="number montserrat semiBold size38">56</div>
+                <div class="montserrat regular size15">....</div>
+                <div class="montserrat semiBold size11">minutes</div>
+              </div>
+              <div class="clock">
+                <div class="number montserrat semiBold size38">11</div>
+                <div class="montserrat regular size15">....</div>
+                <div class="montserrat semiBold size11">seconds</div>
+              </div>
+            </div>
+            
+            <a id="shopNow" class="montserrat regular size13" href="#">Shop Now</a>
+          </div>
+
+          <div>
+            <img src="/images/basketballer.jpg">
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
