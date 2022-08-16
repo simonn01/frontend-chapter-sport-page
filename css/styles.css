@@ -63,13 +63,21 @@ nav {
     color: #616161;
 }
 
+.grey81 {
+    color: #818181;
+}
+
 .black12 {
     color: #121212
 }
 
 /* Font Sizes */
-.size15 {
-    font-size: 15px;
+.size12 {
+    font-size: 12px;
+}
+
+.size13 {
+    font-size: 13px;
 }
 
 .size15 {
@@ -158,6 +166,10 @@ nav {
     letter-spacing: 0.8em;
 }
 
+.strikethrough {
+    text-decoration: line-through;
+}
+
 #ecomTools {
     float: right;
 }
@@ -230,9 +242,10 @@ nav {
    justify-content: space-around;
    margin: 0 0.5px;
    background-color: white;
+   width: 100%;
 }
 
-#basketballContainer ul li a{
+#freeShipping li a{
     padding-bottom: 2em;
     padding-top: 0.7em;
     font-variant: normal;
@@ -240,6 +253,24 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-transform: none;
+}
+
+#basketballContainer .products a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #0d2e57;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+#basketballContainer .products img {
+    width: 100%;
+    height: 100%;
+}
+ 
+#basketballContainer .products li{
+    align-items: flex-start;
 }
 
 #basketballContainer ul li img{
@@ -329,10 +360,6 @@ nav {
 #offer img {
     width: 100%;
     height: 100%;
-}
-
-#oneThousand {
-    text-decoration: line-through;
 }
 
 .shopNow {
