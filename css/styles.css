@@ -25,11 +25,6 @@ h1 {
     letter-spacing: -0.075em;
 }
 
-img {
-    width: 25px;
-    height: 25px;
-}
-
 header {
     background-color: #212121;
     opacity: 0.75;
@@ -182,11 +177,6 @@ nav {
 
 #ecomTools {
     float: right;
-}
-
-#emptyHamburger {
-    width: 30px;
-    color: #1110
 }
 
 .lorem {
@@ -378,7 +368,6 @@ nav {
     align-items: center;
     background-color: #ddd;
     border-radius: 20%;
-    font-size: small;
     font-weight: 500;
     margin: 0 5px;
     padding: 5px 0;
@@ -396,7 +385,6 @@ nav {
 #countdown div .number {
     margin: 0;
     padding: 0;
-    font-size: xx-large;
     font-weight: bold;
 }
 
