@@ -263,6 +263,21 @@ nav {
     text-align: left;
 }
 
+.logos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos div{
+    border: #0d2e57;
+    border-style: dotted;
+    flex: 1 1 0;
+}
+.logos div img {
+    max-width: 90%;
+    max-height: 90%;
+}
+
 #basketballContainer .products img {
     width: 100%;
     height: 100%;
