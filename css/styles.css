@@ -6,6 +6,9 @@ a {
     color: white;
 }
 
+h2 {
+  margin: 0;
+}
 a:visited {
     color: #eee;
 }
@@ -76,6 +79,10 @@ nav {
     font-size: 13px;
 }
 
+.size14 {
+    font-size: 14px;
+}
+
 .size15 {
     font-size: 17px;
 }
@@ -102,6 +109,10 @@ nav {
 
 .size52 {
     font-size: 52px;
+}
+
+.size60 {
+    font-size: 60px;
 }
 
 .size204 {
@@ -162,6 +173,10 @@ nav {
     letter-spacing: 0.8em;
 }
 
+.letterSpace60 {
+    letter-spacing: 0.6em;
+}
+
 .letterSpace75 {
     letter-spacing: -0.75em;
 }
@@ -173,6 +188,10 @@ nav {
 /*utility classes*/
 .uppercase {
     text-transform: uppercase;
+}
+
+.underline {
+    text-decoration: underline;
 }
 
 #ecomTools {
@@ -215,26 +234,26 @@ nav {
 
 }
 
-#basketballBackground {
+.basketballBackground {
     background-color: #FFF;
     padding: 0 100px;
 }
 
-#basketballContainer {
+.basketballContainer {
     position: relative;
     bottom: 20px;
 }
 
-#basketballContainer ul {
+.basketballContainer ul {
     display: flex;
     justify-content: space-around;
     font: #1111;
-    background-color: #CCC;
     margin: 0;
     padding: 0;
+    background-color: #c7c7c7;
 }
 
-#basketballContainer li {
+.basketballContainer li {
    display: flex;
    flex-direction:column;
    align-items: center; 
@@ -247,14 +266,14 @@ nav {
 #freeShipping li a{
     padding-bottom: 2em;
     padding-top: 0.7em;
-    font-variant: normal;
     color: #3753da;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-transform: none;
 }
 
-#basketballContainer .products a{
+
+.basketballContainer .products a{
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 700;
     font-size: 25px;
@@ -263,32 +282,18 @@ nav {
     text-align: left;
 }
 
-.logos {
-    display: flex;
-    justify-content: space-around;
-}
 
-.logos div{
-    border: #0d2e57;
-    border-style: dotted;
-    flex: 1 1 0;
-}
-.logos div img {
-    max-width: 90%;
-    max-height: 90%;
-}
-
-#basketballContainer .products img {
+.basketballContainer .products img {
     width: 100%;
     height: 100%;
 }
  
-#basketballContainer .products li{
+.basketballContainer .products li{
     align-items: flex-start;
     position: relative;
 }
 
-#basketballContainer .products li:hover::before{
+.basketballContainer .products li:hover::before{
     content: ' ';
     background-color: #8a8a8a60;
     position: absolute;
@@ -301,7 +306,7 @@ nav {
     align-items: center;
 }
 
-#basketballContainer .products li:hover::after{
+.basketballContainer .products li:hover::after{
     content: "Shop Now";
     background-color: #3954d9;
     position: absolute;
@@ -325,13 +330,13 @@ nav {
     text-transform: uppercase;
 }
 
-#basketballContainer ul li img{
+.basketballContainer ul li img{
     padding: 2em 0 1em 0;
     height: 35px;
     width: 35px;
 }
 
-#basketballContainer ul li div{
+.basketballContainer ul li div{
     text-align: center;
     font-size: 13px;
     padding: 0.5em 3em;
@@ -427,4 +432,106 @@ nav {
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
+}
+
+.basketballContainer .blackBanner {
+    background: url('/images/runner.jpg') right -30px/45% no-repeat #0f0f19;
+    display: flex;
+    flex: 1 1 0;
+}
+
+#runningHeader {
+    background-color: transparent;
+    color: white;
+}
+
+#runningHeader a.cerulean {
+    background-color: #65cbff;
+    color: #000;
+    margin-top: 20px;
+}
+
+#runningHeader h1 {
+    display: flex;
+    justify-content: center;
+    line-height: 90%;
+    margin: 0 10px;
+    background-color: transparent;
+    font-style: italic;
+}
+
+#runningHeader h1 a {
+    background-color: #65cbff;
+}
+
+#runningHeader h2 {
+    display: flex;
+    justify-content: center;
+    line-height: 90%;
+    margin: 0 10px;
+}
+
+#runningHeader h3 {
+    margin: 10px;
+}
+
+#runningHeader a {
+    color: white;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.sunglasses {
+    border: 1px #c7c7c7 solid;
+    display: flex;
+    padding-top: 30px;
+}
+
+.blueClick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueClick a {
+    color: #3753da;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.logos, .photos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.logos div, .photos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #0d2e57;
+    border: 0.5px solid #CCC;
+    flex: 1 1 0;
+}
+
+.logos div img, .photos div img {
+    max-width: 70%;
+    max-height: 70%;
+    filter: grayscale(100%);
+    margin: 0 0.5px;
+}
+
+.practice {
+    background-color: #000;
+    background: url('/images/sprinter.jpg') center bottom 0px/100% no-repeat #000;
+    height: 250px;
+    width: 250px;
+}
+
+#image1 {
+    background: url('/images/image1.jpg') center 0px/100% no-repeat #000;
 }
