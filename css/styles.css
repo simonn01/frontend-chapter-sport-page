@@ -17,7 +17,7 @@ a:hover {
     color: #8a8a8a
 }
 
-ul {
+header ul {
     display: flex;
     list-style-type: none;
     align-items: center;
@@ -84,7 +84,7 @@ nav {
 }
 
 .size15 {
-    font-size: 17px;
+    font-size: 15px;
 }
 
 .size22 {
@@ -93,6 +93,10 @@ nav {
 
 .size22 {
     font-size: 21px;
+}
+
+.size25 {
+    font-size: 25px;
 }
 
 .size33 {
@@ -237,11 +241,22 @@ nav {
 .basketballBackground {
     background-color: #FFF;
     padding: 0 100px;
+    z-index:0;
 }
 
 .basketballContainer {
     position: relative;
     bottom: 20px;
+    z-index:2;
+    box-shadow: 0 0 75px 0 #212121;
+}
+
+.basketballContainer::before{
+    box-shadow: -20px 0 20px 5px #e0e0e0;
+}
+
+.basketballContainer::after{
+    box-shadow: 0 20px 5px 5px #e0e0e0;
 }
 
 .basketballContainer ul {
@@ -273,6 +288,26 @@ nav {
 }
 
 
+.basketballContainer .products2 a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #0d2e57;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+.basketballContainer .products2 img {
+    width: 100%;
+    height: 100%;
+}
+ 
+.basketballContainer .products2 li{
+    align-items: flex-start;
+    position: relative;
+}
+
 .basketballContainer .products a{
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 700;
@@ -293,7 +328,7 @@ nav {
     position: relative;
 }
 
-.basketballContainer .products li:hover::before{
+.basketballContainer .products li:hover::before, .sunglasses:hover::before{
     content: ' ';
     background-color: #8a8a8a60;
     position: absolute;
@@ -306,7 +341,7 @@ nav {
     align-items: center;
 }
 
-.basketballContainer .products li:hover::after{
+.basketballContainer .products li:hover::after, .sunglasses:hover:after{
     content: "Shop Now";
     background-color: #3954d9;
     position: absolute;
@@ -507,6 +542,11 @@ nav {
 .logos, .photos {
     display: flex;
     justify-content: space-around;
+    background-color: #FFF;
+}
+
+.photos {
+    height: 250px;
 }
 
 .logos div, .photos div{
@@ -525,13 +565,104 @@ nav {
     margin: 0 0.5px;
 }
 
-.practice {
-    background-color: #000;
-    background: url('/images/sprinter.jpg') center bottom 0px/100% no-repeat #000;
-    height: 250px;
-    width: 250px;
+.photos div img {
+    display: inline-block;
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%;
 }
 
 #image1 {
-    background: url('/images/image1.jpg') center 0px/100% no-repeat #000;
+    background: url('/images/image1.jpg') center/140% no-repeat #000;
+}
+#image2 {
+    background: url('/images/image2.jpg') center/100% no-repeat #000;
+}
+#image3 {
+    background: url('/images/image3.jpg') center/100% no-repeat #000;
+}
+#image4 {
+    background: url('/images/image4.jpg') center/100% no-repeat #000;
+}
+#image5 {
+    background: url('/images/image5.jpg') center/100% no-repeat #000;
+}
+#image6 {
+    background: url('/images/image6.jpg') center/100% no-repeat #000;
+}
+#image7 {
+    background: url('/images/image7.jpg') center/100% no-repeat #000;
+}
+#image8 {
+    background: url('/images/image8.jpg') center/100% no-repeat #000;
+}
+
+#footerOuter {
+    background-image: url("/images/background.jpg");
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("/images/background.jpg");
+    position: relative;
+    bottom: 105px;
+    margin-bottom: -105px;
+    z-index: 1;
+}
+
+#footer h3 {
+    color: #3145b6;
+    margin: 5em 0 0.2em 0;
+}
+
+#footer h3.noMargin {
+    margin: 2em 0 0.2em 0;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer ul li {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0.8em;
+    color: #FFF;
+}
+
+#footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.bottomFooter {
+    border-top: #656565;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomFooter div {
+    margin: 0 2em;
+}
+
+.bottomFooter .paymentTypes img{
+    width: 30px;
+    height: 30px;
+}
+
+.tAndC {
+    display: flex;
+    flex-direction: column;
+    color: #656565;
+    line-height: 120%;
+    padding: 1em 0;
+}
+
+.paymentTypes {
+    display:flex;
+    align-items: center;
 }
