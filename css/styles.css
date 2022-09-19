@@ -7,8 +7,13 @@ a {
 }
 
 h2 {
-  margin: 0;
+    margin: 0;
 }
+
+ul {
+    padding: 0;
+}
+
 a:visited {
     color: #eee;
 }
@@ -29,24 +34,39 @@ h1 {
 }
 
 header {
-    background-color: #212121;
-    opacity: 0.75;
+    background-color: #21212175;
     color: #eee;
     width: 100%;
     font-family: "serif";
     display: flex;
     justify-content: space-between;
-    padding: 1em 0;
-    align-items: center;
+    align-items: stretch;
     position: sticky;
     top: 0;
     z-index: 9;
     max-height: 64px;
+    border-bottom: 1px solid #4c5b64;
 }
 
 nav {
     display: flex;
-    align-items: center;
+    align-items: stretch;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portPro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #4c5b64;
+    border-right: 1px solid #4c5b64;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 /* Font Colors */
@@ -173,16 +193,12 @@ nav {
     text-align: center;
 }
 
-.letterSpace {
-    letter-spacing: 0.8em;
-}
-
 .letterSpace60 {
     letter-spacing: 0.6em;
 }
 
 .letterSpace75 {
-    letter-spacing: -0.75em;
+    letter-spacing: 0.7em;
 }
 
 .strikethrough {
@@ -194,14 +210,6 @@ nav {
     text-transform: uppercase;
 }
 
-.underline {
-    text-decoration: underline;
-}
-
-#ecomTools {
-    float: right;
-}
-
 .lorem {
     text-transform: none;
     font-family: 'Montserrat', sans-serif;
@@ -209,8 +217,24 @@ nav {
     color: #8a8a8a;
 }
 
-.icons {
+.socialMedia {
     display: flex;
+    border-left: 1px solid #4c5b64;
+    padding-left: 1em;
+    margin-left: 24em;
+}
+
+.ecomTools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #4c5b64;
+    padding-left: 0.55em;
+}
+
+.halfPaddingRight{
+    padding-right: 0.5em;
 }
 
 #sprinter {
@@ -231,6 +255,10 @@ nav {
     line-height: 0.75;
     display: flex;
     justify-content: center;
+}
+
+#signUpNow {
+    padding: 1em 0 2em 0.6em;
 }
 
 #sprinter div a {
@@ -275,7 +303,7 @@ nav {
    justify-content: space-around;
    margin: 0 0.5px;
    background-color: white;
-   width: 100%;
+   height: 309px;
 }
 
 #freeShipping li a{
@@ -421,7 +449,7 @@ nav {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #ddd;
+    background-color: #fff;
     border-radius: 20%;
     font-weight: 500;
     margin: 0 5px;
@@ -473,6 +501,11 @@ nav {
     background: url('/images/runner.jpg') right -30px/45% no-repeat #0f0f19;
     display: flex;
     flex: 1 1 0;
+    height: 311px;
+}
+
+.basketballContainer .blackBanner li{
+    width: 309px;
 }
 
 #runningHeader {
@@ -518,10 +551,13 @@ nav {
     font-weight: 400;
 }
 
-.sunglasses {
+li.sunglasses {
     border: 1px #c7c7c7 solid;
     display: flex;
-    padding-top: 30px;
+}
+
+li.sunglasses img {
+    padding: 3em 1em 2em 1em;
 }
 
 .blueClick {

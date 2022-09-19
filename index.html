@@ -17,8 +17,12 @@
   <body>
     <header class="uppercase">
       <nav>
-        <a href="#"><img src="/images/hamburger.png" alt="Main Menu"></a>
-        <a class="poppins black size33 paddingZero" href="#">PortPro</a>
+        <div class="hamburger">
+          <a href="#"><img src="/images/hamburger.png" alt="Main Menu"></a>
+        </div>
+        <div class="portPro">
+          <a class="poppins black size33 paddingZero" href="#">PortPro</a>
+        </div>
         <ul>
           <li><a class="size13 montserrat semiBold" href="#">Men</a></li>
           <li><a class="size13 montserrat semiBold" href="#">Women</a></li>
@@ -28,8 +32,8 @@
           <li><a class="size13 montserrat semiBold" href="#">Customize</a></li>
         </ul>
       </nav>
-
-      <div class="icons">
+ 
+      <div class="socialMedia">
         <div>
           <ul>
             <li><a href="#"><img src="/images/facebook.png" alt="Facebook"></a></li>
@@ -38,19 +42,20 @@
             <li><a href="#"><img src="/images/instagram.png" alt="Instagram"></a></li>
           </ul>
         </div>
+      </div>
 
-        <div id="ecomTools">
-          <ul>
-            <li><a href="#"><img src="/images/basket.png" alt="Basket"></a></li>
-            <li><a href="#"><img src="/images/search.png" alt="Search"></a></li>
-          </ul>
-        </div>
+
+      <div class="ecomTools">
+          <a href="#"><img src="/images/basket.png" alt="Basket"></a>
+      </div>
+      <div class="ecomTools halfPaddingRight">
+          <a href="#"><img src="/images/search.png" alt="Search"></a>
       </div>
     </header>
 
     <div id="sprinter" class="uppercase">
       <h1 class="size204 poppins bold center">Nike Shoes</h1>
-      <div class="size21 montserrat bold center letterSpace">Sign up now and get 50% off</div>
+      <div id="signUpNow" class="size21 montserrat bold center letterSpace75">Sign up now and get 50% off</div>
       <div><a class="shopNow size17" href="#offer">Shop Now</a></div>
     </div>
 
@@ -58,29 +63,29 @@
       <div class="basketballContainer">
         <ul id="freeShipping">
           <li>
-            <img src="/images/aeroplane.png" alt=" ">
-            <div class="size33 bebasNeue bold phantomBlue">Free Shipping</div>
-            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <a href="#">Click Here</a>
+              <img src="/images/aeroplane.png" alt=" ">
+              <span class="size33 bebasNeue bold phantomBlue">Free Shipping</span>
+              <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+              <a href="#">Click Here</a>
           </li>
 
           <li>
             <img src="/images/clock.png" alt=" ">
-            <div class="size33 bebasNeue bold phantomBlue">Free Shipping</div>
+            <span class="size33 bebasNeue bold phantomBlue">Free Shipping</span>
             <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             <a href="#">Click Here</a>
           </li>
 
           <li>
             <img src="/images/life_raft.png" alt=" ">
-            <div class="size33 bebasNeue bold phantomBlue">Free Shipping</div>
+            <span class="size33 bebasNeue bold phantomBlue">Free Shipping</span>
             <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             <a href="#">Click Here</a>
           </li>
 
           <li>
             <img src="/images/life_raft.png" alt=" ">
-            <div class="size33 bebasNeue bold phantomBlue">Free Shipping</div>
+            <span class="size33 bebasNeue bold phantomBlue">Free Shipping</span>
             <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
             <a href="#">Click Here</a>
           </li>
@@ -162,7 +167,7 @@
         <ul class="blackBanner products2">
           <li id="runningHeader">
             <h2 class="bebasNeue size60 semiBold">Men's Running Shoes</h2>
-            <h3 class="montserrat size14 regular letterSpace60 uppercase underline">Sign up now and get 50% off</h3>
+            <h3 class="montserrat size14 regular letterSpace60 uppercase">Sign up now and get 50% off</h3>
             <div><a href="#" class="shopNow">Click Here</a></div>
           </li>
           <li class="sunglasses">
