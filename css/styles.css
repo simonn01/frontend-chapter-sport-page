@@ -193,8 +193,8 @@ nav {
     text-align: center;
 }
 
-.letterSpace60 {
-    letter-spacing: 0.6em;
+.letterSpace50 {
+    letter-spacing: 0.5em;
 }
 
 .letterSpace75 {
@@ -403,6 +403,7 @@ nav {
     text-align: center;
     font-size: 13px;
     padding: 0.5em 3em;
+    margin-bottom: 30px;
 }
 
 #offer {
@@ -511,21 +512,25 @@ nav {
 #runningHeader {
     background-color: transparent;
     color: white;
+    justify-content: center;
 }
 
 #runningHeader a.cerulean {
     background-color: #65cbff;
     color: #000;
     margin-top: 20px;
+    margin-left: 17px;
 }
 
 #runningHeader h1 {
     display: flex;
     justify-content: center;
     line-height: 90%;
-    margin: 0 10px;
+    margin: 10px;
     background-color: transparent;
     font-style: italic;
+    padding: 40px 0 0 50px;
+    width: 300px;
 }
 
 #runningHeader h1 a {
@@ -536,11 +541,15 @@ nav {
     display: flex;
     justify-content: center;
     line-height: 90%;
-    margin: 0 10px;
+    margin: 0 30px;
 }
 
 #runningHeader h3 {
-    margin: 10px;
+    margin: 20px 0 50px 30px;
+}
+
+#shopNowDiv {
+    padding-left: 30px;
 }
 
 #runningHeader a {
@@ -551,13 +560,16 @@ nav {
     font-weight: 400;
 }
 
-li.sunglasses {
+#sunglasses {
     border: 1px #c7c7c7 solid;
     display: flex;
 }
 
-li.sunglasses img {
+#sunglasses img {
     padding: 3em 1em 2em 1em;
+    height: 35%;
+    width: 80%;
+    align-self: center;
 }
 
 .blueClick {
