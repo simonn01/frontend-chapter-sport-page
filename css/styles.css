@@ -1,0 +1,716 @@
+a {
+    font-weight: 600;
+    font-size: 10px;
+    padding: 0 1em;
+    text-decoration: none;
+    color: white;
+}
+
+h2 {
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+}
+
+a:visited {
+    color: #eee;
+}
+
+a:hover {
+    color: #8a8a8a
+}
+
+header ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+}
+
+h1 {
+    margin: 0;
+    letter-spacing: -0.075em;
+}
+
+header {
+    background-color: #21212175;
+    color: #eee;
+    width: 100%;
+    font-family: "serif";
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    max-height: 64px;
+    border-bottom: 1px solid #4c5b64;
+}
+
+nav {
+    display: flex;
+    align-items: stretch;
+}
+
+.hamburger {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portPro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #4c5b64;
+    border-right: 1px solid #4c5b64;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+/* Font Colors */
+.phantomBlue {
+    color: #0d2e57;
+}
+
+.blue500 {
+    color: #3954d9
+}
+
+.grey61 {
+    color: #616161;
+}
+
+.grey81 {
+    color: #818181;
+}
+
+.black12 {
+    color: #121212
+}
+
+/* Font Sizes */
+.size12 {
+    font-size: 12px;
+}
+
+.size13 {
+    font-size: 13px;
+}
+
+.size14 {
+    font-size: 14px;
+}
+
+.size15 {
+    font-size: 15px;
+}
+
+.size22 {
+    font-size: 22px;
+}
+
+.size22 {
+    font-size: 21px;
+}
+
+.size25 {
+    font-size: 25px;
+}
+
+.size33 {
+    font-size: 33px;
+}
+
+.size38 {
+    font-size: 43px;
+}
+
+.size43 {
+    font-size: 43px;
+}
+
+.size52 {
+    font-size: 52px;
+}
+
+.size60 {
+    font-size: 60px;
+}
+
+.size204 {
+    font-size: 204px;
+}
+
+/* Font Families */
+.montserrat {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.poppins {
+    font-family: 'Poppins', sans-serif;
+}
+
+.bebasNeue {
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/*Font Weights */
+.light {
+    font-weight: 300;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semibold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.black {
+    font-weight: 900;
+}
+
+.paddingZero {
+    padding: 0
+}
+
+.paddingTop2 {
+    padding-top: 2em;
+}
+
+.center {
+    text-align: center;
+}
+
+.letterSpace50 {
+    letter-spacing: 0.5em;
+}
+
+.letterSpace75 {
+    letter-spacing: 0.7em;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+/*utility classes*/
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lorem {
+    text-transform: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    color: #8a8a8a;
+}
+
+.socialMedia {
+    display: flex;
+    border-left: 1px solid #4c5b64;
+    padding-left: 1em;
+    margin-left: 24em;
+}
+
+.ecomTools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #4c5b64;
+    padding-left: 0.55em;
+}
+
+.halfPaddingRight{
+    padding-right: 0.5em;
+}
+
+#sprinter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: url('/images/sprinter.jpg') center bottom 0px/100% no-repeat #0d2e57;
+    color: white;
+    padding: 300px 500px 100px 0;
+    position: relative;
+    bottom: 240px;
+    margin-bottom: -270px;
+}
+
+#sprinter h1, #sprinter div {
+    width: 700px;
+    line-height: 0.75;
+    display: flex;
+    justify-content: center;
+}
+
+#signUpNow {
+    padding: 1em 0 2em 0.6em;
+}
+
+#sprinter div a {
+    width: 100px;
+
+}
+
+.basketballBackground {
+    background-color: #FFF;
+    padding: 0 100px;
+    z-index:0;
+}
+
+.basketballContainer {
+    position: relative;
+    bottom: 20px;
+    z-index:2;
+    box-shadow: 0 0 75px 0 #212121;
+}
+
+.basketballContainer::before{
+    box-shadow: -20px 0 20px 5px #e0e0e0;
+}
+
+.basketballContainer::after{
+    box-shadow: 0 20px 5px 5px #e0e0e0;
+}
+
+.basketballContainer ul {
+    display: flex;
+    justify-content: space-around;
+    font: #1111;
+    margin: 0;
+    padding: 0;
+    background-color: #c7c7c7;
+}
+
+.basketballContainer li {
+   display: flex;
+   flex-direction:column;
+   align-items: center; 
+   justify-content: space-around;
+   margin: 0 0.5px;
+   background-color: white;
+   height: 309px;
+}
+
+#freeShipping li a{
+    padding-bottom: 2em;
+    padding-top: 0.7em;
+    color: #3753da;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: none;
+}
+
+
+.basketballContainer .products2 a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #0d2e57;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+.basketballContainer .products2 img {
+    width: 100%;
+    height: 100%;
+}
+ 
+.basketballContainer .products2 li{
+    align-items: flex-start;
+    position: relative;
+}
+
+.basketballContainer .products a{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #0d2e57;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+
+.basketballContainer .products img {
+    width: 100%;
+    height: 100%;
+}
+ 
+.basketballContainer .products li{
+    align-items: flex-start;
+    position: relative;
+}
+
+.basketballContainer .products li:hover::before, .sunglasses:hover::before{
+    content: ' ';
+    background-color: #8a8a8a60;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.basketballContainer .products li:hover::after, .sunglasses:hover:after{
+    content: "Shop Now";
+    background-color: #3954d9;
+    position: absolute;
+    /* center */
+    width: 85px;
+    left: 0;
+    right: 0;
+    margin: 1.5em auto;
+    /**********/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 2em;
+    font-size: 13px;
+    color: white;
+    padding: 0.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.basketballContainer ul li img{
+    padding: 2em 0 1em 0;
+    height: 35px;
+    width: 35px;
+}
+
+.basketballContainer ul li div{
+    text-align: center;
+    font-size: 13px;
+    padding: 0.5em 3em;
+    margin-bottom: 30px;
+}
+
+#offer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f2f0f0;
+    text-align: center;
+    scroll-margin-top: 80px;
+}
+
+#offer #left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#left .lorem{
+    margin: 0.5em 5em;
+}
+
+#phantomElite {
+    padding:  0.4em 0 1em 0;
+}
+
+#reduction {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#reduction span {
+    padding: 20px;
+}
+
+#countdown {
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600;
+}
+
+#countdown div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20%;
+    font-weight: 500;
+    margin: 0 5px;
+    padding: 5px 0;
+}
+
+#countdown .clock {
+    margin-bottom: 15px;
+    padding-bottom: 0 15px;
+}
+
+#countdown .clock div {
+    color: #2d2b27;
+}
+
+#countdown div .number {
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+#offer div {
+    width: 50%;
+}
+
+#offer img {
+    width: 100%;
+    height: 100%;
+}
+
+.shopNow {
+    display: flex;
+    background-color: #3954d9;
+    border-radius: 30px;
+    height: 2em;
+    font-size: 13px;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    padding: 0.3em;
+    margin: 1.5em 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.basketballContainer .blackBanner {
+    background: url('/images/runner.jpg') right -30px/45% no-repeat #0f0f19;
+    display: flex;
+    flex: 1 1 0;
+    height: 311px;
+}
+
+.basketballContainer .blackBanner li{
+    width: 309px;
+}
+
+#runningHeader {
+    background-color: transparent;
+    color: white;
+    justify-content: center;
+}
+
+#runningHeader a.cerulean {
+    background-color: #65cbff;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 17px;
+}
+
+#runningHeader h1 {
+    display: flex;
+    justify-content: center;
+    line-height: 90%;
+    margin: 10px;
+    background-color: transparent;
+    font-style: italic;
+    padding: 40px 0 0 50px;
+    width: 300px;
+}
+
+#runningHeader h1 a {
+    background-color: #65cbff;
+}
+
+#runningHeader h2 {
+    display: flex;
+    justify-content: center;
+    line-height: 90%;
+    margin: 0 30px;
+}
+
+#runningHeader h3 {
+    margin: 20px 0 50px 30px;
+}
+
+#shopNowDiv {
+    padding-left: 30px;
+}
+
+#runningHeader a {
+    color: white;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+#sunglasses {
+    border: 1px #c7c7c7 solid;
+    display: flex;
+}
+
+#sunglasses img {
+    padding: 3em 1em 2em 1em;
+    height: 35%;
+    width: 80%;
+    align-self: center;
+}
+
+.blueClick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blueClick a {
+    color: #3753da;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 20px;
+}
+
+.logos, .photos {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFF;
+}
+
+.photos {
+    height: 250px;
+}
+
+.logos div, .photos div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: #0d2e57;
+    border: 0.5px solid #CCC;
+    flex: 1 1 0;
+}
+
+.logos div img, .photos div img {
+    max-width: 70%;
+    max-height: 70%;
+    filter: grayscale(100%);
+    margin: 0 0.5px;
+}
+
+.photos div img {
+    display: inline-block;
+    height: 0;
+    padding-bottom: 100%;
+    width: 100%;
+}
+
+#image1 {
+    background: url('/images/image1.jpg') center/140% no-repeat #000;
+}
+#image2 {
+    background: url('/images/image2.jpg') center/100% no-repeat #000;
+}
+#image3 {
+    background: url('/images/image3.jpg') center/100% no-repeat #000;
+}
+#image4 {
+    background: url('/images/image4.jpg') center/100% no-repeat #000;
+}
+#image5 {
+    background: url('/images/image5.jpg') center/100% no-repeat #000;
+}
+#image6 {
+    background: url('/images/image6.jpg') center/100% no-repeat #000;
+}
+#image7 {
+    background: url('/images/image7.jpg') center/100% no-repeat #000;
+}
+#image8 {
+    background: url('/images/image8.jpg') center/100% no-repeat #000;
+}
+
+#footerOuter {
+    background-image: url("/images/background.jpg");
+}
+
+#footer {
+    display: flex;
+    justify-content: space-around;
+    background-image: url("/images/background.jpg");
+    position: relative;
+    bottom: 105px;
+    margin-bottom: -105px;
+    z-index: 1;
+}
+
+#footer h3 {
+    color: #3145b6;
+    margin: 5em 0 0.2em 0;
+}
+
+#footer h3.noMargin {
+    margin: 2em 0 0.2em 0;
+}
+
+#footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+#footer ul li {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0.8em;
+    color: #FFF;
+}
+
+#footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.bottomFooter {
+    border-top: #656565;
+    border-style: solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottomFooter div {
+    margin: 0 2em;
+}
+
+.bottomFooter .paymentTypes img{
+    width: 30px;
+    height: 30px;
+}
+
+.tAndC {
+    display: flex;
+    flex-direction: column;
+    color: #656565;
+    line-height: 120%;
+    padding: 1em 0;
+}
+
+.paymentTypes {
+    display:flex;
+    align-items: center;
+}
