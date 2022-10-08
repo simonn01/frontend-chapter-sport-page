@@ -7,7 +7,7 @@
     <title>Sport Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -15,27 +15,27 @@
   <!--body>header>div>div*3^div>a^div>ul>li*6>a^^^div>ul>li*4>a^^^div>ul>li*2>a-->
   <!--(nav>a+ul>li*6>a)+div>ul>li*4>a^^^div>ul>li*2>a-->
   <body>
-    <header class="uppercase">
-      <nav>
-        <div class="hamburger">
+    <header class="header">
+      <nav class="flex-box">
+        <div class="flex-box flex-box--direction-column flex-box--justify-center">
           <a href="#"><img src="/images/hamburger.png" alt="Main Menu"></a>
         </div>
-        <div class="portPro">
-          <a class="poppins black size33 paddingZero" href="#">PortPro</a>
+        <div class="header__port-pro-container">
+          <a class="header__port-pro-link" href="#">PortPro</a>
         </div>
-        <ul>
-          <li><a class="size13 montserrat semiBold" href="#">Men</a></li>
-          <li><a class="size13 montserrat semiBold" href="#">Women</a></li>
-          <li><a class="size13 montserrat semiBold" href="#">Kids</a></li>
-          <li><a class="size13 montserrat semiBold" href="#">Sports</a></li>
-          <li><a class="size13 montserrat semiBold" href="#">Brands</a></li>
-          <li><a class="size13 montserrat semiBold" href="#">Customize</a></li>
+        <ul class="ul ul--no-padding flex-box flex-box--align-center">
+          <li><a class="header__li" href="#">Men</a></li>
+          <li><a class="header__li" href="#">Women</a></li>
+          <li><a class="header__li" href="#">Kids</a></li>
+          <li><a class="header__li" href="#">Sports</a></li>
+          <li><a class="header__li" href="#">Brands</a></li>
+          <li><a class="header__li" href="#">Customize</a></li>
         </ul>
       </nav>
  
-      <div class="socialMedia">
+      <div class="header__social-media">
         <div>
-          <ul>
+          <ul class="ul ul--no-padding flex-box flex-box--align-center">
             <li><a href="#"><img src="/images/facebook.png" alt="Facebook"></a></li>
             <li><a href="#"><img src="/images/twitter.png" alt="Twitter"></a></li>
             <li><a href="#"><img src="/images/G+.png" alt="Google"></a></li>
@@ -44,19 +44,18 @@
         </div>
       </div>
 
-
-      <div class="ecomTools">
+      <div class="header__ecom-tools">
           <a href="#"><img src="/images/basket.png" alt="Basket"></a>
       </div>
-      <div class="ecomTools halfPaddingRight">
+      <div class="header__ecom-tools header__ecom-tools--padding-right">
           <a href="#"><img src="/images/search.png" alt="Search"></a>
       </div>
     </header>
 
-    <div id="sprinter" class="uppercase">
-      <h1 class="size204 poppins bold center">Nike Shoes</h1>
-      <div id="signUpNow" class="size21 montserrat bold center letterSpace75">Sign up now and get 50% off</div>
-      <div><a class="shopNow size17" href="#offer">Shop Now</a></div>
+    <div class="sprinter">
+      <h1 class="sprinter__content sprinter__content--heading">Nike Shoes</h1>
+      <div class="sprinter__content signUpNow size21 montserrat bold center letterSpace75">Sign up now and get 50% off</div>
+      <div class="sprinter__content"><a class="btn--shop-now sprinter__content sprinter__content--btn size17" href="#offer">Shop Now</a></div>
     </div>
 
     <div class="basketballBackground">
@@ -120,7 +119,7 @@
               </div>
             </div>
 
-            <a class="shopNow size13" href="#offer">Shop Now</a>
+            <a class="btn--shop-now size13" href="#offer">Shop Now</a>
           </div>
 
           <div>
@@ -128,25 +127,24 @@
           </div>
         </div>
 
-        <!--ul>(li>img+a+div)*4-->
         <ul class="products">
-          <li>
-            <img src="/images/stefanJanoskiMax.jpg" alt=" ">
-            <a href="#">Stefan Janoski Max</a>
-            <div>
-              <span class="montserrat semibold size13 blue500">$100.00</span>
+          <li class="tile">
+            <img class="tile__img" src="/images/stefanJanoskiMax.jpg" alt=" ">
+            <span class="tile__title">Stefan Janoski Max</span>
+            <div class="tile__content">
+              <span class="tile__content montserrat semibold size13 blue500">$100.00</span>
               <span class="montserrat semibold size12 grey81 strikethrough">$200</span>
             </div>
           </li>
-          <li>
+          <li class="tile">
             <img src="/images/vandalHighSupreme.jpg" alt=" ">
             <a href="#">Vandal High Supreme</a>
-            <div>
-              <span class="montserrat semibold size13 blue500">$100.00</span>
-              <span class="montserrat semibold size12 grey81 strikethrough">$200</span>
+            <div class="tile__content__container">
+              <span class="tile__content tile__content--blue">$100.00</span>
+              <span class="tile__content tile__content--grey">$200</span>
             </div>
           </li>
-          <li>
+          <li class="tile">
             <img src="/images/newZoom.jpg" alt=" ">
             <a href="#">New Zoom</a>
             <div>
@@ -154,7 +152,7 @@
               <span class="montserrat semibold size12 grey81 strikethrough">$200</span>
             </div>
           </li>
-          <li>
+          <li class="tile">
             <img src="/images/fitShoes.jpg" alt=" ">
             <a href="#">Fit Shoes</a>
             <div>
@@ -168,7 +166,7 @@
           <li id="runningHeader">
             <h2 class="bebasNeue size52 semiBold">Men's Running Shoes</h2>
             <h3 class="montserrat size14 regular letterSpace50 uppercase underline">Sign up now and get 50% off</h3>
-            <div id="shopNowDiv"><a href="#" class="shopNow">Click Here</a></div>
+            <div id="btn--shop-nowDiv"><a href="#" class="shopNow">Click Here</a></div>
           </li>
           <li id="sunglasses">
             <img src="/images/sunglasses.png" alt="sunglasses on sale">
@@ -180,111 +178,111 @@
           </li>
           <li id="runningHeader">
             <h1 class="poppins size52 bold italic uppercase">Run, <br> eat, sleep and repeat</h1>
-            <div><a href="#" class="shopNow cerulean">Shop Now</a></div>
+            <div><a href="#" class="btn--shop-now cerulean">Shop Now</a></div>
           </li>
           <li id="runningHeader"></li>
         </ul>
-        <div class="blueClick"><a href="#">Click Here</a></div>
-        <div class="photos">
-          <div id="image1"></div>
-          <div id="image2"></div>
-          <div id="image3"></div>
-          <div id="image4"></div>
+        <div class="flex-box flex-box--justify-center"><a class="btn--blue-click" href="#">Click Here</a></div>
+        <div class="flex-box">
+          <div class="photos photos--1"></div>
+          <div class="photos photos--2"></div>
+          <div class="photos photos--3"></div>
+          <div class="photos photos--4"></div>
         </div>
-        <div class="photos">
-          <div id="image5"></div>
-          <div id="image6"></div>
-          <div id="image7"></div>
-          <div id="image8"></div>
+        <div class="flex-box">
+          <div class="photos photos--5"></div>
+          <div class="photos photos--6"></div>
+          <div class="photos photos--7"></div>
+          <div class="photos photos--8"></div>
         </div>
-        <div class="logos top">
-          <div><img src="/images/laCoste.png" alt="Lacoste logo"></div>
-          <div><img src="/images/pks.png" alt="PKS logo"></div>
-          <div><img src="/images/talbot.png" alt="Talbot logo"></div>
-          <div><img src="/images/pks.png" alt="PKS logo"></div>
-          <div><img src="/images/talbot.png" alt="Talbot logo"></div>
-          <div><img src="/images/laCoste.png" alt="Lacoste logo"></div>
+        <div class="flex-box flex-box--background-white">
+          <div class="logos"><img class="logos__img" src="/images/laCoste.png" alt="Lacoste logo"></div>
+          <div class="logos"><img class="logos__img" src="/images/pks.png" alt="PKS logo"></div>
+          <div class="logos"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
+          <div class="logos"><img class="logos__img" src="/images/pks.png" alt="PKS logo"></div>
+          <div class="logos"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
+          <div class="logos"><img class="logos__img" src="/images/laCoste.png" alt="Lacoste logo"></div>
         </div>
-        <div class="logos bottom">
-          <div><img src="/images/talbot.png" alt="Talbot logo"></div>
-          <div><img src="/images/laCoste.png" alt="Lacoste logo"></div>
-          <div><img src="/images/pks.png" alt="PKS logo"></div>
-          <div><img src="/images/talbot.png" alt="Talbot logo"></div>
-          <div><img src="/images/laCoste.png" alt="Lacoste logo"></div>
-          <div><img src="/images/pks.png" alt="PKS logo"></div></div>
+        <div class="flex-box flex-box--background-white">
+          <div class="logos"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
+          <div class="logos"><img class="logos__img" src="/images/laCoste.png" alt="Lacoste logo"></div>
+          <div class="logos"><img class="logos__img" src="/images/pks.png" alt="PKS logo"></div>
+          <div class="logos"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
+          <div class="logos"><img class="logos__img" src="/images/laCoste.png" alt="Lacoste logo"></div>
+          <div class="logos"><img class="logos__img" src="/images/pks.png" alt="PKS logo"></div></div>
+        </div>
+        <div class="footer">
+          <div class="flex-box flex-box--direction-column">
+            <h3 class="footer__h3">Shops</h3>
+            <ul class="footer__ul">
+              <li>New in</li>
+              <li>Women</li>
+              <li>Schuhe Shoes</li>
+              <li>Bags & Accessories</li>
+              <li>Men</li>
+              <li>Top Brands</li>
+              <li>Sales & Special Offers</li>
+              <li>Lookbook</li>
+            </ul>
+          </div>
+          <div class="flex-box flex-box--direction-column">
+            <h3 class="footer__h3">Information</h3>
+            <ul class="footer__ul">
+              <li>About us</li>
+              <li>Customer Service</li>
+              <li>New Collection</li>
+              <li>Best Sellers</li>
+              <li>Manufacturers</li>
+              <li>Privacy policy</li>
+              <li>Terms & conditions</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+          <div class="flex-box flex-box--direction-column">
+            <h3 class="footer__h3">Customer Services</h3>
+            <ul class="footer__ul">
+              <li>Search Terms</li>
+              <li>Advanced Search</li>
+              <li>Orders and Returns</li>
+              <li>Contact us</li>
+              <li>RSS</li>
+              <li>Help & FAQs</li>
+              <li>Consultant</li>
+              <li>Store Locations</li>
+            </ul>
+          </div>
+          <div class="flex-box flex-box--direction-column">
+            <h3 class="footer__h3">Stay Connected</h3>
+            <ul class="footer__ul">
+              <a href=""><img src="/images/G+.png" alt="Google Plus"></a>
+              <a href=""><img src="/images/facebook.png" alt="Pinterest"></a>
+              <a href=""><img src="/images/twitter.png" alt="V"></a>
+              <a href=""><img src="/images/facebook.png" alt="Facebook"></a>
+              <a href=""><img src="/images/twitter.png" alt="Twitter"></a>
+              <a href=""><img src="/images/G+.png" alt="Radar"></a>
+            </ul>
+            <h3 class="footer__h3 footer__h3--no-margin">Newsletter Sign Up</h3>
+            <input class="footer__form"></input>
+            <div class="btn--shop-now btn--width-50">Shop Now</div>
+          </div>
+        </div>
+        <div class="bottom-footer">
+          <div class="t-and-c">
+            <div>© 2022 PSDFreebies.com | All Rights Reserved.</div>
+            <div>Free PSD Themes & Templates by PSDFreebies.com.</div>
+          </div>
+          <div class="flex-box flex-box--align-center">
+            <img class="flex-box__img--grey-size-30" src="/images/mastercard.png" alt="Mastercard">
+            <img class="flex-box__img--grey-size-30" src="/images/discover.webp" alt="Discover">
+            <img class="flex-box__img--grey-size-30" src="/images/amex.webp" alt="AmEx">
+            <img class="flex-box__img--grey-size-30" src="/images/visa.webp" alt="Visa">
+            <img class="flex-box__img--grey-size-30" src="/images/stripe.png" alt="Stripe">
+            <img class="flex-box__img--grey-size-30" src="/images/dc.png" alt="Diners Club International">
+          </div>
         </div>
       </div>
     </div>
-    <div id="footerOuter">
-      <div id="footer">
-        <div>
-          <h3 class="uppercase poppins size25 regular">Shops</h3>
-          <ul>
-            <li>New in</li>
-            <li>Women</li>
-            <li>Schuhe Shoes</li>
-            <li>Bags & Accessories</li>
-            <li>Men</li>
-            <li>Top Brands</li>
-            <li>Sales & Special Offers</li>
-            <li>Lookbook</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="uppercase poppins size25 regular">Information</h3>
-          <ul>
-            <li>About us</li>
-            <li>Customer Service</li>
-            <li>New Collection</li>
-            <li>Best Sellers</li>
-            <li>Manufacturers</li>
-            <li>Privacy policy</li>
-            <li>Terms & conditions</li>
-            <li>Blog</li>
-          </ul>
-        </div>
-        <div>
-          <h3 class="uppercase poppins size25 regular">Customer Services</h3>
-          <ul>
-            <li>Search Terms</li>
-            <li>Advanced Search</li>
-            <li>Orders and Returns</li>
-            <li>Contact us</li>
-            <li>RSS</li>
-            <li>Help & FAQs</li>
-            <li>Consultant</li>
-            <li>Store Locations</li>
-          </ul>
-        </div>
-        <div id="connected_newsletter">
-          <h3 class="uppercase poppins size25 regular">Stay Connected</h3>
-          <ul>
-            <a href=""><img src="/images/G+.png" alt="Google Plus" href=""></a>
-            <a href=""><img src="/images/facebook.png" alt="Google Plus" href=""></a>
-            <a href=""><img src="/images/twitter.png" alt="Google Plus" href=""></a>
-            <a href=""><img src="/images/facebook.png" alt="Google Plus" href=""></a>
-            <a href=""><img src="/images/twitter.png" alt="Google Plus" href=""></a>
-            <a href=""><img src="/images/G+.png" alt="Google Plus" href=""></a>
-          </ul>
-          <h3 class="uppercase poppins size25 regular noMargin">Newsletter Sign Up</h3>
-          <input></input>
-          <div class="shopNow">Shop Now</div>
-        </div>
-      </div>
-      <div class="bottomFooter">
-        <div class="tAndC">
-          <div class="poppins regular size15">© 2022 PSDFreebies.com | All Rights Reserved.</div>
-          <div class="poppins regular size15">Free PSD Themes & Templates by PSDFreebies.com.</div>
-        </div>
-        <div class="paymentTypes">
-          <img src="/images/pks.png" alt="Mastercard">
-          <img src="/images/pks.png" alt="Discover">
-          <img src="/images/pks.png" alt="AmEx">
-          <img src="/images/pks.png" alt="Visa">
-          <img src="/images/pks.png" alt="Stripe">
-          <img src="/images/pks.png" alt="Diners Club International">
-        </div>
-      </div>
+    <div class="footer-background">
     </div>
   </body>
 </html>

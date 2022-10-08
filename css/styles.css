@@ -1,3 +1,5 @@
+@import url('main.css');
+
 a {
     font-weight: 600;
     font-size: 10px;
@@ -22,51 +24,9 @@ a:hover {
     color: #8a8a8a
 }
 
-header ul {
-    display: flex;
-    list-style-type: none;
-    align-items: center;
-}
-
 h1 {
     margin: 0;
     letter-spacing: -0.075em;
-}
-
-header {
-    background-color: #21212175;
-    color: #eee;
-    width: 100%;
-    font-family: "serif";
-    display: flex;
-    justify-content: space-between;
-    align-items: stretch;
-    position: sticky;
-    top: 0;
-    z-index: 9;
-    max-height: 64px;
-    border-bottom: 1px solid #4c5b64;
-}
-
-nav {
-    display: flex;
-    align-items: stretch;
-}
-
-.hamburger {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.portPro {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    border-left: 1px solid #4c5b64;
-    border-right: 1px solid #4c5b64;
-    padding-left: 1em;
-    padding-right: 1em;
 }
 
 /* Font Colors */
@@ -217,27 +177,8 @@ nav {
     color: #8a8a8a;
 }
 
-.socialMedia {
-    display: flex;
-    border-left: 1px solid #4c5b64;
-    padding-left: 1em;
-    margin-left: 24em;
-}
-
-.ecomTools {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-left: 1px solid #4c5b64;
-    padding-left: 0.55em;
-}
-
-.halfPaddingRight{
-    padding-right: 0.5em;
-}
-
-#sprinter {
+/**//**//**//**//**//**//**/
+.sprinter {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -248,23 +189,32 @@ nav {
     position: relative;
     bottom: 240px;
     margin-bottom: -270px;
+    text-transform: uppercase;
 }
 
-#sprinter h1, #sprinter div {
+.sprinter__content--heading {
+    font-size: 204px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sprinter__content {
     width: 700px;
     line-height: 0.75;
     display: flex;
     justify-content: center;
 }
 
-#signUpNow {
+.signUpNow {
     padding: 1em 0 2em 0.6em;
 }
 
-#sprinter div a {
+.sprinter div a {
     width: 100px;
-
 }
+
+/**//**//**//**//**//**//**/
 
 .basketballBackground {
     background-color: #FFF;
@@ -358,6 +308,80 @@ nav {
 
 .products li a, #sunglassesFreeShipping {
     padding-left: 39px;
+}
+
+.tile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 0.5px;
+    background-color: #FFF;
+    padding-bottom: 30px;
+    /*padding: 0 0 30px 39px;*/
+}
+
+.tile:hover::before {
+    content: '';
+    background-color: #8a8a8a60;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.tile:hover::after {
+    content: 'Shop Now';
+    background-color: #3954d9;
+    position: absolute;
+    width: 85px;
+    left: 0;
+    right: 0;
+    margin: 1.5em auto;
+    display: flex;
+    align-items: center;
+    border-radius: 30px;
+    height: 2em;
+    color: #FFF;
+    padding: 0.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.tile__img {
+    height: 100%;
+    width: 100%;
+    padding: 2em 0 1em 0;
+}
+
+.tile__title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #0d2e57;
+    text-transform: uppercase;
+    padding-left: 39px;
+    padding: 0 20px 0 20px;
+    letter-spacing: -0.05em;
+}
+
+.tile__content__container {
+    padding-left: 39px;
+}
+
+.tile__content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
+
+.tile__content--blue {
+    color: #3954d9;
+    font-size: 13px;
+}
+
+.tile__content--grey {
+    color: #818181;
+    font-size: 12px;
+    text-transform: strikethrough;
 }
 
 .basketballContainer .products li:hover::before, .sunglasses:hover::before{
@@ -485,23 +509,6 @@ nav {
     height: 100%;
 }
 
-.shopNow {
-    display: flex;
-    background-color: #3954d9;
-    border-radius: 30px;
-    height: 2em;
-    font-size: 13px;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    padding: 0.3em;
-    margin: 1.5em 0;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 500;
-    text-align: center;
-    text-transform: uppercase;
-}
-
 .basketballContainer .blackBanner {
     background: url('/images/runner.jpg') right -30px/45% no-repeat #0f0f19;
     display: flex;
@@ -575,147 +582,4 @@ nav {
     width: 80%;
     align-self: center;
     margin-bottom: 30px;
-}
-
-.blueClick {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.blueClick a {
-    color: #3753da;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 20px;
-}
-
-.logos, .photos {
-    display: flex;
-    justify-content: space-around;
-    background-color: #FFF;
-}
-
-.photos {
-    height: 250px;
-}
-
-.logos div, .photos div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: #0d2e57;
-    border: 0.5px solid #CCC;
-    flex: 1 1 0;
-}
-
-.logos div img, .photos div img {
-    max-width: 70%;
-    max-height: 70%;
-    filter: grayscale(100%);
-    margin: 0 0.5px;
-}
-
-.photos div img {
-    display: inline-block;
-    height: 0;
-    padding-bottom: 100%;
-    width: 100%;
-}
-
-#image1 {
-    background: url('/images/image1.jpg') center/140% no-repeat #000;
-}
-#image2 {
-    background: url('/images/image2.jpg') center/100% no-repeat #000;
-}
-#image3 {
-    background: url('/images/image3.jpg') center/100% no-repeat #000;
-}
-#image4 {
-    background: url('/images/image4.jpg') center/100% no-repeat #000;
-}
-#image5 {
-    background: url('/images/image5.jpg') center/100% no-repeat #000;
-}
-#image6 {
-    background: url('/images/image6.jpg') center/100% no-repeat #000;
-}
-#image7 {
-    background: url('/images/image7.jpg') center/100% no-repeat #000;
-}
-#image8 {
-    background: url('/images/image8.jpg') center/100% no-repeat #000;
-}
-
-#footerOuter {
-    background-image: url("/images/background.jpg");
-}
-
-#footer {
-    display: flex;
-    justify-content: space-around;
-    background-image: url("/images/background.jpg");
-    position: relative;
-    bottom: 105px;
-    margin-bottom: -105px;
-    z-index: 1;
-}
-
-#footer h3 {
-    color: #3145b6;
-    margin: 5em 0 0.2em 0;
-}
-
-#footer h3.noMargin {
-    margin: 2em 0 0.2em 0;
-}
-
-#footer ul {
-    list-style: none;
-    padding: 0;
-}
-
-#footer ul li {
-    font-size: 15px;
-    font-family: 'Poppins', sans-serif;
-    margin: 0.8em;
-    color: #FFF;
-}
-
-#footer div {
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-}
-
-.bottomFooter {
-    border-top: #656565;
-    border-style: solid;
-    display: flex;
-    justify-content: space-between;
-}
-
-.bottomFooter div {
-    margin: 0 2em;
-}
-
-.bottomFooter .paymentTypes img{
-    width: 30px;
-    height: 30px;
-}
-
-.tAndC {
-    display: flex;
-    flex-direction: column;
-    color: #656565;
-    line-height: 120%;
-    padding: 1em 0;
-}
-
-.paymentTypes {
-    display:flex;
-    align-items: center;
 }

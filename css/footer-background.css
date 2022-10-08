@@ -1,0 +1,5 @@
+.footer-background {
+    background: url("/images/background.jpg") bottom repeat #FFF;
+    margin-top: -500px;
+    height: 500px;
+}

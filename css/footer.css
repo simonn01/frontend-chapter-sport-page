@@ -1,0 +1,39 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    bottom: 105px;
+    margin-bottom: -105px;
+}
+
+.footer__h3 {
+    color: #3145b6;
+    margin: 5em 0 0.2em 0;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.footer__h3--no-margin {
+    margin: 2em 0 0.2em 0;
+}
+
+.footer__ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer__ul li {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0.8em;
+    color: #FFF;
+}
+
+.footer__form {
+    border-radius: 25px;
+    border: none;
+    height: 1.8em;
+    background-color: #2f2f2f;
+}
