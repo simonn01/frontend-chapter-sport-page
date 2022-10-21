@@ -1,0 +1,47 @@
+.sprinter {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background: url('/images/sprinter.jpg') center bottom 0px/100% no-repeat #0d2e57;
+    color: white;
+    padding: 280px 500px 100px 0;
+    position: relative;
+    bottom: 240px;
+    margin-bottom: -270px;
+    text-transform: uppercase;
+}
+
+.sprinter__content--heading {
+    font-size: 204px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+.sprinter__content {
+    width: 650px;
+    line-height: 0.75;
+    display: flex;
+    justify-content: center;
+}
+
+.sprinter__content--body {
+    font-size: 21px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.7em;
+}
+
+.sprinter__content--btn {
+    font-size: 17px;
+}
+
+.sprinter__content--padding-odd {
+    padding: 1em 0 2em 0.6em;
+}
+
+.sprinter__anchor {
+    width: 100px;
+}

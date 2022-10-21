@@ -1,0 +1,9 @@
+.li--basket {
+   display: flex;
+   flex-direction:column;
+   align-items: center; 
+   justify-content: flex-end;
+   margin: 0 0.5px;
+   background-color: white;
+   height: 309px;
+}

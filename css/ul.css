@@ -5,3 +5,12 @@
 .ul--no-padding {
     padding: 0;
 }
+
+.ul--basket {
+    display: flex;
+    justify-content: space-around;
+    font: #1111;
+    margin: 0;
+    padding: 0;
+    background-color: #c7c7c7;
+}

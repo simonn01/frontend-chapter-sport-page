@@ -24,13 +24,18 @@
     font-family: 'Poppins', sans-serif;
     font-weight: 900;
     font-size: 33px;
-    padding: 0;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #FFF;
 }
 
-.header__li {
+.header__anchor {
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     font-weight: 600;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #FFF;
 }
 
 .header__social-media {
@@ -38,6 +43,10 @@
     border-left: 1px solid #4c5b64;
     padding-left: 1em;
     margin-left: 24em;
+}
+
+.header__social-anchor {
+    padding: 0 10px;
 }
 
 .header__ecom-tools {

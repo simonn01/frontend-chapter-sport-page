@@ -18,6 +18,10 @@
     align-items: center;
 }
 
+.flex-box--align-baseline {
+    align-items: baseline;
+}
+
 .flex-box__img--grey-size-30{
     max-width: 30px;
     max-height: 30px;

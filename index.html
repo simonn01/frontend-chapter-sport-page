@@ -11,173 +11,190 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
 </head>
-  <!--Emmet-->
-  <!--body>header>div>div*3^div>a^div>ul>li*6>a^^^div>ul>li*4>a^^^div>ul>li*2>a-->
-  <!--(nav>a+ul>li*6>a)+div>ul>li*4>a^^^div>ul>li*2>a-->
+
   <body>
     <header class="header">
       <nav class="flex-box">
         <div class="flex-box flex-box--direction-column flex-box--justify-center">
-          <a href="#"><img src="/images/hamburger.png" alt="Main Menu"></a>
+          <a class="header__social-anchor" href="#"><img src="/images/hamburger.png" alt="Main Menu"></a>
         </div>
         <div class="header__port-pro-container">
           <a class="header__port-pro-link" href="#">PortPro</a>
         </div>
         <ul class="ul ul--no-padding flex-box flex-box--align-center">
-          <li><a class="header__li" href="#">Men</a></li>
-          <li><a class="header__li" href="#">Women</a></li>
-          <li><a class="header__li" href="#">Kids</a></li>
-          <li><a class="header__li" href="#">Sports</a></li>
-          <li><a class="header__li" href="#">Brands</a></li>
-          <li><a class="header__li" href="#">Customize</a></li>
+          <li><a class="header__anchor" href="#">Men</a></li>
+          <li><a class="header__anchor" href="#">Women</a></li>
+          <li><a class="header__anchor" href="#">Kids</a></li>
+          <li><a class="header__anchor" href="#">Sports</a></li>
+          <li><a class="header__anchor" href="#">Brands</a></li>
+          <li><a class="header__anchor" href="#">Customize</a></li>
         </ul>
       </nav>
  
       <div class="header__social-media">
         <div>
           <ul class="ul ul--no-padding flex-box flex-box--align-center">
-            <li><a href="#"><img src="/images/facebook.png" alt="Facebook"></a></li>
-            <li><a href="#"><img src="/images/twitter.png" alt="Twitter"></a></li>
-            <li><a href="#"><img src="/images/G+.png" alt="Google"></a></li>
-            <li><a href="#"><img src="/images/instagram.png" alt="Instagram"></a></li>
+            <li><a class="header__social-anchor" href="#"><img src="/images/facebook.png" alt="Facebook"></a></li>
+            <li><a class="header__social-anchor" href="#"><img src="/images/twitter.png" alt="Twitter"></a></li>
+            <li><a class="header__social-anchor" href="#"><img src="/images/G+.png" alt="Google"></a></li>
+            <li><a class="header__social-anchor" href="#"><img src="/images/instagram.png" alt="Instagram"></a></li>
           </ul>
         </div>
       </div>
 
       <div class="header__ecom-tools">
-          <a href="#"><img src="/images/basket.png" alt="Basket"></a>
+          <a class="header__social-anchor" href="#"><img src="/images/basket.png" alt="Basket"></a>
       </div>
       <div class="header__ecom-tools header__ecom-tools--padding-right">
-          <a href="#"><img src="/images/search.png" alt="Search"></a>
+          <a class= "header__social-anchor" href="#"><img src="/images/search.png" alt="Search"></a>
       </div>
     </header>
 
     <div class="sprinter">
       <h1 class="sprinter__content sprinter__content--heading">Nike Shoes</h1>
-      <div class="sprinter__content signUpNow size21 montserrat bold center letterSpace75">Sign up now and get 50% off</div>
-      <div class="sprinter__content"><a class="btn--shop-now sprinter__content sprinter__content--btn size17" href="#offer">Shop Now</a></div>
+      <div class="sprinter__content sprinter__content-padding-odd">Sign up now and get 50% off</div>
+      <div class="sprinter__content"><a class="btn--shop-now sprinter__content sprinter__content--btn sprinter__anchor" href="#offer">Shop Now</a></div>
     </div>
 
-    <div class="basketballBackground">
-      <div class="basketballContainer">
-        <ul id="freeShipping">
-          <li>
-              <img src="/images/aeroplane.png" alt=" ">
-              <span class="size33 bebasNeue bold phantomBlue">Free Shipping</span>
-              <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-              <a href="#">Click Here</a>
+    <div class="main-container">
+      <div class="main-body">
+        <ul class="ul--basket">
+          <li class="free-shipping__container">
+            <img class="free-shipping" src="/images/aeroplane.png" alt=" ">
+            <span class="free-shipping free-shipping--span">Free Shipping</span>
+            <div class="free-shipping free-shipping--lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a class="free-shipping free-shipping--anchor" href="#">Click Here</a>
           </li>
 
-          <li>
-            <img src="/images/clock.png" alt=" ">
-            <span class="size33 bebasNeue bold phantomBlue">Free Shipping</span>
-            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <a href="#">Click Here</a>
+          <li class="free-shipping__container">
+            <img class="free-shipping__img" src="/images/clock.png" alt=" ">
+            <span class="free-shipping free-shipping--span">Free Shipping</span>
+            <div class="free-shipping free-shipping--lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a class="free-shipping free-shipping--anchor" href="#">Click Here</a>
           </li>
 
-          <li>
-            <img src="/images/life_raft.png" alt=" ">
-            <span class="size33 bebasNeue bold phantomBlue">Free Shipping</span>
-            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <a href="#">Click Here</a>
+          <li class="free-shipping__container">
+            <img class="free-shipping__img" src="/images/life_raft.png" alt=" ">
+            <span class="free-shipping free-shipping--span">Free Shipping</span>
+            <div class="free-shipping free-shipping--lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a class="free-shipping free-shipping--anchor" href="#">Click Here</a>
           </li>
 
-          <li>
-            <img src="/images/life_raft.png" alt=" ">
-            <span class="size33 bebasNeue bold phantomBlue">Free Shipping</span>
-            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <a href="#">Click Here</a>
+          <li class="free-shipping__container">
+            <img class="free-shipping__img" src="/images/life_raft.png" alt=" ">
+            <span class="free-shipping free-shipping--span">Free Shipping</span>
+            <div class="free-shipping free-shipping--lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a class="free-shipping free-shipping--anchor" href="#">Click Here</a>
           </li>
         </ul>
 
-        <div id="offer">
-          <div id="left">
-            <div class="grey61 size20 poppins semiBold paddingTop2 uppercase">Offer of the Month</div>
-            <div class="phantomBlue size43 bebasNeue bold">Phantom Vision Elite Dynamic</div>
-            <div class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam deleniti nesciunt illum deserunt iusto explicabo velit? Repellendus quae, in facilis ratione accusantium amet culpa consequatur, hic eum nemo iusto!</div>
+        <div class="offer">
+          <div class="offer__left">
+            <div class="offer__subtitle">Offer of the Month</div>
+            <div class="offer__title">Phantom Vision Elite Dynamic</div>
+            <div class="offer__lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam deleniti nesciunt illum deserunt iusto explicabo velit? Repellendus quae, in facilis ratione accusantium amet culpa consequatur, hic eum nemo iusto!</div>
 
-            <div id="reduction">
-              <span class="blue500 size52 montserrat bold">$500</span>
-              <span class="black12 size33 montserrat medium strikethrough">$1000</span>
+            <div class="flex-box flex-box--align-baseline">
+              <span class="reduction reduction--500">$500</span>
+              <span class="reduction reduction--1000">$1000</span>
             </div>
 
-            <div id="countdown">
-              <div class="clock">
-                <div class="number montserrat semiBold size38">09</div>
-                <div class="montserrat regular size15">....</div>
-                <div class="montserrat semiBold size11 uppercase">hours</div>
+            <div class="flex-box">
+              <div class="clock__container">
+                <div class="clock clock--digit">09</div>
+                <div class="clock clock--dots">....</div>
+                <div class="clock clock--type">hours</div>
               </div>
-              <div class="clock">
-                <div class="number montserrat semiBold size38">56</div>
-                <div class="montserrat regular size15">....</div>
-                <div class="montserrat semiBold size11 uppercase">minutes</div>
+              <div class="clock__container">
+                <div class="clock clock--digit">56</div>
+                <div class="clock clock--dots">....</div>
+                <div class="clock clock--type">minutes</div>
               </div>
-              <div class="clock">
-                <div class="number montserrat semiBold size38">11</div>
-                <div class="montserrat regular size15">....</div>
-                <div class="montserrat semiBold size11 uppercase">seconds</div>
+              <div class="clock__container">
+                <div class="clock clock--digit">11</div>
+                <div class="clock clock--dots">....</div>
+                <div class="clock clock--type">seconds</div>
               </div>
             </div>
 
-            <a class="btn--shop-now size13" href="#offer">Shop Now</a>
+            <a class="btn--shop-now btn--size-13" href="#offer">Shop Now</a>
           </div>
 
-          <div>
-            <img src="/images/basketballer.jpg" alt=" ">
+          <div class="offer__right">
+            <img class="offer__img" src="/images/basketballer.jpg" alt=" ">
           </div>
         </div>
 
-        <ul class="products">
-          <li class="tile">
-            <img class="tile__img" src="/images/stefanJanoskiMax.jpg" alt=" ">
-            <span class="tile__title">Stefan Janoski Max</span>
-            <div class="tile__content">
-              <span class="tile__content montserrat semibold size13 blue500">$100.00</span>
-              <span class="montserrat semibold size12 grey81 strikethrough">$200</span>
+        <ul class="ul ul--basket products">
+          <a href="#">
+            <li class="tile">
+              <img class="tile__img" src="/images/stefanJanoskiMax.jpg" alt=" ">
+              <div class="tile__content__container">
+                <span class="tile__title">Stefan Janoski Max</span>
+                <div class="tile__content">
+                  <span class="tile__content tile__content--blue">$100.00</span>
+                  <span class="tile__content tile__content--grey">$200</span>
+                </div>
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li class="tile">
+              <img class="tile__img" src="/images/vandalHighSupreme.jpg" alt=" ">
+              <div class="tile__content__container">
+                <span class="tile__title">Vandal High Supreme</span>
+                <div class="tile__content">
+                  <span class="tile__content tile__content--blue">$100.00</span>
+                  <span class="tile__content tile__content--grey">$200</span>
+                </div>
             </div>
-          </li>
-          <li class="tile">
-            <img src="/images/vandalHighSupreme.jpg" alt=" ">
-            <a href="#">Vandal High Supreme</a>
-            <div class="tile__content__container">
-              <span class="tile__content tile__content--blue">$100.00</span>
-              <span class="tile__content tile__content--grey">$200</span>
-            </div>
-          </li>
-          <li class="tile">
-            <img src="/images/newZoom.jpg" alt=" ">
-            <a href="#">New Zoom</a>
-            <div>
-              <span class="montserrat semibold size13 blue500">$100.00</span>
-              <span class="montserrat semibold size12 grey81 strikethrough">$200</span>
-            </div>
-          </li>
-          <li class="tile">
-            <img src="/images/fitShoes.jpg" alt=" ">
-            <a href="#">Fit Shoes</a>
-            <div>
-              <span class="montserrat semibold size13 blue500">$100.00</span>
-              <span class="montserrat semibold size12 grey81 strikethrough">$200</span>
-            </div>
-          </li>
+            </li>
+          </a>
+          <a href="#">
+            <li class="tile">
+              <img class="tile__img" src="/images/newZoom.jpg" alt=" ">
+              <div class="tile__content__container">
+                <span class="tile__title">New Zoom</span>
+                <div>
+                  <span class="tile__content tile__content--blue">$100.00</span>
+                  <span class="tile__content tile__content--grey">$200</span>
+                </div>
+              </div>
+            </li>
+          </a>
+          <a href="#">
+            <li class="tile">
+              <img class="tile__img" src="/images/fitShoes.jpg" alt=" ">
+              <div class="tile__content__container">
+                <span class="tile__title">Fit Shoes</span>
+                <div>
+                  <span class="tile__content tile__content--blue">$100.00</span>
+                  <span class="tile__content tile__content--grey">$200</span>
+                </div>
+              </div>
+            </li>
+          </a>
         </ul>
-        <!--(div>(h2+div*2+h2+div+img))+(div>ul>(img+div))+(div>a)+(div>img*8)+(div>img*12)+(div>((h3+ul>li*8)*3)+(h3+ul>a*6)+div)+(ul>(h3+div))+div-->
-        <ul class="blackBanner products2">
-          <li id="runningHeader">
-            <h2 class="bebasNeue size52 semiBold">Men's Running Shoes</h2>
-            <h3 class="montserrat size14 regular letterSpace50 uppercase underline">Sign up now and get 50% off</h3>
+
+        <ul class="ul black-banner products2">
+          <li class="black-banner__running-header">
+            <h2 class="black-banner__running-h2">Men's Running Shoes</h2>
+            <h3 class="black-banner__running-h3">Sign up now and get 50% off</h3>
             <div id="btn--shop-nowDiv"><a href="#" class="shopNow">Click Here</a></div>
           </li>
-          <li id="sunglasses">
-            <img src="/images/sunglasses.png" alt="sunglasses on sale">
-            <a id="sunglassesFreeShipping" href="#">Free Shipping</a>
-            <div>
-              <span class="montserrat semibold size13 blue500">$100.00</span>
-              <span class="montserrat semibold size12 grey81 strikethrough">$200</span>
-            </div>
-          </li>
-          <li id="runningHeader">
-            <h1 class="poppins size52 bold italic uppercase">Run, <br> eat, sleep and repeat</h1>
+          <a href="#">
+            <li class="tile sunglasses">
+              <img class="tile__img sunglasses__img" src="/images/sunglasses.png" alt="sunglasses on sale">
+              <div class="tile__content__container">
+                <div>
+                  <span class="tile__content tile__content--blue">$100.00</span>
+                  <span class="tile__content tile__content--grey">$200</span>
+                </div>
+              </div>
+            </li>
+          </a>
+          <li class="black-banner__running-header">
+            <h1 class="black-banner__running-h1">Run, <br> eat, sleep and repeat</h1>
             <div><a href="#" class="btn--shop-now cerulean">Shop Now</a></div>
           </li>
           <li id="runningHeader"></li>

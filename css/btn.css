@@ -27,3 +27,7 @@
     text-transform: uppercase;
     padding: 20px;
 }
+
+.btn--size13 {
+    font-size: 13px;
+}

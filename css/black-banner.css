@@ -1,0 +1,79 @@
+.black-banner {
+    background: url('/images/runner.jpg') right -30px/45% no-repeat #0f0f19;
+    display: flex;
+    flex: 1 1 0;
+    height: 311px;
+}
+
+.black-banner li{
+    width: 309px;
+}
+
+.black-banner__running-header {
+    width: 309px;
+    background-color: transparent;
+    color: white;
+    justify-content: center;
+}
+
+.black-banner__running-header a.cerulean {
+    background-color: #65cbff;
+    color: #000;
+    margin-top: 20px;
+    margin-left: 17px;
+}
+
+.black-banner__running-h1 {
+    display: flex;
+    justify-content: center;
+    line-height: 90%;
+    margin: 10px;
+    background-color: transparent;
+    font-style: italic;
+    padding: 40px 0 0 50px;
+    width: 300px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 52px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.black-banner__running-h1 a {
+    background-color: #65cbff;
+}
+
+.black-banner__running-h2 {
+    display: flex;
+    justify-content: center;
+    line-height: 90%;
+    margin: 50px 30px 0 30px;
+    font-family: 'Bebase Neue', sans-serif;
+    font-size: 52px;
+    font-weight: 600;
+}
+
+.black-banner__running-h3 {
+    margin: 20px 0 30px 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.5em;
+    text-transform: uppercase;
+}
+
+.black-banner__running-header a {
+    color: white;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.black-banner__anchor {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: #0d2e57;
+    text-transform: uppercase;
+    text-align: left;
+}
