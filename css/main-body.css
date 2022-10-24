@@ -1,0 +1,14 @@
+.main-body {
+    position: relative;
+    bottom: 20px;
+    z-index:2;
+    box-shadow: 0 0 75px 0 #212121;
+}
+
+.main-body::before{
+    box-shadow: -20px 0 20px 5px #e0e0e0;
+}
+
+.main-body::after{
+    box-shadow: 0 20px 5px 5px #e0e0e0;
+}

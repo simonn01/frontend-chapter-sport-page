@@ -1,0 +1,30 @@
+.flex-box {
+    display: flex;
+}
+
+.flex-box--background-white {
+    background-color: #FFF;
+}
+
+.flex-box--direction-column {
+    flex-direction: column;
+}
+
+.flex-box--justify-center {
+    justify-content: center;
+}
+
+.flex-box--align-center {
+    align-items: center;
+}
+
+.flex-box--align-baseline {
+    align-items: baseline;
+}
+
+.flex-box__img--grey-size-30{
+    max-width: 30px;
+    max-height: 30px;
+    filter: grayscale(100%);
+    margin: 0 2px;
+}

@@ -1,0 +1,17 @@
+.reduction {
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+
+.reduction--500 {
+    color: #3954d9;
+    font-size: 52px;
+    font-weight: 700;
+}
+
+.reduction--1000 {
+    font-size: 33px;
+    color: #121212;
+    font-weight: 500;
+    text-decoration: line-through;
+}
