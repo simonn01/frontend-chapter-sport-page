@@ -47,7 +47,7 @@
 }
 
 /* Tablet Design */
-@media (600px < width < 1200px) {
+@media (900px < width < 1200px) {
     .free-shipping__container {
         flex-wrap: wrap;
     }
@@ -75,7 +75,7 @@
 }
 
 /* Mobile Design */
-@media (width < 600px) {
+@media (width < 900px) {
     .free-shipping__container {
         flex-wrap: wrap;
         background: none;

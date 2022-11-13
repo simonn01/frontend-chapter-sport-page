@@ -37,7 +37,7 @@
     background: url('/images/image8.jpg') center/110% no-repeat #000;
 }
 
-@media (width < 600px) {
+@media (width < 1000px) {
     .photos {
         display: none;
     }

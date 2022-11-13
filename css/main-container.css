@@ -4,7 +4,7 @@
     z-index:0;
 }
 
-@media (600px > width) {
+@media (900px > width) {
     .main-container {
         padding: 0 50px;
         background: linear-gradient(white, transparent), url("/images/background.jpg") bottom repeat #FFF;

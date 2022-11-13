@@ -16,7 +16,7 @@
     text-decoration: line-through;
 }
 
-@media (width < 600px) {
+@media (width < 900px) {
     .reduction--500 {
         font-size: 32px;
         text-shadow: 1px 1px 1px white;

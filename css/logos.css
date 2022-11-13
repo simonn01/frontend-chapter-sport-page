@@ -39,7 +39,7 @@
     }
 }
 
-@media (width < 600px) {
+@media (width < 900px) {
     .logos {
         display: none;
     }

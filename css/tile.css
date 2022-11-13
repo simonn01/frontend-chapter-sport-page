@@ -148,7 +148,7 @@
     }
 }
 
-@media (width < 600px) {
+@media (width < 1000px) {
     .tile {
         background: none;
     }

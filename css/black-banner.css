@@ -7,7 +7,7 @@
     list-style-type: none;
 }
 
-@media (width < 600px) {
+@media (width < 1000px) {
     .black-banner {
         display: none;
     }

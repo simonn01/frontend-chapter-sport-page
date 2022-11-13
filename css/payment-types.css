@@ -1,4 +1,4 @@
-@media (600px > width) {
+@media (1000px > width) {
     .payment-types {
         justify-content: center;
     }
