@@ -1,0 +1,14 @@
+.black-banner {
+    background: url('/images/runner.jpg') right -30px/45% no-repeat #0f0f19;
+    display: flex;
+    flex: 1 1 0;
+    margin: 0;
+    color: #FFF;
+    list-style-type: none;
+}
+
+@media (width < 600px) {
+    .black-banner {
+        display: none;
+    }
+}

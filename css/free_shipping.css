@@ -78,11 +78,13 @@
 @media (width < 600px) {
     .free-shipping__container {
         flex-wrap: wrap;
+        background: none;
     }
     .free-shipping__tile {
         width: 99%;
         padding-bottom: 50%;
         margin: 1px 0.5px;
+        background: none;
     }
     .free-shipping__img {
         display: none;

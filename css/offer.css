@@ -53,3 +53,16 @@
         display: none;
     }
 }
+
+@media (width < 600px) {
+    .offer {
+        background: none;
+    }
+    .offer__title {
+        font-size: 26px;
+    }
+    .offer__lorem {
+        font-size: 12px;
+        margin: 0;
+    }
+}

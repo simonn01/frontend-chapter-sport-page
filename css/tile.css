@@ -120,9 +120,42 @@
 .tile__content--grey {
     color: #818181;
     font-size: 12px;
-    text-transform: strikethrough;
+    text-decoration: line-through;
 }
 
 .tile__anchor {
     width: 30%;
+}
+
+.tile__container {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    font: #1111;
+    padding: 0;
+    background-color: #c7c7c7;
+    margin: 0;
+}
+
+@media (width < 1000px) {
+    .tile__container {
+        flex-wrap: wrap;
+    }
+    .a--tile {
+        width: 49.9%;
+        margin-top: 0.05px;
+        margin-bottom: 2px;
+    }
+}
+
+@media (width < 600px) {
+    .tile {
+        background: none;
+    }
+    .tile__container {
+        background: none;
+    }
+    .tile__content--grey {
+        color: #DDD;
+    }
 }

@@ -12,3 +12,16 @@
 .main-body::after{
     box-shadow: 0 20px 5px 5px #e0e0e0;
 }
+
+@media (width < 600px) {
+    .main-body {
+        box-shadow: none;
+        bottom: 0;
+    }
+    .main-body::before{
+        box-shadow: none;
+    }
+    .main-body::after{
+        box-shadow: none;
+    }
+}

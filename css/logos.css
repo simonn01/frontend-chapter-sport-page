@@ -28,3 +28,19 @@
     top: 50%;
     margin-top: -30%;
 }
+
+@media (600px < width < 1000px) {
+    .logos {
+        padding-bottom: calc(100%/3);
+    }
+    .logos--desktop {
+        position: absolute;
+        display: none;
+    }
+}
+
+@media (width < 600px) {
+    .logos {
+        display: none;
+    }
+}

@@ -5,20 +5,3 @@
 .ul--no-padding {
     padding: 0;
 }
-
-.ul--basket {
-    display: flex;
-    justify-content: space-around;
-    font: #1111;
-    padding: 0;
-    background-color: #c7c7c7;
-    margin: 0;
-}
-
-.ul--black-banner {
-    background: url('/images/runner.jpg') right -30px/45% no-repeat #0f0f19;
-    display: flex;
-    flex: 1 1 0;
-    margin: 0;
-    color: #FFF;
-}

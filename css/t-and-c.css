@@ -7,3 +7,10 @@
     font-weight: 400;
     font-size: 15px;
 }
+
+@media (width < 600px) {
+    .t-and-c {
+        font-size: 10px;
+        text-align: center;
+    }
+}

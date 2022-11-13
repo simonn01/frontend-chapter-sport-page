@@ -36,3 +36,9 @@
 .photos--8 {
     background: url('/images/image8.jpg') center/110% no-repeat #000;
 }
+
+@media (width < 600px) {
+    .photos {
+        display: none;
+    }
+}

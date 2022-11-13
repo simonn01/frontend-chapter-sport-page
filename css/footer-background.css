@@ -3,3 +3,14 @@
     margin-top: -500px;
     height: 500px;
 }
+
+@media (width < 600px) {
+    .footer-background {
+        display: none;
+        /*
+        background: linear-gradient(white, transparent), url("/images/background.jpg") bottom repeat #FFF;
+        margin-top: -1500px;
+        height: 1500px;
+        */
+    }
+}
