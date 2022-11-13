@@ -1,16 +1,26 @@
 .free-shipping__container {
     display: flex;
+    justify-content: space-around;
+    font: #1111;
+    padding: 0;
+    background-color: #c7c7c7;
+    margin: 0;
+}
+
+
+.free-shipping__tile {
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
     margin: 0 0.5px;
     background-color: #FFF;
-    height: 309px;
+    height: 0;
+    padding-bottom: calc(100%/4);
     text-align: center;
 }
 
 .free-shipping {
-    padding: 10px 0;
+    padding: 0.8em 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
 }
@@ -20,7 +30,7 @@
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 700;
     color: #0d2e57;
-    padding-top: 25px;
+    padding-top: 0.8em;
 }
 
 .free-shipping--lorem {
@@ -34,4 +44,51 @@
     color: #3753da;
     font-weight: 600;
     text-transform: none;
+}
+
+/* Tablet Design */
+@media (600px < width < 1200px) {
+    .free-shipping__container {
+        flex-wrap: wrap;
+    }
+    .free-shipping__tile {
+        width: 49.7%;
+        margin: 1px 0.5px;
+        padding-bottom: calc(100%/3.5);
+        height: 200px;
+        padding: 0;
+    }
+    .free-shipping__img {
+        position: absolute;
+        align-self: flex-start;
+        padding: 1em;
+        height: 2em;
+        width: 2em;
+    }
+    .free-shipping--anchor {
+        padding: 1em;
+    }
+    .free-shipping--span {
+        font-size: 23px;
+        padding-bottom: 0;
+    }
+}
+
+/* Mobile Design */
+@media (width < 600px) {
+    .free-shipping__container {
+        flex-wrap: wrap;
+    }
+    .free-shipping__tile {
+        width: 99%;
+        padding-bottom: 50%;
+        margin: 1px 0.5px;
+    }
+    .free-shipping__img {
+        display: none;
+    }
+    .free-shipping--span {
+        font-size: 15px;
+        padding-bottom: 0;
+    }
 }

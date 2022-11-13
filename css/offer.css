@@ -44,3 +44,12 @@
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 700;
 }
+
+@media (width < 1200px) {
+    .offer__left {
+        width: 100%;
+    }
+    .offer__right {
+        display: none;
+    }
+}
