@@ -29,7 +29,7 @@
     margin-top: -30%;
 }
 
-@media (600px < width < 1000px) {
+@media (600px < max-width: 1000px) {
     .logos {
         padding-bottom: calc(100%/3);
     }
@@ -39,7 +39,7 @@
     }
 }
 
-@media (width < 900px) {
+@media (max-width: 900px) {
     .logos {
         display: none;
     }

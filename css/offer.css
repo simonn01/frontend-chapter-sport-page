@@ -45,7 +45,7 @@
     font-weight: 700;
 }
 
-@media (width < 1200px) {
+@media (max-width: 1200px) {
     .offer__left {
         width: 100%;
     }
@@ -54,7 +54,7 @@
     }
 }
 
-@media (width < 1000px) {
+@media (max-width: 1000px) {
     .offer {
         background: none;
     }

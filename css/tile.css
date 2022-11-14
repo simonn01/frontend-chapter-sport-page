@@ -137,7 +137,7 @@
     margin: 0;
 }
 
-@media (width < 1000px) {
+@media (max-width: 1000px) {
     .tile__container {
         flex-wrap: wrap;
     }
@@ -148,7 +148,7 @@
     }
 }
 
-@media (width < 1000px) {
+@media (max-width: 1000px) {
     .tile {
         background: none;
     }
