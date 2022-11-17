@@ -1,4 +1,4 @@
-.clock__container {
+.clock {
     flex-direction: column;
     background-color: #FFF;
     border-radius: 20%;
@@ -8,13 +8,10 @@
     padding-bottom: 0 15px;
 }
 
-.clock {
+.clock__digit {
     color: #2d2b27;
     font-family: 'Montserrat', sans-serif;
     padding: 8px;
-}
-
-.clock--digit {
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -22,13 +19,28 @@
     font-size: 38px;
 }
 
-.clock--dots {
-  margin-top: -18px;
+.clock__dots {
+    color: #2d2b27;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    margin-top: -18px;
 }
 
-.clock--type {
+.clock__unit {
+    color: #2d2b27;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
     font-weight: 600;
     font-size: 11px;
     text-transform: uppercase;
     margin-top: -12px;
+}
+
+@media (max-width: 640px) {
+    .clock__digit {
+        font-size: 28px;
+    }
+    .clock__unit {
+        font-size: 8px;
+    }
 }

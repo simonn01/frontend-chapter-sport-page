@@ -1,27 +1,27 @@
-.reduction {
+.price {
     font-family: 'Montserrat', sans-serif;
     padding: 20px;
 }
 
-.reduction--500 {
+.price--reduction {
     color: #3954d9;
     font-size: 52px;
     font-weight: 700;
 }
 
-.reduction--1000 {
+.price--full {
     font-size: 33px;
     color: #121212;
     font-weight: 500;
     text-decoration: line-through;
 }
 
-@media (width < 600px) {
-    .reduction--500 {
+@media (max-width: 640px) {
+    .price--reduction {
         font-size: 32px;
         text-shadow: 1px 1px 1px white;
     }
-    .reduction--1000 {
+    .price--full {
         font-size: 16px;
     }
 }
