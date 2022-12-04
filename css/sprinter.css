@@ -1,41 +1,37 @@
 .sprinter {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    background: url('/images/sprinter.jpg') center bottom 0px/100% no-repeat #0d2e57;
+    background: url('/images/sprinter.jpg') center bottom 0px/116% no-repeat #0d2e57;
     color: white;
-    padding: 275px 500px 100px 0;
-    position: relative;
-    bottom: 240px;
-    margin-bottom: -270px;
     text-transform: uppercase;
+    line-height: 0.75;
 }
 
-.sprinter__content--heading {
-    font-size: 204px;
+.sprinter__column{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10% 0 10% 10%;
+}
+
+.sprinter__heading {
+    font-size: 10vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-align: center;
 }
 
-.sprinter__content {
-    width: 650px;
-    line-height: 0.75;
-    display: flex;
-    justify-content: center;
-}
-
-.sprinter__content--body {
+.sprinter__body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: center;
     letter-spacing: 0.7em;
     padding: 1em 0 2em 0.6em;
+    font-size: 0.8vw;
 }
 
-.sprinter__content--btn {
+.sprinter__btn {
     font-size: 17px;
+    text-decoration: none;
 }
 
 .sprinter__anchor {
@@ -43,37 +39,31 @@
     text-decoration: none;
 }
 
-@media (width < 600px) {
-    .sprinter {
-        padding: 0;
-        bottom: 0;
-        margin: auto;
-        background: url('/images/sprinter.jpg') center bottom 0px/116% no-repeat #0d2e57;
+@media (max-width: 1200px) {
+    .sprinter__column {
+        margin: 0 0 0 10%;
     }
-    .sprinter__content {
-        width: 100%;
-    }
-    .sprinter__content--body {
-        font-size: 10px;
-        letter-spacing: 0;
-        width: 200px;
-        bottom: 48px;
-        padding: 0;
-        position: relative;
-        font-size: 6px;
-    }
-    .sprinter__content--btn {
-        width: 100px;
-        padding: 0;
-        font-size: 8px;
-        margin-bottom: 0;
-    }
-    .sprinter__content--heading {
-        position: relative;
+    .sprinter__heading {
         margin-top: 28%;
-        font-size: 36px;
-        width: 40%;
-        bottom: 50px;
-        left: 20px;
+    }
+    .sprinter__body {
+        font-size: 0.8vw;
+        padding: 0;
+        margin: 5% 0 15% 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .sprinter {
+        background: url(/images/sprinter.jpg) center 80%/116% #0d2e57;
+    }
+    .sprinter__column {
+        margin: 0 0 5% 10%;
+    }
+    .sprinter__btn {
+        height: 1.5em;
+        margin-bottom: 5%;
+        font-size: 1.6vw;
+        width: 50%;
     }
 }
