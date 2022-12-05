@@ -1,0 +1,18 @@
+.link {
+    color: #FFF;
+    position: relative;
+}
+
+.link--tile {
+    width: 25%;
+}
+
+.link--tile:hover {
+    color: #8a8a8a;
+}
+
+@media (max-width: 600px) {
+    .link--tile {
+        width: 49.0%;
+    }
+}

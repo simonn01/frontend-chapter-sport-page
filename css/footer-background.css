@@ -4,13 +4,15 @@
     height: 500px;
 }
 
+@media (max-width: 1200px) {
+    .footer-background {
+        margin-top: -120vh;
+        height: 120vh;
+    }
+}
+
 @media (width < 600px) {
     .footer-background {
         display: none;
-        /*
-        background: linear-gradient(white, transparent), url("/images/background.jpg") bottom repeat #FFF;
-        margin-top: -1500px;
-        height: 1500px;
-        */
     }
 }

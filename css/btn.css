@@ -1,3 +1,7 @@
+.btn {
+    width: 120px;
+}
+
 .btn--shop-now {
     display: flex;
     background-color: #3954d9;
@@ -44,5 +48,24 @@
     background-color: #65cbff;
     color: #000;
     margin-top: 35px;
-    width: 80%;
+}
+
+@media (max-width: 1200px) {
+    .btn {
+        width: 9vw;
+        font-size: 1vw;
+    }
+    .btn--margin-left-30 {
+        margin-left: 1vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .btn {
+        width: 60px;
+        font-size: 1.25ex;
+    }
+    .btn--shop-now {
+        margin-bottom: 0;
+    }
 }

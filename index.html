@@ -13,15 +13,17 @@
 </head>
 
   <body>
-    <!--<header class="header">
+    <header class="header">
       <nav class="flex-box">
         <div class="flex-box flex-box--direction-column flex-box--justify-center">
-          <a class="header__social-anchor" href="#"><img src="/images/hamburger.png" alt="Main Menu"></a>
+          <a class="header__social-anchor" href="#">
+            <img class="header__hamburger" src="/images/hamburger.png" alt="Main Menu">
+          </a>
         </div>
         <div class="header__port-pro-container">
           <a class="header__port-pro-link" href="#">PortPro</a>
         </div>
-        <ul class="ul ul--no-padding flex-box flex-box--align-center">
+        <ul class="header__menu ul ul--no-padding flex-box flex-box--align-center">
           <li><a class="header__anchor" href="#">Men</a></li>
           <li><a class="header__anchor" href="#">Women</a></li>
           <li><a class="header__anchor" href="#">Kids</a></li>
@@ -33,28 +35,28 @@
  
       <div class="header__social-media">
         <div>
-          <ul class="ul ul--no-padding flex-box flex-box--align-center">
-            <li><a class="header__social-anchor" href="#"><img src="/images/facebook.png" alt="Facebook"></a></li>
-            <li><a class="header__social-anchor" href="#"><img src="/images/twitter.png" alt="Twitter"></a></li>
-            <li><a class="header__social-anchor" href="#"><img src="/images/G+.png" alt="Google"></a></li>
-            <li><a class="header__social-anchor" href="#"><img src="/images/instagram.png" alt="Instagram"></a></li>
+          <ul class="header__media-images ul ul--no-padding flex-box flex-box--align-center">
+            <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media header__img--fb" src="/images/facebook.png" alt="Facebook"></a></li>
+            <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/twitter.png" alt="Twitter"></a></li>
+            <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/G+.png" alt="Google"></a></li>
+            <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/instagram.png" alt="Instagram"></a></li>
           </ul>
         </div>
       </div>
 
       <div class="header__ecom-tools">
-          <a class="header__social-anchor" href="#"><img src="/images/basket.png" alt="Basket"></a>
+          <a class="header__social-anchor" href="#"><img class="header__img header__img--ecom" src="/images/basket.png" alt="Basket"></a>
       </div>
       <div class="header__ecom-tools header__ecom-tools--padding-right">
-          <a class= "header__social-anchor" href="#"><img src="/images/search.png" alt="Search"></a>
+          <a class= "header__social-anchor" href="#"><img class="header__img header__img--ecom" src="/images/search.png" alt="Search"></a>
       </div>
-    </header>-->
+    </header>
 
     <div class="sprinter">
       <div class="sprinter__column">
         <h1 class="sprinter__heading">Nike<br>Shoes</h1>
         <div class="sprinter__body">Sign up now and get 50% off</div>
-        <a class="btn--shop-now sprinter__btn" href="#offer">Shop Now</a>
+        <a class="btn btn--shop-now sprinter__btn" href="#offer">Shop Now</a>
       </div>
     </div>
 
@@ -62,32 +64,35 @@
       <div class="main-body">
         
         <ul class="tile-row">
-          <li class="tile tile--free-shipping tile--first">
-            <img class="tile__img tile__img--free-shipping" src="/images/aeroplane.png" alt=" ">
-            <span class="free-shipping free-shipping--span">Free Shipping</span>
-            <div class="free-shipping free-shipping--lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <a class="a free-shipping free-shipping--anchor" href="#">Click Here</a>
+          <li class="free-shipping free-shipping--first">
+            <img class="free-shipping__img" src="/images/aeroplane.png" alt=" ">
+            <span class="free-shipping__span">Free Shipping</span>
+            <div class="free-shipping__lorem">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+               ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+            <a class="a free-shipping__anchor" href="#">Click Here</a>
           </li>
 
-          <li class="tile tile--free-shipping">
-            <img class="tile__img tile__img--free-shipping" src="/images/clock.png" alt=" ">
-            <span class="free-shipping free-shipping--span">Free Shipping</span>
-            <div class="free-shipping free-shipping--lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <a class="a free-shipping free-shipping--anchor" href="#">Click Here</a>
+          <li class="free-shipping">
+            <img class="free-shipping__img" src="/images/clock.png" alt=" ">
+            <span class="free-shipping__span">Free Shipping</span>
+            <div class="free-shipping__lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a class="a free-shipping__anchor" href="#">Click Here</a>
           </li>
 
-          <li class="tile tile--free-shipping">
-            <img class="tile__img tile__img--free-shipping" src="/images/life_raft.png" alt=" ">
-            <span class="free-shipping free-shipping--span">Free Shipping</span>
-            <div class="free-shipping free-shipping--lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <a class="a free-shipping free-shipping--anchor" href="#">Click Here</a>
+          <li class="free-shipping">
+            <img class="free-shipping__img" src="/images/life_raft.png" alt=" ">
+            <span class="free-shipping__span">Free Shipping</span>
+            <div class="free-shipping__lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a class="a free-shipping__anchor" href="#">Click Here</a>
           </li>
 
-          <li class="tile tile--free-shipping tile--last">
-            <img class="tile__img tile__img--free-shipping" src="/images/life_raft.png" alt=" ">
-            <span class="free-shipping free-shipping--span">Free Shipping</span>
-            <div class="free-shipping free-shipping--lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
-            <a class="a free-shipping free-shipping--anchor" href="#">Click Here</a>
+          <li class="free-shipping free-shipping--last">
+            <img class="free-shipping__img" src="/images/life_raft.png" alt=" ">
+            <span class="free-shipping__span">Free Shipping</span>
+            <div class="free-shipping__lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <a class="a free-shipping__anchor" href="#">Click Here</a>
           </li>
         </ul>
 
@@ -120,7 +125,7 @@
               </div>
             </div>
 
-            <a class="a btn--shop-now btn--size-13" href="#offer">Shop Now</a>
+            <a class="link btn btn--shop-now btn--size-13" href="#offer">Shop Now</a>
           </div>
 
           <div class="offer__right">
@@ -128,11 +133,11 @@
           </div>
         </div>
 
-        <ul class="tile__container">
-          <a class="a a--tile" href="#">
+        <ul class="tile-row">
+          <a class="link--tile" href="#">
             <li class="tile tile--clickable">
               <img class="tile__img" src="/images/stefanJanoskiMax.png" alt=" ">
-              <div class="tile__content__container">
+              <div class="tile__content-container">
                 <span class="tile__title">Stefan Janoski Max</span>
                 <div class="tile__content">
                   <span class="tile__content tile__content--blue">$100.00</span>
@@ -141,10 +146,10 @@
               </div>
             </li>
           </a>
-          <a class="a a--tile" href="#">
+          <a class="link--tile" href="#">
             <li class="tile tile--clickable">
               <img class="tile__img" src="/images/vandalHighSupreme.png" alt=" ">
-              <div class="tile__content__container">
+              <div class="tile__content-container">
                 <span class="tile__title">Vandal High Supreme</span>
                 <div class="tile__content">
                   <span class="tile__content tile__content--blue">$100.00</span>
@@ -153,10 +158,10 @@
             </div>
             </li>
           </a>
-          <a class="a a--tile" href="#">
+          <a class="link--tile" href="#">
             <li class="tile tile--clickable">
               <img class="tile__img" src="/images/newZoom.png" alt=" ">
-              <div class="tile__content__container">
+              <div class="tile__content-container">
                 <span class="tile__title">New Zoom</span>
                 <div>
                   <span class="tile__content tile__content--blue">$100.00</span>
@@ -165,10 +170,10 @@
               </div>
             </li>
           </a>
-          <a class="a a--tile" href="#">
+          <a class="link--tile" href="#">
             <li class="tile tile--clickable">
               <img class="tile__img" src="/images/fitShoes.png" alt=" ">
-              <div class="tile__content__container">
+              <div class="tile__content-container">
                 <span class="tile__title">Fit Shoes</span>
                 <div>
                   <span class="tile__content tile__content--blue">$100.00</span>
@@ -180,15 +185,15 @@
         </ul>
 
         <ul class="ul black-banner">
-          <li class="li--quarter-width tile tile--transparent">
+          <li class="tile--black-banner li--quarter-width tile tile--transparent">
             <h2 class="tile__h2">Men's Running Shoes</h2>
             <h3 class="tile__h3">Sign up now and get 50% off</h3>
-            <a href="#" class="btn--no-margin btn--shop-now btn--margin-left-30 tile__anchor a">Click Here</a>
+            <a href="#" class="btn btn--no-margin btn--shop-now btn--margin-left-30 link">Click Here</a>
           </li>
           <a class="a li--quarter-width" href="#">
-            <li class="tile tile--clickable tile--sunglasses">
+            <li class="tile--black-banner tile tile--clickable tile--sunglasses">
               <img class="tile__img tile__img--sunglasses sunglasses__img" src="/images/sunglasses.png" alt="sunglasses on sale">
-              <div class="tile__content__container">
+              <div class="tile__content-container">
                 <span class="tile__title">Free Shipping</span>
                 <div>
                   <span class="tile__content tile__content--blue">$100.00</span>
@@ -197,13 +202,13 @@
               </div>
             </li>
           </a>
-          <li class="tile tile--transparent li--quarter-width">
+          <li class="tile--black-banner tile tile--transparent li--quarter-width">
             <h1 class="tile__h1">Run, <br> eat, sleep and repeat</h1>
-            <div><a href="#" class="btn--shop-now btn--no-margin btn--cerulean a black-banner__anchor btn--margin-left-30">Shop Now</a></div>
+            <div><a href="#" class="btn btn--shop-now btn--no-margin btn--cerulean black-banner__anchor btn--margin-left-30">Shop Now</a></div>
           </li>
-          <li class="li--quarter-width"></li>
+          <li class="tile--black-banner li--quarter-width"></li>
         </ul>
-        <div class="flex-box flex-box--justify-center"><a class="btn--blue-click a" href="#">Click Here</a></div>
+        <div class="flex-box flex-box--justify-center"><a class="btn btn--blue-click a" href="#">Click Here</a></div>
         <div class="flex-box">
           <div class="photos photos--1"></div>
           <div class="photos photos--2"></div>
@@ -220,14 +225,14 @@
           <div class="logos"><img class="logos__img logos__img--la-coste" src="/images/laCoste.png" alt="Lacoste logo"></div>
           <div class="logos"><img class="logos__img logos__img--pks" src="/images/pks.png" alt="PKS logo"></div>
           <div class="logos"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
-          <div class="logos logos--desktop"><img class="logos__img logos__img--pks" src="/images/pks.png" alt="PKS logo"></div>
-          <div class="logos logos--desktop"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
-          <div class="logos logos--desktop"><img class="logos__img logos__img--la-coste" src="/images/laCoste.png" alt="Lacoste logo"></div>
-        </div>
-        <div class="flex-box flex-box--background-white">
+          <div class="logos"><img class="logos__img logos__img--pks" src="/images/pks.png" alt="PKS logo"></div>
           <div class="logos"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
           <div class="logos"><img class="logos__img logos__img--la-coste" src="/images/laCoste.png" alt="Lacoste logo"></div>
-          <div class="logos"><img class="logos__img logos__img--pks" src="/images/pks.png" alt="PKS logo"></div>
+        </div>
+        <div class="flex-box flex-box--background-white">
+          <div class="logos logos--desktop"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
+          <div class="logos logos--desktop"><img class="logos__img logos__img--la-coste" src="/images/laCoste.png" alt="Lacoste logo"></div>
+          <div class="logos logos--desktop"><img class="logos__img logos__img--pks" src="/images/pks.png" alt="PKS logo"></div>
           <div class="logos logos--desktop"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
           <div class="logos logos--desktop"><img class="logos__img logos__img--la-coste" src="/images/laCoste.png" alt="Lacoste logo"></div>
           <div class="logos logos--desktop"><img class="logos__img logos__img--pks" src="/images/pks.png" alt="PKS logo"></div></div>
@@ -236,55 +241,69 @@
           <div class="flex-box flex-box--direction-column">
             <h3 class="footer__h3">Shops</h3>
             <ul class="footer__ul">
-              <li>New in</li>
-              <li>Women</li>
-              <li>Schuhe Shoes</li>
-              <li>Bags & Accessories</li>
-              <li>Men</li>
-              <li>Top Brands</li>
-              <li>Sales & Special Offers</li>
-              <li>Lookbook</li>
+              <li class="footer__li"><a class="link" href="#">New in</a></li>
+              <li class="footer__li"><a class="link" href="#">Women</a></li>
+              <li class="footer__li"><a class="link" href="#">Schuhe Shoes</a></li>
+              <li class="footer__li"><a class="link" href="#">Bags & Accessories</a></li>
+              <li class="footer__li"><a class="link" href="#">Men</a></li>
+              <li class="footer__li"><a class="link" href="#">Top Brands</a></li>
+              <li class="footer__li"><a class="link" href="#">Sales & Special Offers</a></li>
+              <li class="footer__li"><a class="link" href="#">Lookbook</a></li>
             </ul>
           </div>
           <div class="flex-box flex-box--direction-column">
             <h3 class="footer__h3">Information</h3>
             <ul class="footer__ul">
-              <li>About us</li>
-              <li>Customer Service</li>
-              <li>New Collection</li>
-              <li>Best Sellers</li>
-              <li>Manufacturers</li>
-              <li>Privacy policy</li>
-              <li>Terms & conditions</li>
-              <li>Blog</li>
+              <li class="footer__li"><a class="link" href="#">About us</a></li>
+              <li class="footer__li"><a class="link" href="#">Customer Service</a></li>
+              <li class="footer__li"><a class="link" href="#">New Collection</a></li>
+              <li class="footer__li"><a class="link" href="#">Best Sellers</a></li>
+              <li class="footer__li"><a class="link" href="#">Manufacturers</a></li>
+              <li class="footer__li"><a class="link" href="#">Privacy policy</a></li>
+              <li class="footer__li"><a class="link" href="#">Terms & conditions</a></li>
+              <li class="footer__li"><a class="link" href="#">Blog</a></li>
             </ul>
           </div>
           <div class="flex-box flex-box--direction-column">
             <h3 class="footer__h3">Customer Services</h3>
             <ul class="footer__ul">
-              <li>Search Terms</li>
-              <li>Advanced Search</li>
-              <li>Orders and Returns</li>
-              <li>Contact us</li>
-              <li>RSS</li>
-              <li>Help & FAQs</li>
-              <li>Consultant</li>
-              <li>Store Locations</li>
+              <li class="footer__li"><a class="link" href="#">Search Terms</a></li>
+              <li class="footer__li"><a class="link" href="#">Advanced Search</a></li>
+              <li class="footer__li"><a class="link" href="#">Orders and Returns</a></li>
+              <li class="footer__li"><a class="link" href="#">Contact us</a></li>
+              <li class="footer__li"><a class="link" href="#">RSS</a></li>
+              <li class="footer__li"><a class="link" href="#">Help & FAQs</a></li>
+              <li class="footer__li"><a class="link" href="#">Consultant</a></li>
+              <li class="footer__li"><a class="link" href="#">Store Locations</a></li>
             </ul>
           </div>
           <div class="flex-box flex-box--direction-column">
             <h3 class="footer__h3">Stay Connected</h3>
             <ul class="footer__ul footer__ul--social-media">
-              <a href=""><img src="/images/G+.png" alt="Google Plus"></a>
-              <a href=""><img src="/images/facebook.png" alt="Pinterest"></a>
-              <a href=""><img src="/images/twitter.png" alt="V"></a>
-              <a href=""><img src="/images/facebook.png" alt="Facebook"></a>
-              <a href=""><img src="/images/twitter.png" alt="Twitter"></a>
-              <a href=""><img src="/images/G+.png" alt="Radar"></a>
+              <a class="link" href="#">
+                <img class= "footer__background-img" src="/images/circle.png">
+                <img class="footer__img" src="/images/G+.png" alt="Google Plus">
+              </a>
+              <a class="link" href="#">
+                <img class= "footer__background-img" src="/images/circle.png">
+                <img class="footer__img" src="/images/vimeo.png" alt="Vimeo">
+              </a>
+              <a class="link" href="#">
+                <img class= "footer__background-img" src="/images/circle.png">
+                <img class="footer__img" src="/images/facebook.png" alt="Facebook">
+              </a>
+              <a class="link" href="#">
+                <img class= "footer__background-img" src="/images/circle.png">
+                <img class="footer__img" src="/images/twitter.png" alt="Twitter">
+              </a>
+              <a class="link" href="#">
+                <img class= "footer__background-img" src="/images/circle.png">
+                <img class="footer__img" src="/images/instagram.png" alt="Instagram">
+              </a>
             </ul>
             <h3 class="footer__h3 footer__h3--no-margin">Newsletter Sign Up</h3>
             <input class="footer__form"></input>
-            <div class="btn--shop-now btn--width-50">Shop Now</div>
+            <div class="btn footer__btn btn--shop-now btn--width-50">Shop Now</div>
           </div>
         </div>
         <div class="bottom-footer">

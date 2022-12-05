@@ -5,7 +5,6 @@
     margin: 0 5px;
     padding: 5px 0;
     margin-bottom: 15px;
-    padding-bottom: 0 15px;
 }
 
 .clock__digit {
@@ -37,6 +36,9 @@
 }
 
 @media (max-width: 640px) {
+    .clock {
+        min-width: 55px;
+    }
     .clock__digit {
         font-size: 28px;
     }

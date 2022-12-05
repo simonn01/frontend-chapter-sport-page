@@ -7,6 +7,14 @@
     list-style-type: none;
 }
 
+@media (width < 1200px) {
+    .black-banner {
+        background: url('/images/runner.jpg') right -10px/62% no-repeat #0f0f19;
+    }
+    .black-banner__tile {
+        min-height: 100px;
+    }
+}
 @media (width < 600px) {
     .black-banner {
         display: none;

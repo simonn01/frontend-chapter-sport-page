@@ -45,7 +45,7 @@
     font-weight: 700;
 }
 
-@media (width < 1200px) {
+@media (max-width: 1200px) {
     .offer__left {
         width: 100%;
     }
@@ -54,12 +54,15 @@
     }
 }
 
-@media (width < 600px) {
+@media (max-width: 600px) {
     .offer {
         background: none;
     }
     .offer__title {
         font-size: 26px;
+    }
+    .offer__subtitle {
+        padding-top: 45px;
     }
     .offer__lorem {
         font-size: 12px;

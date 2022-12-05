@@ -8,7 +8,13 @@
     font-size: 15px;
 }
 
-@media (width < 600px) {
+@media (max-width: 1200px) {
+    .t-and-c {
+        font-size: 1.2vw;
+    }
+}
+
+@media (max-width: 600px) {
     .t-and-c {
         font-size: 10px;
         text-align: center;

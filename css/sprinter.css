@@ -40,6 +40,9 @@
 }
 
 @media (max-width: 1200px) {
+    .sprinter {
+        background: url('/images/sprinter.jpg') center bottom 20%/116% no-repeat #0d2e57;
+    }
     .sprinter__column {
         margin: 0 0 0 10%;
     }
@@ -51,19 +54,21 @@
         padding: 0;
         margin: 5% 0 15% 0;
     }
+    .sprinter__btn {
+        height: 1.5em;
+        font-size: 1.6vw;
+        width: 50%;
+    }
 }
 
 @media (max-width: 600px) {
     .sprinter {
-        background: url(/images/sprinter.jpg) center 80%/116% #0d2e57;
+        background: url('/images/sprinter.jpg') center 80%/116% #0d2e57;
     }
     .sprinter__column {
         margin: 0 0 5% 10%;
     }
     .sprinter__btn {
-        height: 1.5em;
         margin-bottom: 5%;
-        font-size: 1.6vw;
-        width: 50%;
     }
 }
