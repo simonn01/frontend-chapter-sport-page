@@ -17,6 +17,16 @@
     border: 1px #c7c7c7 solid;
 }
 
+.tile--free-shipping {
+    justify-content: flex-start;
+    align-items: center;
+    height: 0;
+    padding: 5% 0 calc(100%/4) 0;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+}
+
 .tile__h1 {
     line-height: 90%;
     margin-left: 30px;
@@ -84,6 +94,12 @@
     padding: 2em 0 1em 0;
 }
 
+.tile__img--free-shipping {
+    padding: 0;
+    height: 51px;
+    width: 50px;
+}
+
 .tile__img--sunglasses {
     width: 80%;
     align-self: center;
@@ -137,9 +153,23 @@
     margin: 0;
 }
 
-@media (width < 1000px) {
+@media (max-width: 1200px) {
+    .tile--free-shipping {
+        width: 49.7%;
+        margin: 1px 0.5px;
+        padding-bottom: calc(100%/3.5);
+        height: 185px;
+        padding: 3% 0 0 0;
+    }
     .tile__container {
         flex-wrap: wrap;
+    }
+    .tile__img--free-shipping {
+        position: absolute;
+        align-self: flex-start;
+        padding-left: 2em;
+        height: 2.5em;
+        width: unset;
     }
     .a--tile {
         width: 49.9%;
@@ -148,14 +178,31 @@
     }
 }
 
-@media (width < 600px) {
+@media (max-width: 600px) {
     .tile {
         background: none;
+    }
+    .tile--free-shipping {
+        width: 99%;
+        margin: 1.5px 0;
+        height: 125px;
+        border-width: 1.5px 0;
+        border-style: solid;
+        border-color: #8a8a8a;
+    }
+    .tile--first {
+        border-top: none;
+    }
+    .tile--last {
+        border-bottom: none;
     }
     .tile__container {
         background: none;
     }
     .tile__content--grey {
         color: #DDD;
+    }
+    .tile__img--free-shipping{
+        display: none;
     }
 }

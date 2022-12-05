@@ -1,25 +1,4 @@
-.free-shipping__container {
-    display: flex;
-    justify-content: space-around;
-    font: #1111;
-    padding: 0;
-    background-color: #c7c7c7;
-    margin: 0;
-}
-
-
-.free-shipping__tile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0 0.5px;
-    background-color: #FFF;
-    height: 0;
-    padding-bottom: calc(100%/4);
-    text-align: center;
-}
-
-.free-shipping {
+.tile--free-shipping {
     padding: 0.8em 0;
     font-family: 'Montserrat', sans-serif;
     font-size: 13px;
@@ -47,24 +26,7 @@
 }
 
 /* Tablet Design */
-@media (600px < width < 1200px) {
-    .free-shipping__container {
-        flex-wrap: wrap;
-    }
-    .free-shipping__tile {
-        width: 49.7%;
-        margin: 1px 0.5px;
-        padding-bottom: calc(100%/3.5);
-        height: 200px;
-        padding: 0;
-    }
-    .free-shipping__img {
-        position: absolute;
-        align-self: flex-start;
-        padding: 1em;
-        height: 2em;
-        width: 2em;
-    }
+@media (max-width: 1200px) {
     .free-shipping--anchor {
         padding: 1em;
     }
@@ -75,22 +37,12 @@
 }
 
 /* Mobile Design */
-@media (width < 600px) {
-    .free-shipping__container {
-        flex-wrap: wrap;
-        background: none;
-    }
-    .free-shipping__tile {
-        width: 99%;
-        padding-bottom: 50%;
-        margin: 1px 0.5px;
-        background: none;
-    }
-    .free-shipping__img {
-        display: none;
+@media (max-width: 600px) {
+    .free-shipping--lorem {
+        font-size: 2vw;
     }
     .free-shipping--span {
-        font-size: 15px;
+        font-size: 5vw;
         padding-bottom: 0;
     }
 }
