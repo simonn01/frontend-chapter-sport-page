@@ -1,0 +1,136 @@
+.header {
+    background-color: #21212175;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    max-height: 64px;
+    border-bottom: 1px solid #4c5b64;
+    text-transform: uppercase;
+    width: 100vw;
+}
+
+.header__port-pro-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #4c5b64;
+    border-right: 1px solid #4c5b64;
+    padding: 0 1em;
+}
+
+.header__port-pro-link {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 33px;
+    padding: 0 10px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.header__anchor {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #FFF;
+}
+
+.header__social-media {
+    display: flex;
+    border-left: 1px solid #4c5b64;
+    flex-shrink: 2;
+    flex-basis: 24em;
+    justify-content: flex-end;
+}
+
+.header__social-anchor {
+    padding: 0 10px;
+}
+
+.header__ecom-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #4c5b64;
+    padding-left: 0.55vw;
+    flex-grow: 0;
+}
+
+.header__ecom-tools--padding-right{
+    padding-right: 0.5em;
+}
+
+@media (max-width: 1200px) {
+    .header {
+        max-height: 35px;
+    }
+    .header__anchor {
+        font-size: 1.25vw;
+    }
+    .header__hamburger {
+        width: 2vw;
+    }
+    /* .header__menu {
+        flex-shrink: 2;
+    } */
+    .header__media-images {
+        margin: 0.85vw 0;
+    }
+    .header__img {
+        width: 1.5vw;
+    }
+    .header__img--fb {
+        width: 0.75vw; 
+    }
+    .header__port-pro-link {
+    font-weight: 800;
+    font-size: 2vw;
+    padding: 0;
+    }
+    .header__social-media {
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        max-height: 23px;
+    }
+    .header__anchor {
+        font-size: 1vw;
+        padding: 1vw;;
+    }
+    .header__hamburger {
+        width: 2vw;
+    }
+    .header__media-images {
+        margin: 0.85vw 0;
+    }
+    .header__img {
+        margin: 0 -1vw;
+    }
+    .header__img--ecom {
+        padding-bottom: 0.75vw;
+    }
+    .header__img--media {
+        padding-bottom: 1vw;
+    }
+    .header__img--fb {
+        width: 0.75vw; 
+    }
+    .header__port-pro-link {
+    font-weight: 800;
+    font-size: 2vw;
+    padding: 0;
+    }
+    .header__social-media {
+        margin: 0;
+    }
+    .header__menu {
+        align-items: flex-end;
+    }
+}

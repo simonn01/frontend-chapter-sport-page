@@ -1,0 +1,48 @@
+.clock {
+    flex-direction: column;
+    background-color: #FFF;
+    border-radius: 20%;
+    margin: 0 5px;
+    padding: 5px 0;
+    margin-bottom: 15px;
+}
+
+.clock__digit {
+    color: #2d2b27;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-weight: 600;
+    font-size: 38px;
+}
+
+.clock__dots {
+    color: #2d2b27;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    margin-top: -18px;
+}
+
+.clock__unit {
+    color: #2d2b27;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    font-weight: 600;
+    font-size: 11px;
+    text-transform: uppercase;
+    margin-top: -12px;
+}
+
+@media (max-width: 640px) {
+    .clock {
+        min-width: 55px;
+    }
+    .clock__digit {
+        font-size: 28px;
+    }
+    .clock__unit {
+        font-size: 8px;
+    }
+}

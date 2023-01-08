@@ -1,0 +1,12 @@
+.main-container {
+    background-color: #FFF;
+    padding: 0 100px;
+    z-index:0;
+}
+
+@media (600px > width) {
+    .main-container {
+        padding: 0 50px;
+        background: linear-gradient(white, transparent), url("/images/background.jpg") bottom repeat #FFF;
+    }
+}
