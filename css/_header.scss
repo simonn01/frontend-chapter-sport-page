@@ -1,0 +1,137 @@
+.header {
+  max-height: 23px;
+  background-color: red;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  border-bottom: 1px solid #4c5b64;
+  text-transform: uppercase;
+  width: 100vw;
+  // @include media-breakpoint-up(sm) {
+  @media (min-width: 601px) {
+    max-height: 35px;
+    background-color: red;
+  }
+  @media (min-width: 901px) {
+    max-height: 64px;
+  }
+
+  &__port-pro-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 1px solid #4c5b64;
+      border-right: 1px solid #4c5b64;
+      padding: 0 1em;
+  }
+  
+  &__port-pro-link {
+    font-weight: 800;
+    font-size: 2vw;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #FFF;
+    @media (min-width: 901px) {
+      font-weight: 900;
+      padding: 0 10px;
+      font-size: 33px;
+    }
+  }
+  
+  &__anchor {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0 10px;
+    color: #FFF;
+    @media (min-width: 601px) {
+      font-size: 1vw;
+      padding: 1vw;
+    }
+    @media (min-width: 901px) {
+      font-size: 13px;
+    }
+  }
+  
+  &__hamburger {
+    width: 2vw;
+  }
+
+  &__media-images {
+    margin: 0.85vw 0;
+    @media (min-width: 901px) {
+      margin: 0.85vw 0;
+    }
+  }
+  
+  &__img {
+    margin: 0 -1vw;
+    @media (min-width: 601px) {
+      width: 1.5vw;
+    }
+    @media (min-width: 901px) {
+      margin: unset;
+      width: unset;
+    }
+
+    &--ecom {
+      padding-bottom: 0.75vw;
+      @media (min-width: 601px) {
+        padding-bottom: unset;
+      }
+    }
+
+    &--fb {
+      width: 0.75vw; 
+      @media (min-width: 901px) {
+        width: unset;
+      }
+    }
+
+    &--media {
+      padding-bottom: 1vw;
+      @media (min-width: 601px) {
+        padding-bottom: unset;
+      }
+    }
+  }
+  &__social-media {
+    margin: 0;
+    display: flex;
+    border-left: 1px solid #4c5b64;
+    flex-shrink: 2;
+    flex-basis: 24em;
+    justify-content: flex-end;
+    @media (min-width: 601px) {
+      margin: unset;
+    }
+  }
+  
+  &__menu {
+    align-items: flex-end;
+    @media (min-width: 601px) {
+      align-items: flex-start;
+    }
+  }
+
+  &__social-anchor {
+      padding: 0 10px;
+  }
+  
+  &__ecom-tools {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid #4c5b64;
+    padding-left: 0.55vw;
+    flex-grow: 0;
+
+    &--padding-right{
+      padding-right: 0.5em;
+    }
+  }
+}
