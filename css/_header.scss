@@ -1,6 +1,6 @@
 .header {
   max-height: 23px;
-  background-color: red;
+  background-color: #21212175;
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -9,16 +9,15 @@
   border-bottom: 1px solid #4c5b64;
   text-transform: uppercase;
   width: 100vw;
-  // @include media-breakpoint-up(sm) {
-  @media (min-width: 601px) {
+  @include media-breakpoint-up(sm) {
     max-height: 35px;
-    background-color: red;
   }
-  @media (min-width: 901px) {
+  @include media-breakpoint-up(lg) {
     max-height: 64px;
   }
 
   &__port-pro-container {
+      background-color: yellow;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -105,6 +104,7 @@
     flex-shrink: 2;
     flex-basis: 24em;
     justify-content: flex-end;
+    background-color: red;
     @media (min-width: 601px) {
       margin: unset;
     }
@@ -112,6 +112,7 @@
   
   &__menu {
     align-items: flex-end;
+    background-color: green;
     @media (min-width: 601px) {
       align-items: flex-start;
     }

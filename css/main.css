@@ -406,7 +406,7 @@
 }
 .header {
   max-height: 23px;
-  background-color: red;
+  background-color: rgba(33, 33, 33, 0.4588235294);
   display: flex;
   justify-content: space-between;
   position: fixed;
@@ -416,18 +416,18 @@
   text-transform: uppercase;
   width: 100vw;
 }
-@media (min-width: 601px) {
+@media (min-width: 576px) {
   .header {
     max-height: 35px;
-    background-color: red;
   }
 }
-@media (min-width: 901px) {
+@media (min-width: 992px) {
   .header {
     max-height: 64px;
   }
 }
 .header__port-pro-container {
+  background-color: yellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -524,6 +524,7 @@
   flex-shrink: 2;
   flex-basis: 24em;
   justify-content: flex-end;
+  background-color: red;
 }
 @media (min-width: 601px) {
   .header__social-media {
@@ -532,6 +533,7 @@
 }
 .header__menu {
   align-items: flex-end;
+  background-color: green;
 }
 @media (min-width: 601px) {
   .header__menu {

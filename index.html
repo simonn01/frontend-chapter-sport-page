@@ -14,17 +14,13 @@
 </head>
 
   <body>
-    <header class="header">
-      <nav class="flex-box">
-        <div class="flex-box flex-box--direction-column flex-box--justify-center">
-          <a class="header__social-anchor" href="#">
-            <img class="header__hamburger" src="/images/hamburger.png" alt="Main Menu">
-          </a>
-        </div>
-        <div class="header__port-pro-container">
-          <a class="header__port-pro-link" href="#">PortPro</a>
-        </div>
-        <ul class="header__menu ul ul--no-padding flex-box flex-box--align-center">
+    <header class="container-fluid">
+      <div class="col-1">
+        <img class="header__hamburger" src="/images/hamburger.png" alt="Main Menu">
+      </div>
+      <div class="col-2">PortPro</div>
+      <nav class="col-3">
+        <ul>
           <li><a class="header__anchor" href="#">Men</a></li>
           <li><a class="header__anchor" href="#">Women</a></li>
           <li><a class="header__anchor" href="#">Kids</a></li>
@@ -33,25 +29,67 @@
           <li><a class="header__anchor" href="#">Customize</a></li>
         </ul>
       </nav>
- 
-      <div class="header__social-media">
-        <div>
-          <ul class="header__media-images ul ul--no-padding flex-box flex-box--align-center">
-            <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media header__img--fb" src="/images/facebook.png" alt="Facebook"></a></li>
-            <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/twitter.png" alt="Twitter"></a></li>
-            <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/G+.png" alt="Google"></a></li>
-            <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/instagram.png" alt="Instagram"></a></li>
-          </ul>
-        </div>
+      <div class="col-4 header__social-media">
+        <ul>
+          <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media header__img--fb" src="/images/facebook.png" alt="Facebook"></a></li>
+          <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/twitter.png" alt="Twitter"></a></li>
+          <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/G+.png" alt="Google"></a></li>
+        </ul>
       </div>
-
-      <div class="header__ecom-tools">
-          <a class="header__social-anchor" href="#"><img class="header__img header__img--ecom" src="/images/basket.png" alt="Basket"></a>
+      <div class="col-1">
+        <a href="#">
+          <img src="/images/basket.png" alt="Basket">
+        </a>
       </div>
-      <div class="header__ecom-tools header__ecom-tools--padding-right">
-          <a class= "header__social-anchor" href="#"><img class="header__img header__img--ecom" src="/images/search.png" alt="Search"></a>
+      <div class="col-1">
+        <a class= "header__social-anchor" href="#">
+          <img src="/images/search.png" alt="Search">
+          </a>
       </div>
     </header>
+    <!-- <header class="header row">
+       <nav class="col-6 flex-box">
+         <div class="flex-box flex-box--direction-column flex-box--justify-center">
+           <a class="header__social-anchor" href="#">
+             <img class="header__hamburger" src="/images/hamburger.png" alt="Main Menu">
+           </a>
+         </div>
+         <div class="header__port-pro-container">
+           <a class="header__port-pro-link" href="#">PortPro</a>
+         </div>
+         <ul class="header__menu ul ul--no-padding flex-box flex-box--align-center">
+           <li><a class="header__anchor" href="#">Men</a></li>
+           <li><a class="header__anchor" href="#">Women</a></li>
+           <li><a class="header__anchor" href="#">Kids</a></li>
+           <li><a class="header__anchor" href="#">Sports</a></li>
+           <li><a class="header__anchor" href="#">Brands</a></li>
+           <li><a class="header__anchor" href="#">Customize</a></li>
+         </ul>
+       </nav>
+ 
+       <div class="col-4 header__social-media">
+         <div>
+           <ul class="header__media-images ul ul--no-padding flex-box flex-box--align-center">
+             <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media header__img--fb" src="/images/facebook.png" alt="Facebook"></a></li>
+             <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/twitter.png" alt="Twitter"></a></li>
+             <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/G+.png" alt="Google"></a></li>
+             <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/instagram.png" alt="Instagram"></a></li>
+           </ul>
+         </div>
+       </div>
+
+       <div class="col1 header__ecom-tools">
+           <a class="header__social-anchor" href="#">
+             <img class="header__img header__img--ecom" src="/images/basket.png" alt="Basket">
+           </a>
+       </div>
+       <div class="col-1 header__ecom-tools header__ecom-tools--padding-right">
+           <a class= "header__social-anchor" href="#">
+             <img class="header__img header__img--ecom" src="/images/search.png" alt="Search">
+           </a>
+       </div>
+      </div>
+    </header> -->
 
     <div class="sprinter">
       <div class="sprinter__column">
@@ -324,6 +362,5 @@
       </div>
     </div>
     <div class="footer-background">
-    </div>
   </body>
 </html>
