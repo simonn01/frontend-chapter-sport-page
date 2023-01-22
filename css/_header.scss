@@ -17,35 +17,35 @@
   }
 
   &__port-pro-container {
-      background-color: yellow;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      border-left: 1px solid #4c5b64;
-      border-right: 1px solid #4c5b64;
-      padding: 0 1em;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #4c5b64;
+    border-right: 1px solid #4c5b64;
+    padding: 0 1em;
   }
-  
+
   &__port-pro-link {
     font-weight: 800;
     font-size: 2vw;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: #FFF;
+    color: #fff;
     @media (min-width: 901px) {
       font-weight: 900;
       padding: 0 10px;
       font-size: 33px;
     }
   }
-  
+
   &__anchor {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-decoration: none;
     padding: 0 10px;
-    color: #FFF;
+    color: #fff;
     @media (min-width: 601px) {
       font-size: 1vw;
       padding: 1vw;
@@ -54,7 +54,7 @@
       font-size: 13px;
     }
   }
-  
+
   &__hamburger {
     width: 2vw;
   }
@@ -65,7 +65,7 @@
       margin: 0.85vw 0;
     }
   }
-  
+
   &__img {
     margin: 0 -1vw;
     @media (min-width: 601px) {
@@ -84,7 +84,7 @@
     }
 
     &--fb {
-      width: 0.75vw; 
+      width: 0.75vw;
       @media (min-width: 901px) {
         width: unset;
       }
@@ -109,7 +109,7 @@
       margin: unset;
     }
   }
-  
+
   &__menu {
     align-items: flex-end;
     background-color: green;
@@ -119,9 +119,9 @@
   }
 
   &__social-anchor {
-      padding: 0 10px;
+    padding: 0 10px;
   }
-  
+
   &__ecom-tools {
     display: flex;
     flex-direction: column;
@@ -131,7 +131,7 @@
     padding-left: 0.55vw;
     flex-grow: 0;
 
-    &--padding-right{
+    &--padding-right {
       padding-right: 0.5em;
     }
   }

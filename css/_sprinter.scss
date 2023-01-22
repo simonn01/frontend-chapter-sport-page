@@ -1,74 +1,74 @@
 .sprinter {
-    display: flex;
+  background: url('/images/sprinter.jpg') center bottom 20%/116% no-repeat #0d2e57;
+  display: flex;
+  color: white;
+  text-transform: uppercase;
+  line-height: 0.75;
+  @include media-breakpoint-up(sm) {
+    background: url('/images/sprinter.jpg') center 80%/116% #0d2e57;
+  }
+  @include media-breakpoint-up(xl) {
     background: url('/images/sprinter.jpg') center bottom 0px/116% no-repeat #0d2e57;
-    color: white;
-    text-transform: uppercase;
-    line-height: 0.75;
-}
+  }
 
-.sprinter__column{
+  &__column {
+    margin: 0 0 5% 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 10% 0 10% 10%;
-}
+    @include media-breakpoint-up(sm) {
+      margin: 0 0 0 10%;
+    }
+    @include media-breakpoint-up(sm) {
+      margin: 10% 0 10% 10%;
+    }
+  }
 
-.sprinter__heading {
+  &__heading {
+    &__heading {
+      margin-top: 28%;
+    }
     font-size: 10vw;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     text-align: center;
-}
+    @include media-breakpoint-up(xl) {
+      margin-top: unset;
+    }
+  }
 
-.sprinter__body {
+  &__body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     text-align: center;
     letter-spacing: 0.7em;
     padding: 1em 0 2em 0.6em;
     font-size: 0.8vw;
-}
+  }
 
-.sprinter__btn {
-    font-size: 17px;
+  &__btn {
+    margin-bottom: 5%;
     text-decoration: none;
-}
+    @include media-breakpoint-up(sm) {
+      height: 1.5em;
+      font-size: 1.6vw;
+      width: 50%;
+      margin-bottom: unset;
+    }
+    @include media-breakpoint-up(xl) {
+      height: unset;
+      font-size: 17px;
+    }
+  }
 
-.sprinter__anchor {
+  &__anchor {
     width: 30%;
     text-decoration: none;
-}
+  }
 
-@media (max-width: 1200px) {
-    .sprinter {
-        background: url('/images/sprinter.jpg') center bottom 20%/116% no-repeat #0d2e57;
-    }
-    .sprinter__column {
-        margin: 0 0 0 10%;
-    }
-    .sprinter__heading {
-        margin-top: 28%;
-    }
-    .sprinter__body {
-        font-size: 0.8vw;
-        padding: 0;
-        margin: 5% 0 15% 0;
-    }
-    .sprinter__btn {
-        height: 1.5em;
-        font-size: 1.6vw;
-        width: 50%;
-    }
-}
-
-@media (max-width: 600px) {
-    .sprinter {
-        background: url('/images/sprinter.jpg') center 80%/116% #0d2e57;
-    }
-    .sprinter__column {
-        margin: 0 0 5% 10%;
-    }
-    .sprinter__btn {
-        margin-bottom: 5%;
-    }
+  &__body {
+    font-size: 0.8vw;
+    padding: 0;
+    margin: 5% 0 15% 0;
+  }
 }

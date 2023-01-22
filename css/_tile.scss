@@ -1,58 +1,39 @@
 .tile {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 0 0.5px;
-    background-color: #FFF;
+  background: none;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.5px solid #c7c7c7;
+  border-top: none;
+  position: relative;
+  @include media-breakpoint-up(sm) {
+    background-color: #fff;
+    padding-bottom: 20px;
+    justify-content: flex-end;
+  }
+  @include media-breakpoint-up(xl) {
     padding-bottom: 30px;
-    position: relative;
-}
+  }
 
-.tile--transparent {
+  &--transparent {
     background-color: transparent;
-}
+  }
 
-.tile--sunglasses {
+  &--sunglasses {
     border: 1px #c7c7c7 solid;
-}
+  }
 
-.tile__h1 {
-    line-height: 90%;
-    margin-left: 18px;
-    font-style: italic;
-    padding-top: 50px;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.7em;
-    text-transform: uppercase;
-}
-
-.tile__h2 {
-    line-height: 90%;
-    margin: 50px 30px 0 30px;
-    font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.1em;
-}
-
-.tile__h3 {
-    margin: 20px 0 30px 24px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    letter-spacing: 0.45em;
-    text-transform: uppercase;
-}
-
-
-.tile--clickable:hover::before {
+  &--clickable:hover::before {
     content: '';
     background-color: #8a8a8a60;
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
-}
+  }
 
-.tile--clickable:hover::after {
+  &--clickable:hover::after {
     content: 'Shop Now';
     background-color: #3954d9;
     position: absolute;
@@ -69,115 +50,135 @@
     border-radius: 30px;
     height: 2em;
     font-size: 13px;
-    color: #FFF;
+    color: #fff;
     padding: 0.3em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-}
+  }
 
-.tile__img {
+  &--first{
+    border-left: none;
+  }
+
+  &--last{
+    border-right: none;
+  }
+
+  &__h2 {
+    line-height: 90%;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0.5em 10px 0 10px;
+    font-size: 2.5vw;
+    @include media-breakpoint-up(lg) {
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 2.1em;
+      margin: 50px 30px 0 30px;
+    }
+  }
+
+  &__h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0 20px 20px;
+    font-size: 0.5em;
+    font-weight: 300;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    @include media-breakpoint-up(xl) {
+      margin: 20px 0 30px 24px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  &__img {
     height: 100%;
     width: 100%;
     padding: 2em 0 1em 0;
-}
+    &--sunglasses {
+      padding: 0;
+      width: 80%;
+      align-self: center;
+      @include media-breakpoint-up(xl) {
+        padding: 3em 0 3em 0;
+      }
+    }
+  }
 
-.tile__img--sunglasses {
-    width: 80%;
-    align-self: center;
-    padding: 3em 0 3em 0;
-}
-
-.tile__title {
+  &__title {
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: 700;
-    font-size: 25px;
+    font-size: 20px;
+    font-weight: 600;
     color: #0d2e57;
     text-transform: uppercase;
     letter-spacing: -0.05em;
-}
+    @include media-breakpoint-up(sm) {
+    font-size: 12px;
+    }
+    @include media-breakpoint-up(md) {
+    font-size: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-weight: 700;
+      font-size: 25px;
+    }
+    &--padding-left-39 {
+      padding-left: 39px;
+    }
+  }
 
-.tile__title--padding-left-39 {
-    padding-left: 39px;
-}
+  &__anchor {
+    width: 30%;
+  }
 
-.tile__content-container {
-    padding-left: 39px;
-}
+  &__content-container {
+    padding: 0;
+    text-align: center;
+    @include media-breakpoint-up(sm) {
+      padding: 0 10px;
+      text-align: center;
+      min-height: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    @include media-breakpoint-up(xl) {
+      text-align: unset;
+      min-height: unset;
+      display: unset;
+      padding-left: 39px;
+    }
+  }
 
-.tile__content {
+  &__content {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
-}
+    text-decoration: none;
+  }
 
-.tile__content--blue {
+  &__content--blue {
     color: #3954d9;
     font-size: 13px;
-}
+    @include media-breakpoint-up(sm) {
+    font-size: 10px;
+    }
+    @include media-breakpoint-up(md) {
+    font-size: 13px;
+    }
+  }
 
-.tile__content--grey {
-    color: #818181;
+  &__content--grey {
+    color: #ddd;
     font-size: 12px;
     text-decoration: line-through;
-}
-
-.tile__anchor {
-    width: 30%;
-}
-
-@media (max-width: 1200px) {
-    .tile {
-        min-height: 203px;
-        padding-bottom: 20px;
-        justify-content: flex-end;
+    @include media-breakpoint-up(sm) {
+        font-size: 9px;
+      color: #818181;
     }
-    .tile--black-banner {
-        min-height: 26vw;
-        max-height: 287px !important;
+    @include media-breakpoint-up(md) {
+        font-size: 12px;
     }
-    .tile__content-container {
-        padding: 0 10px;
-        text-align: center;
-        min-height: 70px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-    }
-    .tile__h1 {
-        margin-left: 0.3em;
-        padding-top: 25px;
-        font-size: 3.4vw;
-    }
-    .tile__h2 {
-        margin: 0.5em 10px 0 10px;
-        font-size: 2.5vw;
-    }
-    .tile__h3 {
-        margin: 10px 0 20px 20px;
-        font-size: 0.5em;
-        font-weight: 300;
-        letter-spacing: 0.45em;
-    }
-    .tile__img--sunglasses {
-        padding: 0;
-    }
-    .tile__title{
-        font-size: 20px;
-        font-weight: 600;
-    }
-}
-
-@media (max-width: 600px) {
-    .tile {
-        background: none;
-        padding-bottom: 10px;
-    }
-    .tile__content--grey {
-        color: #DDD;
-    }
-    .tile__content-container {
-        padding: 0;
-        text-align: center;
-    }
+  }
 }

@@ -14,42 +14,42 @@
 </head>
 
   <body>
-    <header class="container-fluid">
-      <div class="col-1">
-        <img class="header__hamburger" src="/images/hamburger.png" alt="Main Menu">
-      </div>
-      <div class="col-2">PortPro</div>
-      <nav class="col-3">
-        <ul>
-          <li><a class="header__anchor" href="#">Men</a></li>
-          <li><a class="header__anchor" href="#">Women</a></li>
-          <li><a class="header__anchor" href="#">Kids</a></li>
-          <li><a class="header__anchor" href="#">Sports</a></li>
-          <li><a class="header__anchor" href="#">Brands</a></li>
-          <li><a class="header__anchor" href="#">Customize</a></li>
-        </ul>
-      </nav>
-      <div class="col-4 header__social-media">
-        <ul>
-          <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media header__img--fb" src="/images/facebook.png" alt="Facebook"></a></li>
-          <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/twitter.png" alt="Twitter"></a></li>
-          <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/G+.png" alt="Google"></a></li>
-        </ul>
-      </div>
-      <div class="col-1">
-        <a href="#">
-          <img src="/images/basket.png" alt="Basket">
-        </a>
-      </div>
-      <div class="col-1">
-        <a class= "header__social-anchor" href="#">
-          <img src="/images/search.png" alt="Search">
-          </a>
-      </div>
-    </header>
+    <!--  <header class="container-fluid"> -->
+       <!-- <div class="col-1"> -->
+         <!-- <img class="header__hamburger" src="/images/hamburger.png" alt="Main Menu"> -->
+       <!-- </div> -->
+       <!-- <div class="col-2">PortPro</div> -->
+       <!-- <nav class="col-3"> -->
+         <!-- <ul> -->
+           <!-- <li><a class="header__anchor" href="#">Men</a></li> -->
+           <!-- <li><a class="header__anchor" href="#">Women</a></li> -->
+           <!-- <li><a class="header__anchor" href="#">Kids</a></li> -->
+           <!-- <li><a class="header__anchor" href="#">Sports</a></li> -->
+           <!-- <li><a class="header__anchor" href="#">Brands</a></li> -->
+           <!-- <li><a class="header__anchor" href="#">Customize</a></li> -->
+         <!-- </ul> -->
+       <!-- </nav> -->
+       <!-- <div class="col-4 header__social-media"> -->
+         <!-- <ul> -->
+           <!-- <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media header__img--fb" src="/images/facebook.png" alt="Facebook"></a></li> -->
+           <!-- <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/twitter.png" alt="Twitter"></a></li> -->
+           <!-- <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/G+.png" alt="Google"></a></li> -->
+         <!-- </ul> -->
+       <!-- </div> -->
+       <!-- <div class="col-1"> -->
+         <!-- <a href="#"> -->
+           <!-- <img src="/images/basket.png" alt="Basket"> -->
+         <!-- </a> -->
+       <!-- </div> -->
+       <!-- <div class="col-1"> -->
+         <!-- <a class= "header__social-anchor" href="#"> -->
+           <!-- <img src="/images/search.png" alt="Search"> -->
+           <!-- </a> -->
+       <!-- </div> -->
+    <!--  </header> -->
     <!-- <header class="header row">
        <nav class="col-6 flex-box">
-         <div class="flex-box flex-box--direction-column flex-box--justify-center">
+         <div class="d-flex flex-box--direction-column flex-box--justify-center">
            <a class="header__social-anchor" href="#">
              <img class="header__hamburger" src="/images/hamburger.png" alt="Main Menu">
            </a>
@@ -57,7 +57,7 @@
          <div class="header__port-pro-container">
            <a class="header__port-pro-link" href="#">PortPro</a>
          </div>
-         <ul class="header__menu ul ul--no-padding flex-box flex-box--align-center">
+         <ul class="header__menu ul ul--no-padding d-flex flex-box--align-center">
            <li><a class="header__anchor" href="#">Men</a></li>
            <li><a class="header__anchor" href="#">Women</a></li>
            <li><a class="header__anchor" href="#">Kids</a></li>
@@ -69,7 +69,7 @@
  
        <div class="col-4 header__social-media">
          <div>
-           <ul class="header__media-images ul ul--no-padding flex-box flex-box--align-center">
+           <ul class="header__media-images ul ul--no-padding d-flex flex-box--align-center">
              <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media header__img--fb" src="/images/facebook.png" alt="Facebook"></a></li>
              <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/twitter.png" alt="Twitter"></a></li>
              <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/G+.png" alt="Google"></a></li>
@@ -91,7 +91,7 @@
       </div>
     </header> -->
 
-    <div class="sprinter">
+    <div class="sprinter container-fluid">
       <div class="sprinter__column">
         <h1 class="sprinter__heading">Nike<br>Shoes</h1>
         <div class="sprinter__body">Sign up now and get 50% off</div>
@@ -99,10 +99,10 @@
       </div>
     </div>
 
-    <div class="main-container">
-      <div class="main-body">
+    <div class="main-container container-fluid">
+      <div class="main-body container">
         
-        <ul class="tile-row">
+        <ul class="tile-row row row-cols-sm-2 row-cols-xl-4">
           <li class="free-shipping free-shipping--first">
             <img class="free-shipping__img" src="/images/aeroplane.png" alt=" ">
             <span class="free-shipping__span">Free Shipping</span>
@@ -116,7 +116,10 @@
           <li class="free-shipping">
             <img class="free-shipping__img" src="/images/clock.png" alt=" ">
             <span class="free-shipping__span">Free Shipping</span>
-            <div class="free-shipping__lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+            <div class="free-shipping__lorem">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+              ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
             <a class="a free-shipping__anchor" href="#">Click Here</a>
           </li>
 
@@ -135,44 +138,51 @@
           </li>
         </ul>
 
-        <div id="offer" class="offer">
-          <div class="offer__left">
+        <div id="offer" class="offer row">
+          <div class="offer__left col-12 col-xl-6">
             <div class="offer__subtitle">Offer of the Month</div>
             <div class="offer__title">Phantom Vision Elite Dynamic</div>
-            <div class="offer__lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia aperiam deleniti nesciunt illum deserunt iusto explicabo velit? Repellendus quae, in facilis ratione accusantium amet culpa consequatur, hic eum nemo iusto!</div>
+            <div class="offer__lorem">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
+              aperiam deleniti nesciunt illum deserunt iusto explicabo velit?
+              Repellendus quae, in facilis ratione accusantium amet culpa
+              consequatur, hic eum nemo iusto!
+            </div>
 
-            <div class="flex-box flex-box--align-baseline">
+            <div class="d-flex flex-box--align-baseline">
               <span class="price price--reduction">$500</span>
               <span class="price price--full">$1000</span>
             </div>
 
-            <div class="flex-box">
-              <div class="clock">
-                <div class="clock__digit">09</div>
-                <div class="clock__dots">....</div>
-                <div class="clock__unit">hours</div>
-              </div>
-              <div class="clock">
-                <div class="clock__digit">56</div>
-                <div class="clock__dots">....</div>
-                <div class="clock__unit">minutes</div>
-              </div>
-              <div class="clock">
-                <div class="clock__digit">11</div>
-                <div class="clock__dots">....</div>
-                <div class="clock__unit">seconds</div>
+            <div class="container-md">
+              <div class="d-flex row justify-content-center">
+                <div class="clock col-2">
+                  <div class="clock__digit">09</div>
+                  <div class="clock__dots">....</div>
+                  <div class="clock__unit">hours</div>
+                </div>
+                <div class="clock col-2">
+                  <div class="clock__digit">56</div>
+                  <div class="clock__dots">....</div>
+                  <div class="clock__unit">minutes</div>
+                </div>
+                <div class="clock col-2">
+                  <div class="clock__digit">11</div>
+                  <div class="clock__dots">....</div>
+                  <div class="clock__unit">seconds</div>
+                </div>
               </div>
             </div>
 
             <a class="link btn btn--shop-now btn--size-13" href="#offer">Shop Now</a>
           </div>
 
-          <div class="offer__right">
+          <div class="offer__right d-none d-xl-flex col-xl-6">
             <img class="offer__img" src="/images/basketballer.jpg" alt=" ">
           </div>
         </div>
 
-        <ul class="tile-row">
+        <ul class="tile-row row row-cols-2 row-cols-sm-4">
           <a class="link--tile" href="#">
             <li class="tile tile--clickable">
               <img class="tile__img" src="/images/stefanJanoskiMax.png" alt=" ">
@@ -223,15 +233,19 @@
           </a>
         </ul>
 
-        <ul class="ul black-banner">
-          <li class="tile--black-banner li--quarter-width tile tile--transparent">
+        <ul class="ul black-banner d-none d-md-flex row row-cols-4">
+          <li class="black-banner__tile tile tile--transparent">
             <h2 class="tile__h2">Men's Running Shoes</h2>
             <h3 class="tile__h3">Sign up now and get 50% off</h3>
-            <a href="#" class="btn btn--no-margin btn--shop-now btn--margin-left-30 link">Click Here</a>
+            <a href="#" 
+               class="btn btn--no-margin btn--shop-now btn--margin-left-30 link">
+               Click Here
+            </a>
           </li>
-          <a class="a li--quarter-width" href="#">
-            <li class="tile--black-banner tile tile--clickable tile--sunglasses">
-              <img class="tile__img tile__img--sunglasses sunglasses__img" src="/images/sunglasses.png" alt="sunglasses on sale">
+          <a class="a black-banner__anchor" href="#">
+            <li class="tile tile--clickable tile--sunglasses">
+              <img class="tile__img tile__img--sunglasses sunglasses__img"
+                   src="/images/sunglasses.png" alt="sunglasses on sale">
               <div class="tile__content-container">
                 <span class="tile__title">Free Shipping</span>
                 <div>
@@ -241,26 +255,36 @@
               </div>
             </li>
           </a>
-          <li class="tile--black-banner tile tile--transparent li--quarter-width">
-            <h1 class="tile__h1">Run, <br> eat, sleep and repeat</h1>
-            <div><a href="#" class="btn btn--shop-now btn--no-margin btn--cerulean black-banner__anchor btn--margin-left-30">Shop Now</a></div>
+          <li class="black-banner__tile tile tile--transparent">
+            <h1 class="black-banner__h1">Run, <br> eat, sleep and repeat</h1>
+            <div>
+              <a
+               href="#" 
+               class="btn btn--shop-now btn--no-margin btn--cerulean black-banner__anchor btn--margin-left-30">
+               Shop Now
+              </a>
+            </div>
           </li>
-          <li class="tile--black-banner li--quarter-width"></li>
+          <li class="black-banner__tile tile--first"></li>
         </ul>
-        <div class="flex-box flex-box--justify-center"><a class="btn btn--blue-click a" href="#">Click Here</a></div>
-        <div class="flex-box">
+
+        <div class="d-flex flex-box--justify-center">
+          <a class="btn btn--blue-click a" href="#">Click Here</a>
+        </div>
+
+        <div class="d-none d-sm-flex row row-cols-4 gx-0">
           <div class="photos photos--1"></div>
           <div class="photos photos--2"></div>
           <div class="photos photos--3"></div>
           <div class="photos photos--4"></div>
         </div>
-        <div class="flex-box">
+        <div class="d-none d-sm-flex row row-cols-4 gx-0">
           <div class="photos photos--5"></div>
           <div class="photos photos--6"></div>
           <div class="photos photos--7"></div>
           <div class="photos photos--8"></div>
         </div>
-        <div class="flex-box flex-box--background-white">
+        <div class="d-none d-sm-flex flex-box--background-white">
           <div class="logos"><img class="logos__img logos__img--la-coste" src="/images/laCoste.png" alt="Lacoste logo"></div>
           <div class="logos"><img class="logos__img logos__img--pks" src="/images/pks.png" alt="PKS logo"></div>
           <div class="logos"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
@@ -268,7 +292,7 @@
           <div class="logos"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
           <div class="logos"><img class="logos__img logos__img--la-coste" src="/images/laCoste.png" alt="Lacoste logo"></div>
         </div>
-        <div class="flex-box flex-box--background-white">
+        <div class="d-none d-xl-flex flex-box--background-white">
           <div class="logos logos--desktop"><img class="logos__img" src="/images/talbot.png" alt="Talbot logo"></div>
           <div class="logos logos--desktop"><img class="logos__img logos__img--la-coste" src="/images/laCoste.png" alt="Lacoste logo"></div>
           <div class="logos logos--desktop"><img class="logos__img logos__img--pks" src="/images/pks.png" alt="PKS logo"></div>
@@ -276,8 +300,9 @@
           <div class="logos logos--desktop"><img class="logos__img logos__img--la-coste" src="/images/laCoste.png" alt="Lacoste logo"></div>
           <div class="logos logos--desktop"><img class="logos__img logos__img--pks" src="/images/pks.png" alt="PKS logo"></div></div>
         </div>
-        <div class="footer">
-          <div class="flex-box flex-box--direction-column">
+
+        <div class="footer d-flex">
+          <div class="d-flex flex-box--direction-column">
             <h3 class="footer__h3">Shops</h3>
             <ul class="footer__ul">
               <li class="footer__li"><a class="link" href="#">New in</a></li>
@@ -290,7 +315,7 @@
               <li class="footer__li"><a class="link" href="#">Lookbook</a></li>
             </ul>
           </div>
-          <div class="flex-box flex-box--direction-column">
+          <div class="d-flex flex-box--direction-column">
             <h3 class="footer__h3">Information</h3>
             <ul class="footer__ul">
               <li class="footer__li"><a class="link" href="#">About us</a></li>
@@ -303,7 +328,7 @@
               <li class="footer__li"><a class="link" href="#">Blog</a></li>
             </ul>
           </div>
-          <div class="flex-box flex-box--direction-column">
+          <div class="d-flex flex-box--direction-column">
             <h3 class="footer__h3">Customer Services</h3>
             <ul class="footer__ul">
               <li class="footer__li"><a class="link" href="#">Search Terms</a></li>
@@ -316,7 +341,7 @@
               <li class="footer__li"><a class="link" href="#">Store Locations</a></li>
             </ul>
           </div>
-          <div class="flex-box flex-box--direction-column">
+          <div class="d-flex flex-box--direction-column">
             <h3 class="footer__h3">Stay Connected</h3>
             <ul class="footer__ul footer__ul--social-media">
               <a class="link" href="#">
@@ -350,7 +375,7 @@
             <div>© 2022 PSDFreebies.com | All Rights Reserved.</div>
             <div>Free PSD Themes & Templates by PSDFreebies.com.</div>
           </div>
-          <div class="flex-box flex-box--align-center payment-types">
+          <div class="d-flex flex-box--align-center payment-types">
             <img class="flex-box__img--grey-size-30" src="/images/mastercard.png" alt="Mastercard">
             <img class="flex-box__img--grey-size-30" src="/images/discover.webp" alt="Discover">
             <img class="flex-box__img--grey-size-30" src="/images/amex.webp" alt="AmEx">

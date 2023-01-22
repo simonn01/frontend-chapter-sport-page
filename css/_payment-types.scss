@@ -1,5 +1,6 @@
-@media (max-width: 600px) {
-    .payment-types {
-        justify-content: center;
-    }
+.payment-types {
+  justify-content: center;
+  @include media-breakpoint-up(sm) {
+    justify-content: unset;
+  }
 }

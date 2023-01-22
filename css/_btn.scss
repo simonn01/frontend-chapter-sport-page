@@ -1,8 +1,17 @@
 .btn {
+  width: 60px;
+  font-size: 1.25ex;
+  @include media-breakpoint-up(sm) {
+    width: 9vw;
+    font-size: 1vw;
+  }
+  @include media-breakpoint-up(xl) {
     width: 120px;
-}
+    font-size: unset;
+  }
 
-.btn--shop-now {
+  &--shop-now {
+    margin-bottom: 0;
     display: flex;
     background-color: #3954d9;
     border-radius: 30px;
@@ -12,60 +21,46 @@
     align-items: center;
     justify-content: center;
     padding: 0.3em;
-    margin-bottom: 60px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     text-align: center;
     text-transform: uppercase;
-}
+    @include media-breakpoint-up(sm) {
+      margin-bottom: 60px;
+    }
+  }
 
-.btn--width-50 {
+  &--width-50 {
     width: 50%;
-}
+  }
 
-.btn--blue-click {
+  &--blue-click {
     color: #3753da;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
     padding: 20px;
-}
+  }
 
-.btn--size13 {
+  &--size13 {
     font-size: 13px;
-}
+  }
 
-.btn--no-margin {
+  &--no-margin {
     margin: 0;
-}
+  }
 
-.btn--margin-left-30 {
-    margin-left: 30px;
-}
+  &--margin-left-30 {
+    margin-left: 1vw;
+    @include media-breakpoint-up(xl) {
+      margin-left: 30px;
+    }
+  }
 
-.btn--cerulean {
+  &--cerulean {
     background-color: #65cbff;
     color: #000;
     margin-top: 35px;
-}
-
-@media (max-width: 1200px) {
-    .btn {
-        width: 9vw;
-        font-size: 1vw;
-    }
-    .btn--margin-left-30 {
-        margin-left: 1vw;
-    }
-}
-
-@media (max-width: 600px) {
-    .btn {
-        width: 60px;
-        font-size: 1.25ex;
-    }
-    .btn--shop-now {
-        margin-bottom: 0;
-    }
+  }
 }

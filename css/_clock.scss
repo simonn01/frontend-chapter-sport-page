@@ -1,48 +1,44 @@
 .clock {
-    flex-direction: column;
-    background-color: #FFF;
-    border-radius: 20%;
-    margin: 0 5px;
-    padding: 5px 0;
-    margin-bottom: 15px;
-}
+  min-width: 55px;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20%;
+  margin: 0 5px;
+  padding: 5px 0;
+  margin-bottom: 15px;
+  font-size: 38px;
+  @include media-breakpoint-up(sm) {
+    min-width: none;
+  }
 
-.clock__digit {
+  &__digit {
     color: #2d2b27;
     font-family: 'Montserrat', sans-serif;
     padding: 8px;
     margin: 0;
     padding: 0;
-    font-weight: bold;
     font-weight: 600;
-    font-size: 38px;
-}
+    font-size: 1em;
+  }
 
-.clock__dots {
+  &__dots {
     color: #2d2b27;
     font-family: 'Montserrat', sans-serif;
     padding: 8px;
     margin-top: -18px;
-}
+    font-size: 0.5em;
+  }
 
-.clock__unit {
+  &__unit {
+    font-size: 8px;
     color: #2d2b27;
     font-family: 'Montserrat', sans-serif;
     padding: 8px;
     font-weight: 600;
-    font-size: 11px;
     text-transform: uppercase;
     margin-top: -12px;
-}
-
-@media (max-width: 640px) {
-    .clock {
-        min-width: 55px;
+    @include media-breakpoint-up(sm) {
+      font-size: 0.3em;
     }
-    .clock__digit {
-        font-size: 28px;
-    }
-    .clock__unit {
-        font-size: 8px;
-    }
+  }
 }

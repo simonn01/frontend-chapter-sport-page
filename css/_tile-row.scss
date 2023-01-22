@@ -1,21 +1,12 @@
 .tile-row {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around;
-    color: #1111;
-    padding: 0;
+  background: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  color: #1111;
+  padding: 0;
+  margin: 0;
+  @include media-breakpoint-up(sm) {
     background-color: #c7c7c7;
-    margin: 0;
-}
-
-@media (max-width: 1200px) {
-    .tile-row {
-        flex-wrap: wrap;
-    }
-}
-
-@media (max-width: 600px) {
-    .tile-row {
-        background: none;
-    }
+  }
 }
