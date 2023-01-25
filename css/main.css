@@ -453,7 +453,6 @@
   }
 }
 .header__port-pro-container {
-  background-color: yellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -550,36 +549,19 @@
   flex-shrink: 2;
   flex-basis: 24em;
   justify-content: flex-end;
-  background-color: red;
 }
-@media (min-width: 601px) {
+@media (min-width: 576px) {
   .header__social-media {
     margin: unset;
   }
 }
 .header__menu {
   align-items: flex-end;
-  background-color: green;
 }
-@media (min-width: 601px) {
+@media (min-width: 576px) {
   .header__menu {
     align-items: flex-start;
   }
-}
-.header__social-anchor {
-  padding: 0 10px;
-}
-.header__ecom-tools {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-left: 1px solid #4c5b64;
-  padding-left: 0.55vw;
-  flex-grow: 0;
-}
-.header__ecom-tools--padding-right {
-  padding-right: 0.5em;
 }
 
 .li--basket {

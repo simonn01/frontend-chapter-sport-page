@@ -17,7 +17,6 @@
   }
 
   &__port-pro-container {
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -104,35 +103,16 @@
     flex-shrink: 2;
     flex-basis: 24em;
     justify-content: flex-end;
-    background-color: red;
-    @media (min-width: 601px) {
+    @include media-breakpoint-up(sm) {
       margin: unset;
     }
   }
 
   &__menu {
     align-items: flex-end;
-    background-color: green;
-    @media (min-width: 601px) {
+    @include media-breakpoint-up(sm) {
       align-items: flex-start;
     }
   }
 
-  &__social-anchor {
-    padding: 0 10px;
-  }
-
-  &__ecom-tools {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-left: 1px solid #4c5b64;
-    padding-left: 0.55vw;
-    flex-grow: 0;
-
-    &--padding-right {
-      padding-right: 0.5em;
-    }
-  }
 }
