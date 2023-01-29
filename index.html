@@ -14,18 +14,20 @@
 </head>
 
   <body>
-    <header class="header container-fluid">
-       <div class="row">
-         <nav class="col-4 d-flex">
-           <div class="d-flex flex-box--direction-column flex-box--justify-center">
-             <a class="header__social-anchor" href="#">
-               <img class="header__hamburger" src="/images/hamburger.png" alt="Main Menu">
-             </a>
-           </div>
-           <div class="header__port-pro-container">
-             <a class="header__port-pro-link" href="#">PortPro</a>
-           </div>
-           <ul class="header__menu ul ul--no-padding d-flex flex-box--align-center">
+    <header class="container-fluid black">
+      <div class="row header__row">
+        <div class="header__hamburger d-flex col-1 blue align-items-center flex-box--direction-column flex-box--justify-between">
+          <a class="header__social-anchor" href="#">
+            <img class="header__hamburger-img" src="/images/hamburger.png" alt="Main Menu">
+          </a>
+        </div>
+
+        <div class="header__port-pro-container green col-9 col-xl-3">
+          <a class="header__port-pro-link" href="#">PortPro</a>
+        </div>
+
+         <nav class="d-none d-xl-block col-xl-4">
+           <ul class="header__menu ul ul--no-padding flex-box--align-center">
              <li><a class="header__anchor" href="#">Men</a></li>
              <li><a class="header__anchor" href="#">Women</a></li>
              <li><a class="header__anchor" href="#">Kids</a></li>
@@ -35,7 +37,7 @@
            </ul>
          </nav>
 
-         <div class="col-3 header__social-media">
+         <div class="col-xl-2 d-none red d-xl-flex header__social-media">
            <div>
              <ul class="header__media-images ul ul--no-padding d-flex flex-box--align-center">
                <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media header__img--fb" src="/images/facebook.png" alt="Facebook"></a></li>
@@ -46,11 +48,13 @@
            </div>
          </div>
 
-         <div class="col-1 d-flex">
+         <div class="col-1 header__basket">
              <a href="#">
                <img class="header__img header__img--ecom" src="/images/basket.png" alt="Basket">
              </a>
+         </div>
 
+         <div class="col-1 header__search">
              <a href="#">
                <img class="header__img header__img--ecom" src="/images/search.png" alt="Search">
              </a>

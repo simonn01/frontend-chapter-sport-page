@@ -82,8 +82,8 @@
   display: flex;
   background-color: #3954d9;
   border-radius: 30px;
+  font-size: 8px;
   height: 2em;
-  font-size: 13px;
   color: white;
   align-items: center;
   justify-content: center;
@@ -95,6 +95,7 @@
 }
 @media (min-width: 576px) {
   .btn--shop-now {
+    font-size: 13px;
     margin-bottom: 60px;
   }
 }
@@ -430,12 +431,18 @@
   }
 }
 
-.header {
-  max-height: 23px;
-  background-color: rgba(33, 33, 33, 0.4588235294);
-  display: flex;
-  justify-content: space-between;
+header {
+  height: 28px;
+  text-transform: uppercase;
   position: fixed;
+  background-color: rgba(33, 33, 33, 0.4588235294);
+}
+
+.header {
+  height: 25px;
+  background-color: rgba(33, 33, 33, 0.4588235294);
+  position: -webkit-sticky;
+  position: sticky;
   top: 0;
   z-index: 9;
   border-bottom: 1px solid #4c5b64;
@@ -452,13 +459,29 @@
     max-height: 64px;
   }
 }
+.header__row {
+  height: 100%;
+  border-bottom: 1px solid #CCC;
+}
 .header__port-pro-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  border-left: 1px solid #4c5b64;
-  border-right: 1px solid #4c5b64;
   padding: 0 1em;
+}
+@media (min-width: 1200px) {
+  .header__port-pro-container {
+    border-left: 1px solid #4c5b64;
+    border-right: 1px solid #4c5b64;
+  }
+}
+.header__search, .header__basket {
+  display: flex;
+  justify-content: center;
+}
+.header__basket {
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
 }
 .header__port-pro-link {
   font-weight: 800;
@@ -481,6 +504,7 @@
   text-decoration: none;
   padding: 0 10px;
   color: #fff;
+  border: 1px solid #CCC;
 }
 @media (min-width: 601px) {
   .header__anchor {
@@ -494,7 +518,10 @@
   }
 }
 .header__hamburger {
-  width: 2vw;
+  border-right: 1px solid #CCC;
+}
+.header__hamburger-img {
+  width: 2.5vw;
 }
 .header__media-images {
   margin: 0.85vw 0;
@@ -505,9 +532,9 @@
   }
 }
 .header__img {
-  margin: 0 -1vw;
+  height: 50%;
 }
-@media (min-width: 601px) {
+@media (min-width: 576px) {
   .header__img {
     width: 1.5vw;
   }
@@ -517,9 +544,6 @@
     margin: unset;
     width: unset;
   }
-}
-.header__img--ecom {
-  padding-bottom: 0.75vw;
 }
 @media (min-width: 601px) {
   .header__img--ecom {
@@ -819,13 +843,12 @@
   }
 }
 .sprinter__heading {
+  margin-top: 38%;
+  line-height: 0.8;
   font-size: 10vw;
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   text-align: center;
-}
-.sprinter__heading__heading {
-  margin-top: 28%;
 }
 @media (min-width: 1200px) {
   .sprinter__heading {

@@ -1,9 +1,29 @@
-.header {
-  max-height: 23px;
-  background-color: #21212175;
-  display: flex;
-  justify-content: space-between;
+$border: 1px solid #CCC;
+
+// .yellow {
+//   background-color: yellow;
+// }
+
+// .green {
+//   background-color: green;
+// }
+// .blue {
+//   background-color: blue;
+// }
+// .black {
+//   background-color: black;
+// }
+
+header {
+  height: 28px;
+  text-transform: uppercase;
   position: fixed;
+  background-color: #21212175;
+}
+.header {
+  height: 25px;
+  background-color: #21212175;
+  position: sticky;
   top: 0;
   z-index: 9;
   border-bottom: 1px solid #4c5b64;
@@ -16,13 +36,31 @@
     max-height: 64px;
   }
 
+  &__row {
+    height: 100%;
+    border-bottom: $border;
+  }
+
   &__port-pro-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border-left: 1px solid #4c5b64;
-    border-right: 1px solid #4c5b64;
     padding: 0 1em;
+    @include media-breakpoint-up(xl) {
+      border-left: 1px solid #4c5b64;
+      border-right: 1px solid #4c5b64;
+    }
+  }
+
+  &__search {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__basket {
+    @extend .header__search;
+    border-left: $border;
+    border-right: $border;
   }
 
   &__port-pro-link {
@@ -45,6 +83,7 @@
     text-decoration: none;
     padding: 0 10px;
     color: #fff;
+    border: $border;
     @media (min-width: 601px) {
       font-size: 1vw;
       padding: 1vw;
@@ -55,7 +94,11 @@
   }
 
   &__hamburger {
-    width: 2vw;
+    border-right: $border;
+  }
+
+  &__hamburger-img {
+    width: 2.5vw;
   }
 
   &__media-images {
@@ -66,8 +109,9 @@
   }
 
   &__img {
-    margin: 0 -1vw;
-    @media (min-width: 601px) {
+    // margin: 0 -1vw;
+    height: 50%;
+    @include media-breakpoint-up(sm) {
       width: 1.5vw;
     }
     @media (min-width: 901px) {
@@ -76,7 +120,7 @@
     }
 
     &--ecom {
-      padding-bottom: 0.75vw;
+      // padding-bottom: 0.75vw;
       @media (min-width: 601px) {
         padding-bottom: unset;
       }
