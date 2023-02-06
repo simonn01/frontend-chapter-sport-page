@@ -1,0 +1,23 @@
+.price {
+  font-family: 'Montserrat', sans-serif;
+  padding: 20px;
+
+  &--reduction {
+    color: #3954d9;
+    font-size: 32px;
+    font-weight: 700;
+    @include media-breakpoint-up(sm) {
+      font-size: 52px;
+    }
+  }
+
+  &--full {
+    font-size: 16px;
+    color: #121212;
+    font-weight: 500;
+    text-decoration: line-through;
+    @include media-breakpoint-up(sm) {
+      font-size: 33px;
+    }
+  }
+}

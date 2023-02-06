@@ -1,0 +1,28 @@
+.flex-box {
+  &--background-white {
+    background-color: #fff;
+  }
+
+  &--direction-column {
+    flex-direction: column;
+  }
+
+  &--justify-center {
+    justify-content: center;
+  }
+
+  &--align-center {
+    align-items: center;
+  }
+
+  &--align-baseline {
+    align-items: baseline;
+  }
+
+  &__img--grey-size-30 {
+    max-width: 30px;
+    max-height: 30px;
+    filter: grayscale(100%);
+    margin: 0 2px;
+  }
+}

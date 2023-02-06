@@ -1,0 +1,49 @@
+.black-banner {
+  background: url('/images/runner.jpg') right -10px/62% no-repeat #0f0f19;
+  display: flex;
+  flex: 1 1 0;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+  list-style-type: none;
+  @include media-breakpoint-up(xl) {
+    background: url('/images/runner.jpg') right -30px/45% no-repeat #0f0f19;
+  }
+
+
+  &__h1 {
+    margin-left: 0.3em;
+    padding-top: 25px;
+    font-size: 3vw;
+    line-height: 90%;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    @include media-breakpoint-up(sm) {
+      margin-left: unset;
+      margin-left: 18px;
+      padding-top: 50px;
+    }
+    @include media-breakpoint-up(lg) {
+    font-size: 3.4vw;
+    }
+    @include media-breakpoint-up(xl) {
+    }
+  }
+
+  & > * {
+    padding: 0;
+  }
+
+  &__anchor {
+  height: 0;
+    padding-bottom: 25%;
+    margin: 0;
+  }
+
+  &__tile {
+  height: 0;
+    padding-top: 25%;
+    margin: 0;
+  }
+}

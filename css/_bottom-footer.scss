@@ -1,0 +1,11 @@
+.bottom-footer {
+  flex-direction: column;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  @include media-breakpoint-up(sm) {
+    flex-direction: unset;
+    border-top: solid #656565;
+  }
+}

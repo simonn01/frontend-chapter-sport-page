@@ -1,0 +1,12 @@
+.link {
+  color: #fff;
+  position: relative;
+  text-decoration: none;
+  &--tile {
+    text-decoration: none;
+    padding: 0;
+  }
+  &--tile:hover {
+    color: #8a8a8a;
+  }
+}

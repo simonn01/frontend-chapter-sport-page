@@ -1,0 +1,44 @@
+.clock {
+  min-width: 55px;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 20%;
+  margin: 0 5px;
+  padding: 5px 0;
+  margin-bottom: 15px;
+  font-size: 38px;
+  @include media-breakpoint-up(sm) {
+    min-width: none;
+  }
+
+  &__digit {
+    color: #2d2b27;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 1em;
+  }
+
+  &__dots {
+    color: #2d2b27;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    margin-top: -18px;
+    font-size: 0.5em;
+  }
+
+  &__unit {
+    font-size: 8px;
+    color: #2d2b27;
+    font-family: 'Montserrat', sans-serif;
+    padding: 8px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: -12px;
+    @include media-breakpoint-up(sm) {
+      font-size: 0.3em;
+    }
+  }
+}

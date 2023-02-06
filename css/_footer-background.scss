@@ -1,0 +1,11 @@
+.footer-background {
+  @include media-breakpoint-up(sm) {
+    background: url('/images/background.jpg') bottom repeat #fff;
+    margin-top: -120vh;
+    height: 120vh;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: -500px;
+    height: 500px;
+  }
+}

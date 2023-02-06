@@ -1,0 +1,12 @@
+.tile-row {
+  background: none;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  color: #1111;
+  padding: 0;
+  margin: 0;
+  @include media-breakpoint-up(sm) {
+    background-color: #c7c7c7;
+  }
+}

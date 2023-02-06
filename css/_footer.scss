@@ -1,0 +1,87 @@
+.footer {
+  flex-direction: column;
+  bottom: 0;
+  margin: 0;
+  justify-content: space-around;
+  position: relative;
+  @include media-breakpoint-up(sm) {
+    flex-direction: unset;
+    bottom: 105px;
+    margin-bottom: -105px;
+  }
+
+  &__h3 {
+    margin-top: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    color: #3145b6;
+    font-size: 2.75vw;
+    @include media-breakpoint-up(sm) {
+      margin: 15vw 1vw 0 1vw;
+      font-weight: 400;
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 2.05vw;
+      margin: 5em 0 0.2em 0;
+    }
+    &--no-margin {
+      margin: 40px 0 10px 0;
+    }
+  }
+
+  &__ul {
+    margin: 0;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 12px;
+    @include media-breakpoint-up(xl) {
+      font-size: 15px;
+    }
+
+    &--social-media {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__li {
+    margin: 0.8em;
+  }
+
+  &__form {
+    border-radius: 25px;
+    border: none;
+    height: 1.8em;
+    background-color: #2f2f2f;
+    margin-bottom: 30px;
+  }
+
+  &__background-img {
+    width: 4.5vw;
+    @include media-breakpoint-up(xl) {
+      margin: 0 3px;
+    }
+  }
+  &__img {
+    width: 2.3vw;
+    filter: brightness(0%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    translate: -50% -60%;
+    @include media-breakpoint-up(xl) {
+      width: unset;
+    }
+  }
+
+  &__btn {
+    margin: -15px 0 25px 0;
+    align-self: center;
+    @include media-breakpoint-up(sm) {
+      margin: unset;
+      align-self: unset;
+    }
+  }
+}

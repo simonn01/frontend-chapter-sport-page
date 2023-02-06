@@ -1,0 +1,6 @@
+.payment-types {
+  justify-content: center;
+  @include media-breakpoint-up(sm) {
+    justify-content: unset;
+  }
+}

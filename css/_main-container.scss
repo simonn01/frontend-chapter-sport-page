@@ -1,0 +1,10 @@
+.main-container {
+    padding: 0 50px;
+    background: linear-gradient(white, transparent), url("/images/background.jpg") bottom repeat #FFF;
+    z-index:0;
+@include media-breakpoint-up(sm) {
+    padding: 0 100px;
+    background: unset;
+    background-color: #FFF;
+    }
+}

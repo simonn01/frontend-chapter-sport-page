@@ -1,0 +1,184 @@
+.tile {
+  background: none;
+  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 0.5px solid #c7c7c7;
+  border-top: none;
+  position: relative;
+  @include media-breakpoint-up(sm) {
+    background-color: #fff;
+    padding-bottom: 20px;
+    justify-content: flex-end;
+  }
+  @include media-breakpoint-up(xl) {
+    padding-bottom: 30px;
+  }
+
+  &--transparent {
+    background-color: transparent;
+  }
+
+  &--sunglasses {
+    border: 1px #c7c7c7 solid;
+  }
+
+  &--clickable:hover::before {
+    content: '';
+    background-color: #8a8a8a60;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+  }
+
+  &--clickable:hover::after {
+    content: 'Shop Now';
+    background-color: #3954d9;
+    position: absolute;
+    /* center */
+    width: 85px;
+    left: 0;
+    right: 0;
+    top: 0;
+    margin: 45% auto;
+    /**********/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    height: 2em;
+    font-size: 13px;
+    color: #fff;
+    padding: 0.3em;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &--first{
+    border-left: none;
+  }
+
+  &--last{
+    border-right: none;
+  }
+
+  &__h2 {
+    line-height: 90%;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0.5em 10px 0 10px;
+    font-size: 2.5vw;
+    @include media-breakpoint-up(lg) {
+    }
+    @include media-breakpoint-up(xl) {
+      font-size: 2.1em;
+      margin: 50px 30px 0 30px;
+    }
+  }
+
+  &__h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0 20px 20px;
+    font-size: 0.5em;
+    font-weight: 300;
+    letter-spacing: 0.45em;
+    text-transform: uppercase;
+    @include media-breakpoint-up(xl) {
+      margin: 20px 0 30px 24px;
+      font-size: 14px;
+      font-weight: 400;
+    }
+  }
+
+  &__img {
+    height: 100%;
+    width: 100%;
+    padding: 2em 0 1em 0;
+    &--sunglasses {
+      padding: 0;
+      width: 80%;
+      align-self: center;
+      @include media-breakpoint-up(xl) {
+        padding: 3em 0 3em 0;
+      }
+    }
+  }
+
+  &__title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0d2e57;
+    text-transform: uppercase;
+    letter-spacing: -0.05em;
+    @include media-breakpoint-up(sm) {
+    font-size: 12px;
+    }
+    @include media-breakpoint-up(md) {
+    font-size: 20px;
+    }
+    @include media-breakpoint-up(xl) {
+      font-weight: 700;
+      font-size: 25px;
+    }
+    &--padding-left-39 {
+      padding-left: 39px;
+    }
+  }
+
+  &__anchor {
+    width: 30%;
+  }
+
+  &__content-container {
+    padding: 0;
+    text-align: center;
+    @include media-breakpoint-up(sm) {
+      padding: 0 10px;
+      text-align: center;
+      min-height: 70px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+    @include media-breakpoint-up(xl) {
+      text-align: unset;
+      min-height: unset;
+      display: unset;
+      padding-left: 39px;
+    }
+  }
+
+  &__content {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+  }
+
+  &__content--blue {
+    color: #3954d9;
+    font-size: 13px;
+    @include media-breakpoint-up(sm) {
+    font-size: 10px;
+    }
+    @include media-breakpoint-up(md) {
+    font-size: 13px;
+    }
+  }
+
+  &__content--grey {
+    color: #ddd;
+    font-size: 12px;
+    text-decoration: line-through;
+    @include media-breakpoint-up(sm) {
+        font-size: 9px;
+      color: #818181;
+    }
+    @include media-breakpoint-up(md) {
+        font-size: 12px;
+    }
+  }
+}
