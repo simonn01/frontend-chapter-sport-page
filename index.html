@@ -11,14 +11,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700&family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <script>
+      function toggleMenu() {
+        const header = document.getElementById("header");
+        header.classList.toggle("header--menu-open");
+        // portpro.classList.toggle("header__port-pro-link--open");
+      }
+    </script>
 </head>
 
+  <!-- <body onload="toggleMenu()"> -->
   <body>
-    <header class="container-fluid black">
+    <header id="header" class="container-fluid header">
       <div class="row header__row">
-        <div class="header__hamburger d-flex col-1 blue align-items-center flex-box--direction-column flex-box--justify-between">
-          <a class="header__social-anchor" href="#">
-            <img class="header__hamburger-img" src="/images/hamburger.png" alt="Main Menu">
+        <div 
+          class="header__hamburger d-flex col-1 align-items-center flex-box--direction-column flex-box--justify-between"
+          onclick="toggleMenu()"
+        >
+          <svg 
+          viewbox="-5 -15 40 40"
+          xmlns="http://www.w3.org/2000/svg" version="1.1" width="30px" height="21px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; fill:currentColor; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <a class="header__social-anchor" href="#">
+            <g><path fill="currentColor" style="opacity:0.62" d="M -0.5,-0.5 C 9.5,-0.5 19.5,-0.5 29.5,-0.5C 29.5,1.16667 29.5,2.83333 29.5,4.5C 19.4176,4.80744 9.41756,4.4741 -0.5,3.5C -0.5,2.16667 -0.5,0.833333 -0.5,-0.5 Z"/></g>
+            <g><path fill="currentColor" style="opacity:0.75" d="M -0.5,8.5 C 9.5,8.5 19.5,8.5 29.5,8.5C 29.5,9.83333 29.5,11.1667 29.5,12.5C 19.5,12.5 9.5,12.5 -0.5,12.5C -0.5,11.1667 -0.5,9.83333 -0.5,8.5 Z"/></g>
+            <g><path fill="currentColor" style="opacity:0.763" d="M -0.5,16.5 C 9.5,16.5 19.5,16.5 29.5,16.5C 29.5,17.8333 29.5,19.1667 29.5,20.5C 19.5,20.5 9.5,20.5 -0.5,20.5C -0.5,19.1667 -0.5,17.8333 -0.5,16.5 Z"/></g>
+          </svg>
           </a>
         </div>
 
@@ -26,39 +43,82 @@
           <a class="header__port-pro-link" href="#">PortPro</a>
         </div>
 
-         <nav class="d-none d-xl-block col-xl-4">
-           <ul class="header__menu ul ul--no-padding flex-box--align-center">
-             <li><a class="header__anchor" href="#">Men</a></li>
-             <li><a class="header__anchor" href="#">Women</a></li>
-             <li><a class="header__anchor" href="#">Kids</a></li>
-             <li><a class="header__anchor" href="#">Sports</a></li>
-             <li><a class="header__anchor" href="#">Brands</a></li>
-             <li><a class="header__anchor" href="#">Customize</a></li>
-           </ul>
-         </nav>
+      <div class="header__menu-wrapper">
+        <nav class="col-xl-4 header__navigation">
+          <ul class="header__menu ul ul--no-padding flex-box--align-center">
+            <li><a class="header__anchor" href="#">Men</a></li>
+            <li><a class="header__anchor" href="#">Women</a></li>
+            <li><a class="header__anchor" href="#">Kids</a></li>
+            <li><a class="header__anchor" href="#">Sports</a></li>
+            <li><a class="header__anchor" href="#">Brands</a></li>
+            <li><a class="header__anchor" href="#">Customize</a></li>
+          </ul>
+        </nav>
 
-         <div class="col-xl-2 d-none red d-xl-flex header__social-media">
-           <div>
-             <ul class="header__media-images ul ul--no-padding d-flex flex-box--align-center">
-               <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media header__img--fb" src="/images/facebook.png" alt="Facebook"></a></li>
-               <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/twitter.png" alt="Twitter"></a></li>
-               <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/G+.png" alt="Google"></a></li>
-               <li><a class="header__social-anchor" href="#"><img class="header__img header__img--media" src="/images/instagram.png" alt="Instagram"></a></li>
-             </ul>
-           </div>
-         </div>
+        <div class="col-xl-2 d-flex header__social-media">
+          <ul class="header__media-images ul ul--no-padding d-flex justify-content-center flex-box--align-center">
+            <li>
+              <svg 
+              xmlns="http://www.w3.org/2000/svg"
+              version="1.1"
+              viewbox="-22 -10 50 50"
+              width="auto"
+              height="25px"
+              style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <a href="#"></a>
+                <g><path style="opacity:0.848" d="M 6.5,-0.5 C 9.16667,-0.5 11.8333,-0.5 14.5,-0.5C 14.5,1.5 14.5,3.5 14.5,5.5C 12.8333,5.5 11.1667,5.5 9.5,5.5C 9.5,6.5 9.5,7.5 9.5,8.5C 11.1667,8.5 12.8333,8.5 14.5,8.5C 14.5,10.5 14.5,12.5 14.5,14.5C 12.8333,14.5 11.1667,14.5 9.5,14.5C 9.5,18.5 9.5,22.5 9.5,26.5C 7.5,26.5 5.5,26.5 3.5,26.5C 3.5,22.5 3.5,18.5 3.5,14.5C 2.16667,14.5 0.833333,14.5 -0.5,14.5C -0.5,12.5 -0.5,10.5 -0.5,8.5C 0.833333,8.5 2.16667,8.5 3.5,8.5C 2.92376,4.88753 3.92376,1.88753 6.5,-0.5 Z"/></g>
+              </svg>
+            </li>
+            <li>
+              <svg 
+              viewbox="-10 -12 50 50"
+              xmlns="http://www.w3.org/2000/svg" version="1.1" width="25px" height="22px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g><path style="opacity:0.826" d="M 15.5,-0.5 C 16.1667,-0.5 16.8333,-0.5 17.5,-0.5C 18.8664,1.3505 20.533,1.68383 22.5,0.5C 23.1818,1.24269 23.8485,1.90935 24.5,2.5C 24.5,2.83333 24.5,3.16667 24.5,3.5C 23.5416,3.9528 22.7083,4.61947 22,5.5C 21.73,13.0598 18.23,18.3932 11.5,21.5C 8.5,21.5 5.5,21.5 2.5,21.5C 1.70951,20.5987 0.709515,19.9321 -0.5,19.5C -0.5,19.1667 -0.5,18.8333 -0.5,18.5C 5.41689,18.6088 6.25022,17.2755 2,14.5C 1.62638,12.5087 0.793048,10.842 -0.5,9.5C -0.5,8.83333 -0.5,8.16667 -0.5,7.5C 0.833333,6.83333 0.833333,6.16667 -0.5,5.5C -0.5,4.5 -0.5,3.5 -0.5,2.5C 0.117425,2.38929 0.617425,2.05596 1,1.5C 3.58643,3.54481 6.41976,5.21148 9.5,6.5C 10.3759,3.00992 12.3759,0.676585 15.5,-0.5 Z"/></g>
+              </svg>
+            </li>
+            <li>
+              <svg 
+              viewbox="-10 -12 50 50"
+              xmlns="http://www.w3.org/2000/svg" version="1.1" width="27px" height="22px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <g><path style="opacity:0.658" d="M 7.5,-0.5 C 9.16667,-0.5 10.8333,-0.5 12.5,-0.5C 14.1002,0.644443 15.7669,1.81111 17.5,3C 16.646,4.02173 15.646,4.85506 14.5,5.5C 8.75186,2.96109 5.08519,4.62776 3.5,10.5C 6.02139,17.5124 10.0214,18.6791 15.5,14C 13.8659,13.5065 12.1992,13.3398 10.5,13.5C 10.5,11.8333 10.5,10.1667 10.5,8.5C 13.7766,8.21614 16.9433,8.54948 20,9.5C 21.0195,8.31277 22.1861,7.31277 23.5,6.5C 24.2876,7.77013 25.2876,8.77013 26.5,9.5C 26.5,10.1667 26.5,10.8333 26.5,11.5C 25.2436,11.9038 24.0769,12.5705 23,13.5C 22.0546,13.0946 21.3879,12.428 21,11.5C 19.7108,16.2791 16.8775,19.6125 12.5,21.5C 10.5,21.5 8.5,21.5 6.5,21.5C 3.83333,19.5 1.5,17.1667 -0.5,14.5C -0.5,11.8333 -0.5,9.16667 -0.5,6.5C 1.57257,3.42355 4.23924,1.09021 7.5,-0.5 Z"/></g>
+              </svg>
+            </li>
+            <li>
+              <svg 
+              viewbox="-10 -10 50 50"
+              xmlns="http://www.w3.org/2000/svg" version="1.1" width="29px" height="28px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <g><path style="opacity:0.688"  d="M 3.5,-0.5 C 10.1667,-0.5 16.8333,-0.5 23.5,-0.5C 25.1436,0.316435 26.3103,1.64977 27,3.5C 27.6667,10.1667 27.6667,16.8333 27,23.5C 26.3103,25.3502 25.1436,26.6836 23.5,27.5C 16.8333,27.5 10.1667,27.5 3.5,27.5C 2.13632,25.8089 0.802988,24.1423 -0.5,22.5C -0.5,16.5 -0.5,10.5 -0.5,4.5C 0.802988,2.85774 2.13632,1.19107 3.5,-0.5 Z M 22.5,3.5 C 17.9835,4.62535 17.6502,6.29202 21.5,8.5C 23.1112,7.67975 23.7778,6.34642 23.5,4.5C 24.6525,10.3188 24.8192,16.3188 24,22.5C 5.31101,29.8102 -1.35566,23.8102 4,4.5C 4.5,4 5,3.5 5.5,3C 11.3487,2.18163 17.0154,2.3483 22.5,3.5 Z M 11.5,9.5 C 17.3133,9.06197 18.98,11.562 16.5,17C 9.745,17.7558 8.07833,15.2558 11.5,9.5 Z"/></g>
+              <g><path style="opacity:0.495"  d="M 22.5,3.5 C 22.5,4.16667 22.8333,4.5 23.5,4.5C 23.7778,6.34642 23.1112,7.67975 21.5,8.5C 17.6502,6.29202 17.9835,4.62535 22.5,3.5 Z"/></g>
+              <g><path style="opacity:0.63" d="M 12.5,5.5 C 20.3952,6.96065 22.7286,11.294 19.5,18.5C 15.6711,22.3914 11.8378,22.3914 8,18.5C 5.09757,12.4662 6.59757,8.13291 12.5,5.5 Z M 11.5,9.5 C 8.07833,15.2558 9.745,17.7558 16.5,17C 18.98,11.562 17.3133,9.06197 11.5,9.5 Z"/></g>
+              </svg>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-         <div class="col-1 header__basket">
-             <a href="#">
-               <img class="header__img header__img--ecom" src="/images/basket.png" alt="Basket">
-             </a>
-         </div>
+      <div class="col-1 header__search">
+        <svg 
+          xmlns="http://www.w3.org/2000/svg"
+          version="1.1"
+          viewbox="-13 -10 50 50"
+          width="27px"
+          height="26px"
+          style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+          xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g>
+            <path fill="currentColor" style="opacity:0.703" d="M 5.5,-0.5 C 8.5,-0.5 11.5,-0.5 14.5,-0.5C 19.7621,3.55248 21.0955,8.55248 18.5,14.5C 21.1864,16.8558 23.853,19.1891 26.5,21.5C 26.5,22.5 26.5,23.5 26.5,24.5C 25.8333,24.5 25.5,24.8333 25.5,25.5C 24.8333,25.5 24.1667,25.5 23.5,25.5C 21.3719,22.8697 19.0386,20.3697 16.5,18C 12.8794,18.4052 9.21276,18.4052 5.5,18C 2.97739,16.6403 0.977392,14.807 -0.5,12.5C -0.5,10.1667 -0.5,7.83333 -0.5,5.5C 1.16667,3.16667 3.16667,1.16667 5.5,-0.5 Z M 6.5,3.5 C 14.8412,2.8734 17.1746,6.20674 13.5,13.5C 6.70766,15.8616 3.54099,13.5282 4,6.5C 5.04499,5.62656 5.87833,4.62656 6.5,3.5 Z"/>
+          </g>
+          <a href="#"></a>
+        </svg>
+      </div>
 
-         <div class="col-1 header__search">
-             <a href="#">
-               <img class="header__img header__img--ecom" src="/images/search.png" alt="Search">
-             </a>
-         </div>
+      <div class="col-1 header__basket">
+        <svg 
+        viewbox="-13 -10 50 50"
+        xmlns="http://www.w3.org/2000/svg" version="1.1" width="25px" height="25px" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <g><path fill="currentColor" style="opacity:0.858" fill="#fefffe" d="M 8.5,-0.5 C 10.8333,-0.5 13.1667,-0.5 15.5,-0.5C 18.8357,1.45423 20.5024,4.45423 20.5,8.5C 21.8333,8.5 23.1667,8.5 24.5,8.5C 24.5,14.5 24.5,20.5 24.5,26.5C 16.1667,26.5 7.83333,26.5 -0.5,26.5C -0.5,20.5 -0.5,14.5 -0.5,8.5C 0.977822,8.76202 2.31116,8.42869 3.5,7.5C 4.19348,4.0896 5.86015,1.42293 8.5,-0.5 Z M 9.5,1.5 C 14.6822,1.01781 17.3489,3.35115 17.5,8.5C 13.8333,8.5 10.1667,8.5 6.5,8.5C 6.14963,5.54661 7.14963,3.21328 9.5,1.5 Z"/></g>
+          <a href="#"></a>
+        </svg>
       </div>
     </header>
 
