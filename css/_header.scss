@@ -1,44 +1,50 @@
 $border: 1px solid #CCC;
 
-// .yellow {
-//   background-color: yellow;
+// svg {
+//   fill: currentColor;
 // }
 
-// .green {
-//   background-color: green;
-// }
-// .blue {
-//   background-color: blue;
-// }
-// .black {
-//   background-color: black;
-// }
-
-header {
-  height: 28px;
+.header {
   text-transform: uppercase;
   position: fixed;
   background-color: #21212175;
-}
-.header {
-  height: 25px;
-  background-color: #21212175;
-  position: sticky;
-  top: 0;
-  z-index: 9;
-  border-bottom: 1px solid #4c5b64;
-  text-transform: uppercase;
-  width: 100vw;
+  color: #FFF;
+  border-bottom: $border;
   @include media-breakpoint-up(sm) {
     max-height: 35px;
   }
   @include media-breakpoint-up(lg) {
     max-height: 64px;
   }
+  @include media-breakpoint-up(xxl) {
+    height: 25px;
+    background-color: #21212175;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    border-bottom: 1px solid #4c5b64;
+    text-transform: uppercase;
+    width: 100vw;
+  }
+
+  &--menu-open {
+    border: none;
+    z-index: 3;
+  }
+
+  &__menu-wrapper {
+    transform: translateX(-100%);
+    position: absolute;
+    background-color: white;
+    color: black;
+    height: 100vh;
+    .header--menu-open & {
+      transform: translateX(0);
+    }
+  }
 
   &__row {
-    height: 100%;
-    border-bottom: $border;
+    height: auto;
   }
 
   &__port-pro-container {
@@ -55,35 +61,64 @@ header {
   &__search {
     display: flex;
     justify-content: center;
+    padding: 1px 0 0 0;
+    &--open {
+      border: none;
+    }
   }
 
   &__basket {
     @extend .header__search;
     border-left: $border;
     border-right: $border;
+    &--open {
+      border: none;
+    }
   }
 
   &__port-pro-link {
     font-weight: 800;
-    font-size: 2vw;
+    font-size: 3vw;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-    color: #fff;
     @media (min-width: 901px) {
       font-weight: 900;
       padding: 0 10px;
       font-size: 33px;
     }
+    &--open {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translate(-50%, 20%);
+    }
+  }
+
+  &__navigation {
+    padding-top: 35px;
+  }
+
+  &__menu {
+    align-items: flex-end;
+    text-align: center;
+    background: white;
+    margin-bottom: 0;
+    width: 100%;
+    padding: 0;
+    @include media-breakpoint-up(sm) {
+      align-items: flex-start;
+    }
   }
 
   &__anchor {
+    text-align: center;
     font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
     font-weight: 600;
     text-decoration: none;
     padding: 0 10px;
-    color: #fff;
-    border: $border;
+    color: #000;
     @media (min-width: 601px) {
       font-size: 1vw;
       padding: 1vw;
@@ -91,10 +126,22 @@ header {
     @media (min-width: 901px) {
       font-size: 13px;
     }
+    &--port-pro-link {
+      font-weight: 800;
+      font-size: 2vw;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      text-decoration: none;
+      position: relative;
+      bottom: 22px;
+    }
   }
 
   &__hamburger {
     border-right: $border;
+    &--open {
+      border: none;
+    }
   }
 
   &__hamburger-img {
@@ -102,14 +149,12 @@ header {
   }
 
   &__media-images {
-    margin: 0.85vw 0;
-    @media (min-width: 901px) {
+    @include media-breakpoint-up(xl){
       margin: 0.85vw 0;
     }
   }
 
   &__img {
-    // margin: 0 -1vw;
     height: 50%;
     @include media-breakpoint-up(sm) {
       width: 1.5vw;
@@ -120,7 +165,6 @@ header {
     }
 
     &--ecom {
-      // padding-bottom: 0.75vw;
       @media (min-width: 601px) {
         padding-bottom: unset;
       }
@@ -150,13 +194,12 @@ header {
     @include media-breakpoint-up(sm) {
       margin: unset;
     }
-  }
-
-  &__menu {
-    align-items: flex-end;
-    @include media-breakpoint-up(sm) {
-      align-items: flex-start;
+    &--open {
+      position: absolute;
+      top: 0;
+      transform: translateY(180px);
+      justify-content: center;
+      border: none;
     }
   }
-
 }

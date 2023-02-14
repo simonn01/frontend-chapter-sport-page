@@ -24,3 +24,7 @@
 @import "tile-row.scss";
 @import "t-and-c.scss";
 @import "ul.scss";
+
+a:visited {
+  color: unset;
+}
