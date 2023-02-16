@@ -6,22 +6,6 @@ $border: 1px solid #CCC;
   background-color: #21212175;
   color: #FFF;
   border-bottom: $border;
-  @include media-breakpoint-up(sm) {
-    max-height: 35px;
-  }
-  @include media-breakpoint-up(lg) {
-    max-height: 64px;
-  }
-  @include media-breakpoint-up(xxl) {
-    height: 25px;
-    background-color: #21212175;
-    position: sticky;
-    top: 0;
-    z-index: 9;
-    border-bottom: 1px solid #4c5b64;
-    text-transform: uppercase;
-    width: 100vw;
-  }
 
   &--menu-open {
     border: none;
@@ -56,8 +40,7 @@ $border: 1px solid #CCC;
     justify-content: center;
     padding: 0 1em;
     @include media-breakpoint-up(xl) {
-      border-left: 1px solid #4c5b64;
-      border-right: 1px solid #4c5b64;
+      padding: 1.5em 1em;
     }
   }
 
@@ -66,6 +49,7 @@ $border: 1px solid #CCC;
     justify-content: center;
     padding: 1px 0 0 0;
     z-index: 0;
+    border-left: $border;
     .header--menu-open & {
       border: none;
     }
@@ -73,7 +57,6 @@ $border: 1px solid #CCC;
 
   &__basket {
     @extend .header__search;
-    border-left: $border;
     border-right: $border;
   }
 
