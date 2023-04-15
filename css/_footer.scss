@@ -16,8 +16,9 @@
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     color: #3145b6;
-    font-size: 2.75vw;
+    font-size: 3.75vw;
     @include media-breakpoint-up(sm) {
+      font-size: 2.05vw;
       margin: 15vw 1vw 0 1vw;
       font-weight: 400;
     }

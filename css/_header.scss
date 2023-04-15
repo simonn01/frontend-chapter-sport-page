@@ -138,14 +138,14 @@ $border: 1px solid #CCC;
     }
   }
   &--middle {
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     transition-property: transform;
     .header--menu-open & {
       display: none;
     }
   }
   &--bottom {
-    transition-duration: 1s;
+    transition-duration: 0.5s;
     transition-property: transform color;
     .header--menu-open & {
       transform: rotate(-45deg) translate(-15%, -5%);
@@ -205,7 +205,7 @@ $border: 1px solid #CCC;
       margin: unset;
     }
     @include media-breakpoint-up(xl) {
-      position: relative;
+      position: unset;
       border-left: $border;
     }
   }

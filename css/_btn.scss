@@ -36,12 +36,15 @@
   }
 
   &--blue-click {
-    color: #3753da;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
-    font-size: 13px;
-    text-transform: uppercase;
-    padding: 20px;
+    display: none;
+    @include media-breakpoint-up(xl) {
+      color: #3753da;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      text-transform: uppercase;
+      padding: 20px;
+    }
   }
 
   &--size13 {
